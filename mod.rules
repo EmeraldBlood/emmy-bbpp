@@ -1,0 +1,135 @@
+//Changelog at file tail
+ID = Emerald.BaBPersonalPatch
+Name = "Emmy Battle & Build Personal Patch (BaBPP)"
+Version = 1.2.0
+CompatibleGameVersions = ["0.26.0"]
+ModifiesMultiplayer = true
+Author = "Emerald Blood"
+Description = "Changes up starting techs, as well as custom tech pricing. Added mod support for Build & Battle mode:\n"\
+"- Kurim's More Crew Quarters\n"\
+"- AWT Armor Weapons & Technology\n"\
+"- TDI Advance Missile Launcher\n"\
+"- Twin Small Thrusters\n"\
+"- Twin Linked Point Defense Turret\n"\
+"- Bulkheads\n"\
+"- Micromissile Launcher\n"\
+"- Missile Launcher Variant - Crippler\n"\
+"- Blackmian's Elbow Magazine\n"\
+"- General Munitions' Projectile Weaponry\n"\
+"- DIGI Modular Missiles"
+
+Actions
+[
+	//Replace base list with custom list
+	//Draftable techs & prices
+	{
+		Action = Replace
+		Replace = "<modes/pvp/pvp_buildbattle/pvp_buildbattle.rules>/Mode/Techs"
+		IgnoreIfNotExisting = false
+		With = &<base-techs.rules>/Techs
+	}
+	//Starting tech
+	{
+		Action = Replace
+		Replace = "<modes/pvp/pvp_buildbattle/pvp_buildbattle.rules>/Mode/PartsWhitelist"
+		IgnoreIfNotExisting = false
+		With = &<base-techs.rules>/PartsWhitelist
+	}
+	//Replace mode icon with Maxwell. What a good boy
+	{
+		Action = Replace
+		Replace = "<modes/pvp/pvp_buildbattle/pvp_buildbattle.rules>/Mode/Icon"
+		IgnoreIfNotExisting = false
+		With = &<mode-rules.rules>/Mode/Icon
+	}
+	//Replace stash icon with Neco Arc. :3
+	{
+		Action = Replace
+		Replace = "<modes/pvp/pvp_buildbattle/pvp_buildbattle.rules>/Mode/StashIcon"
+		IgnoreIfNotExisting = false
+		With = &<mode-rules.rules>/Mode/StashIcon
+	}
+	//Updates tech per round
+	{
+		Action = Replace
+		Replace = "<modes/pvp/pvp_buildbattle/pvp_buildbattle.rules>/Mode/RandomOfferingsPerRound"
+		IgnoreIfNotExisting = false
+		With = &<mode-rules.rules>/Mode/RandomOfferingsPerRound
+	}
+	//My custom ship parts
+	/* 
+	{ 
+		Action = AddMany
+		AddTo = "<ships/terran/terran.rules>/terran/parts"
+		ManyToAdd = &<assets/cust-parts.rules>/Parts
+	} */
+	//Mod support
+	//Techs & prices
+	{
+		Action = AddMany
+		AddTo = "<../Standard Mods/emmy-bbpp/base-techs.rules>/Techs"
+		ManyToAdd = &<mod-parts.rules>/Techs
+	}
+	//Starting techs
+	{
+		Action = AddMany
+		AddTo = "<../Standard Mods/emmy-bbpp/base-techs.rules>/PartsWhitelist"
+		ManyToAdd = &<mod-parts.rules>/PartsWhitelist
+	}
+]
+
+/* 
+Required Mods List
+	Chaingun elbow
+	General Munitions' Projectile Weapons
+	Micromissle Launcher
+	Missile Launchyer Variant - Crippler
+	Kurim's More Crew Quarters
+	Twin Small Thrusters
+	Twin linked point defense turret
+	Deranged Industries: Advance Missile Launcer
+	DIGI Modular Missiles
+
+Changelog
+Version# - Overview
+	Changes
+	+ Added
+	/ Tweaked
+	- Removed
+
+v1.0.4 - Main release
+	+ More Crew Quarter
+	+ AWT Armor & Weapons
+		- Shields and gun not added
+	+ TDI Advance Missile Launcher
+	+ Bulkheads
+	+ Twin small thrusters
+	+ Special Icons
+Base Parts Moved:
+	- Removed part factories
+	/ Ammo factories now draft bundle
+	/ Standard engines now draft
+	/ Crews Quarter now draft (with 3x2 MCQ)
+
+v1.1.0 - More mods update
+	+ Twin PDT
+	+ Crippler Missiles
+	+ Micro Missiles
+Base Parts:
+	/ Cannon factories are now base
+	- Factories are no longer a bundle
+Prices:
+Tweaked all base prices based on value.
+	/ Upped all thresholds 200,000 -> 250,000
+	/ Prices up: tri-steel, bulkheads & reinforced corridors, nukes, large cannons, large laser, deck cannon, ion beams, railgun, large shields, small shields
+
+v1.2.0 - Mod-Thruster Update & new weapons
+	+ Supports version 0.26.0
+	+ Added the Basegame Mod Trusters to the list
+	+ Added all GM Projectile Weapons and shields
+	/ As of now, the Sandevistan devices are NOT added due to being wonky
+	+ Fixed a bug where Micro or Crippler lacked the ability to buy missiles.
+	+ Elbow Magazine mod
+	+ DIGI Modular Missiles
+	+ Added in AWT Shields, but may be OP
+*/

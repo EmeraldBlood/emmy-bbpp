@@ -1,0 +1,7 @@
+Parts
+{
+	//Auto Charge
+	AutoCharge = "Auto Charge"
+	AutoChargeIcon = &AutoCharge
+	AutoChargeDesc = "AI priority charge. Used for Build & Battle mode with AI controllers"
+}
