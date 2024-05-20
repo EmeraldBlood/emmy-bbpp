@@ -16,7 +16,23 @@ A link to the steam collection can be found here: https://steamcommunity.com/sha
 
 ## Changelog:
 v1.3.0 - Bucket update & QoL improvements
-* Flamer has been knocked up a tier
+* Added categories to all modded weapons. Forgot to do this prior, oops.
+	* Added a new category for Utility parts.
+* Added custom icons for buckets of items and new names to better denote what is multiple different items included in a single cost.
+* Balance
+	* Flamer has been knocked up a price tier
+	* EMP weapons are now considered Utility for categories
+	* Sulfur genators have all been knocked up one tier. The B&B mode is too short for their fuel downside to be a problem.
+
+v1.2.0 - Mod-Thruster Update & new weapons
+* Supports version 0.26.0
+* Added the Basegame Mod Trusters to the list
+* Added all GM Projectile Weapons and shields
+* As of now, the Sandevistan devices are NOT added due to being wonky
+* Fixed a bug where Micro or Crippler lacked the ability to buy missiles.
+* Elbow Magazine mod
+* DIGI Modular Missiles
+* Added in AWT Shields, but may be OP
 
 v1.1.0 - More mods update
 Added Mods:
@@ -31,16 +47,6 @@ Tweaked all base prices based on value.
 * Upped all thresholds 200,000 -> 250,000
 * Prices up: tri-steel, bulkheads & reinforced corridors, nukes, large cannons, large laser, deck cannon, ion beams, railgun, large shields, small shields
 
-v1.2.0 - Mod-Thruster Update & new weapons
-* Supports version 0.26.0
-* Added the Basegame Mod Trusters to the list
-* Added all GM Projectile Weapons and shields
-* As of now, the Sandevistan devices are NOT added due to being wonky
-* Fixed a bug where Micro or Crippler lacked the ability to buy missiles.
-* Elbow Magazine mod
-* DIGI Modular Missiles
-* Added in AWT Shields, but may be OP
-
 v1.0.4 - Main release
 * More Crew Quarter
 * AWT Armor & Weapons
@@ -54,3 +60,6 @@ Base Parts Moved:
 * Ammo factories now draft bundle
 * Standard engines now draft
 * Crews Quarter now draft (with 3x2 MCQ)
+
+## Todo List
+* Adding late-game buckets to buy groupings of low-tier weapons in bulk.

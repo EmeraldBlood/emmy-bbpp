@@ -1,7 +1,37 @@
+__Name = "English"
+__DebugOnly = false
+//The above 2 lines *MUST* be the first two lines of the file!
+
 Parts
 {
+//Mod Assets
 	//Auto Charge
 	AutoCharge = "Auto Charge"
 	AutoChargeIcon = &AutoCharge
 	AutoChargeDesc = "AI priority charge. Used for Build & Battle mode with AI controllers"
+	
+//Buckets
+	//More Crew Mod
+	//3x2 bunks
+	CrewQuarters3x2Bucket = "Medium Bunk Bucket"
+	CrewQuarters3x2BucketIcon = "Quad Bunk Bucket"
+	CrewQuarters3x2BucketDesc = "Provides both 2x2 and 3x2 bunks."
+	
+	//4x3 bunks
+	CrewQuarters4x3Bucket = "Large Bunk Bucket"
+	CrewQuarters4x3BucketDesc = "Emmy BBPP: placeholder text"
+	
+	//Bulkheads & AWT
+	//bulkheads
+	BulkheadBucket = "Reinforced Corridor Bucket"
+	BulkheadBucketDesc = "Emmy BBPP: placeholder text"
+	
+	//General Munitions
+	//Small sulfur
+	ReactorMedBucket = "Medium Power Bucket"
+	ReactorMedBucketDesc = "Emmy BBPP: placeholder text"
+	
+	//Medium sulfur
+	ReactorLargeBucket = "High Power Bucket"
+	ReactorLargeBucketDesc = "Emmy BBPP: placeholder text"
 }

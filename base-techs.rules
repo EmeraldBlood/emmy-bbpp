@@ -16,11 +16,12 @@ Techs
 		NameKey = "MissileTypes/EMP"
 		DescriptionKey = "MissileTypes/EMPDesc"
 		Icon = &<./Data/ships/terran/missile_launcher/emp/missile_launcher_emp.rules>/EditorIcon
+		Category = [utility]
 		PartsUnlocked = [&<./Data/ships/terran/missile_launcher/missile_launcher.rules>/Part/ID]
 		ResourcesUnlocked = [&<./Data/resources/missile_part_emp/missile_part_emp.rules>/ID]
 		ToggleChoicesUnlocked = [[missile_type, 1]]
 		Cost = 5000
-		FundsThresholdBeforeOffered = 0
+		FundsThresholdBeforeOffered = 100000
 	}
 	{
 		ID = cosmoteer.missile_launcher_nuke
@@ -100,6 +101,7 @@ Techs
 		NameKey = &<./Data/ships/terran/disruptor/disruptor.rules>/Part/NameKey
 		DescriptionKey = &<./Data/ships/terran/disruptor/disruptor.rules>/Part/DescriptionKey
 		Icon = &<./Data/ships/terran/disruptor/disruptor.rules>/Part/EditorIcon
+		Category = [utility]
 		PartsUnlocked = [&<./Data/ships/terran/disruptor/disruptor.rules>/Part/ID]
 		Cost = 5000
 		FundsThresholdBeforeOffered = 0
@@ -196,6 +198,7 @@ Techs
 		NameKey = &<./Data/ships/terran/control_room_med/control_room_med.rules>/Part/NameKey
 		DescriptionKey = &<./Data/ships/terran/control_room_med/control_room_med.rules>/Part/DescriptionKey
 		Icon = &<./Data/ships/terran/control_room_med/control_room_med.rules>/Part/EditorIcon
+		Category = [utility]
 		PartsUnlocked = [&<./Data/ships/terran/control_room_med/control_room_med.rules>/Part/ID]
 		Cost = 5000
 		FundsThresholdBeforeOffered = 250000
@@ -205,6 +208,7 @@ Techs
 		NameKey = &<./Data/ships/terran/control_room_large/control_room_large.rules>/Part/NameKey
 		DescriptionKey = &<./Data/ships/terran/control_room_large/control_room_large.rules>/Part/DescriptionKey
 		Icon = &<./Data/ships/terran/control_room_large/control_room_large.rules>/Part/EditorIcon
+		Category = [utility]
 		PartsUnlocked = [&<./Data/ships/terran/control_room_large/control_room_large.rules>/Part/ID]
 		Cost = 5000
 		FundsThresholdBeforeOffered = 550000
@@ -254,33 +258,17 @@ Techs
 		NameKey = &<./Data/ships/terran/power_storage/power_storage.rules>/Part/NameKey
 		DescriptionKey = &<./Data/ships/terran/power_storage/power_storage.rules>/Part/DescriptionKey
 		Icon = &<./Data/ships/terran/power_storage/power_storage.rules>/Part/EditorIcon
+		Category = [utility]
 		PartsUnlocked = [&<./Data/ships/terran/power_storage/power_storage.rules>/Part/ID]
 		Cost = 5000
 		FundsThresholdBeforeOffered = 0
-	}
-	{
-		ID = cosmoteer.reactor_med
-		NameKey = &<./Data/ships/terran/reactor_med/reactor_med.rules>/Part/NameKey
-		DescriptionKey = &<./Data/ships/terran/reactor_med/reactor_med.rules>/Part/DescriptionKey
-		Icon = &<./Data/ships/terran/reactor_med/reactor_med.rules>/Part/EditorIcon
-		PartsUnlocked = [&<./Data/ships/terran/reactor_med/reactor_med.rules>/Part/ID]
-		Cost = 5000
-		FundsThresholdBeforeOffered = 250000
-	}
-	{
-		ID = cosmoteer.reactor_large
-		NameKey = &<./Data/ships/terran/reactor_large/reactor_large.rules>/Part/NameKey
-		DescriptionKey = &<./Data/ships/terran/reactor_large/reactor_large.rules>/Part/DescriptionKey
-		Icon = &<./Data/ships/terran/reactor_large/reactor_large.rules>/Part/EditorIcon
-		PartsUnlocked = [&<./Data/ships/terran/reactor_large/reactor_large.rules>/Part/ID]
-		Cost = 5000
-		FundsThresholdBeforeOffered = 400000
 	}
 	{
 		ID = cosmoteer.tractor_beam_emitter
 		NameKey = &<./Data/ships/terran/tractor_beam_emitter/tractor_beam_emitter.rules>/Part/NameKey
 		DescriptionKey = &<./Data/ships/terran/tractor_beam_emitter/tractor_beam_emitter.rules>/Part/DescriptionKey
 		Icon = &<./Data/ships/terran/tractor_beam_emitter/tractor_beam_emitter.rules>/Part/EditorIcon
+		Category = [utility]
 		PartsUnlocked = [&<./Data/ships/terran/tractor_beam_emitter/tractor_beam_emitter.rules>/Part/ID]
 		Cost = 5000
 		FundsThresholdBeforeOffered = 100000
@@ -290,6 +278,7 @@ Techs
 		NameKey = &<./Data/ships/terran/sensor_array/sensor_array.rules>/Part/NameKey
 		DescriptionKey = &<./Data/ships/terran/sensor_array/sensor_array.rules>/Part/DescriptionKey
 		Icon = &<./Data/ships/terran/sensor_array/sensor_array.rules>/Part/EditorIcon
+		Category = [utility]
 		PartsUnlocked = [&<./Data/ships/terran/sensor_array/sensor_array.rules>/Part/ID]
 		Cost = 7500
 		FundsThresholdBeforeOffered = 250000
@@ -315,6 +304,7 @@ Techs
 		NameKey = &<./Data/ships/terran/thruster_med/thruster_med.rules>/Part/NameKey
 		DescriptionKey = &<./Data/ships/terran/thruster_med/thruster_med.rules>/Part/DescriptionKey
 		Icon = &<./Data/ships/terran/thruster_med/thruster_med.rules>/Part/EditorIcon
+		Category = [thrusters]
 		PartsUnlocked = [&<./Data/ships/terran/thruster_med/thruster_med.rules>/Part/ID]
 		Cost = 5000
 		FundsThresholdBeforeOffered = 0

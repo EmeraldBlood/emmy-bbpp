@@ -3,26 +3,28 @@ Techs
 	//More Crew Quarters
 	{//2x2, 3x2 bunks
 		ID = kurim.3x2crewquarters
-		NameKey = &<./Data/../../../workshop/content/799600/2883177284/ships/crew_3x2/crew_3x2.rules>/Part/NameKey
-		DescriptionKey = &<./Data/../../../workshop/content/799600/2883177284/ships/crew_3x2/crew_3x2.rules>/Part/DescriptionKey
-		Icon = &<./Data/../../../workshop/content/799600/2883177284/ships/crew_3x2/crew_3x2.rules>/Part/EditorIcon
+		NameKey = &<./Standard Mods/emmy-bbpp/buckets/3x2crewquarters.rules>/Part/NameKey
+		DescriptionKey = &<./Standard Mods/emmy-bbpp/buckets/3x2crewquarters.rules>/Part/DescriptionKey
+		Icon = &<./Standard Mods/emmy-bbpp/buckets/3x2crewquarters.rules>/Part/EditorIcon
 		PartsUnlocked = [
 			&<./Data/../../../workshop/content/799600/2883177284/ships/crew_3x2/crew_3x2.rules>/Part/ID
 			&<./Data/ships/terran/crew_quarters_med/crew_quarters_med.rules>/Part/ID
 			]
-		Cost = 6000
+		Category = [utility]
+		Cost = 7500
 		FundsThresholdBeforeOffered = 0
 	}
 	{//3x3, 4x3, 4x4 bunks
 		ID = kurim.4x3crewquarters
-		NameKey = &<./Data/../../../workshop/content/799600/2883177284/ships/crew_4x3/crew_4x3.rules>/Part/NameKey
-		DescriptionKey = &<./Data/../../../workshop/content/799600/2883177284/ships/crew_4x3/crew_4x3.rules>/Part/DescriptionKey
-		Icon = &<./Data/../../../workshop/content/799600/2883177284/ships/crew_4x3/crew_4x3.rules>/Part/EditorIcon
+		NameKey = &<./Standard Mods/emmy-bbpp/buckets/4x3crewquarters.rules>/Part/NameKey
+		DescriptionKey = &<./Standard Mods/emmy-bbpp/buckets/4x3crewquarters.rules>/Part/DescriptionKey
+		Icon = &<./Standard Mods/emmy-bbpp/buckets/4x3crewquarters.rules>/Part/EditorIcon
 		PartsUnlocked = [
 			&<./Data/../../../workshop/content/799600/2883177284/ships/crew_3x3/crew_3x3.rules>/Part/ID
 			&<./Data/../../../workshop/content/799600/2883177284/ships/crew_4x3/crew_4x3.rules>/Part/ID
 			&<./Data/../../../workshop/content/799600/2883177284/ships/crew_4x4/crew_4x4.rules>/Part/ID
 			]
+		Category = [utility]
 		Cost = 10000
 		FundsThresholdBeforeOffered = 100000
 	}
@@ -33,6 +35,7 @@ Techs
 		DescriptionKey = &<./Data/../../../workshop/content/799600/2892943426/advanced_launcher/advanced_launcher.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/2892943426/advanced_launcher/advanced_launcher.rules>/Part/EditorIcon
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/2892943426/advanced_launcher/advanced_launcher.rules>/Part/ID]
+		Category = [weapons]
 		Cost = 10000
 		FundsThresholdBeforeOffered = 250000
 	}
@@ -40,15 +43,16 @@ Techs
 	//Renforced Corridors from AWT included with this
 	{
 		ID = doctorjaska.bulkhead
-		NameKey = &<./Data/../../../workshop/content/799600/2879432704/bulkhead/bulkhead.rules>/Part/NameKey
-		DescriptionKey = &<./Data/../../../workshop/content/799600/2879432704/bulkhead/bulkhead.rules>/Part/DescriptionKey
-		Icon = &<./Data/../../../workshop/content/799600/2879432704/bulkhead/bulkhead.rules>/Part/EditorIcon
+		NameKey = &<./Standard Mods/emmy-bbpp/buckets/bulkhead.rules>/Part/NameKey
+		DescriptionKey = &<./Standard Mods/emmy-bbpp/buckets/bulkhead.rules>/Part/DescriptionKey
+		Icon = &<./Standard Mods/emmy-bbpp/buckets/bulkhead.rules>/Part/EditorIcon
 		PartsUnlocked = [
 			&<./Data/../../../workshop/content/799600/2879432704/bulkhead/bulkhead.rules>/Part/ID
 			&<./Data/../../../workshop/content/799600/2882082274/Armor/renforced_corridor/renforced_corridor.rules>/Part/ID
 			]
+		Category = [utility]
 		Cost = 7500
-		FundsThresholdBeforeOffered = 0
+		FundsThresholdBeforeOffered = 100000
 	}
 	//AWT
 	{//light armor
@@ -64,6 +68,7 @@ Techs
 			&<./Data/../../../workshop/content/799600/2882082274/Armor/light/light_armor_wedge/light_armor_wedge.rules>/Part/ID
 			&<./Data/../../../workshop/content/799600/2882082274/Armor/light/light_armor1x2/light_armor_2x1.rules>/Part/ID
 			]
+		Category = [defenses]
 		Cost = 5000
 		FundsThresholdBeforeOffered = 0
 	}
@@ -80,6 +85,7 @@ Techs
 			&<./Data/../../../workshop/content/799600/2882082274/Armor/heavy/heavy_armor_wedge/heavy_armor_wedge.rules>/Part/ID
 			&<./Data/../../../workshop/content/799600/2882082274/Armor/heavy/heavy_armor_2x1/heavy_armor_2x1.rules>/Part/ID
 			]
+		Category = [defenses]
 		Cost = 5000
 		FundsThresholdBeforeOffered = 0
 	}
@@ -96,6 +102,7 @@ Techs
 			&<./Data/../../../workshop/content/799600/2882082274/Armor/tri_steel/tri_steel_armor_wedge/tri_steel_armor_wedge.rules>/Part/ID
 			&<./Data/../../../workshop/content/799600/2882082274/Armor/tri_steel/tri_steel_armor_2x1/tri_steel_armor_2x1.rules>/Part/ID
 			]
+		Category = [defenses]
 		Cost = 10000
 		FundsThresholdBeforeOffered = 400000
 	}
@@ -105,6 +112,7 @@ Techs
 		DescriptionKey = &<./Data/../../../workshop/content/799600/2882082274/Shields/small_bubble_shield/small_bubble_shield.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/2882082274/Shields/small_bubble_shield/small_bubble_shield.rules>/Part/EditorIcon
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/2882082274/Shields/small_bubble_shield/small_bubble_shield.rules>/Part/ID]
+		Category = [defenses]
 		Cost = 10000
 		FundsThresholdBeforeOffered = 250000
 	}
@@ -114,6 +122,7 @@ Techs
 		DescriptionKey = &<./Data/../../../workshop/content/799600/2882082274/Shields/blathalite_180_shield/blathalite_180_shield.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/2882082274/Shields/blathalite_180_shield/blathalite_180_shield.rules>/Part/EditorIcon
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/2882082274/Shields/blathalite_180_shield/blathalite_180_shield.rules>/Part/ID]
+		Category = [defenses]
 		Cost = 10000
 		FundsThresholdBeforeOffered = 400000
 	}
@@ -126,6 +135,7 @@ Techs
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3174036265/micromissiles/micromissile_launcher/micromissile_launcher.rules>/Part/ID]
 		ResourcesUnlocked = [&<./Data/resources/missile_part_he/missile_part_he.rules>/ID]
 		ToggleChoicesUnlocked = [[missile_type, 0]]
+		Category = [weapons]
 		Cost = 7500
 		FundsThresholdBeforeOffered = 100000
 	}
@@ -138,6 +148,7 @@ Techs
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3167877731/cripplermissiles/missile_launcher_v_crippler/missile_launcher_v_crippler.rules>/Part/ID]
 		ResourcesUnlocked = [&<./Data/resources/missile_part_he/missile_part_he.rules>/ID]
 		ToggleChoicesUnlocked = [[missile_type, 0]]
+		Category = [weapons]
 		Cost = 7500
 		FundsThresholdBeforeOffered = 100000
 	}
@@ -148,6 +159,7 @@ Techs
 		DescriptionKey = &<./Data/../../../workshop/content/799600/2886934391/point_defense_med/point_defense_med.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/2886934391/point_defense_med/point_defense_med.rules>/Part/EditorIcon
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/2886934391/point_defense_med/point_defense_med.rules>/Part/ID]
+		Category = [defenses]
 		Cost = 7500
 		FundsThresholdBeforeOffered = 100000
 	}
@@ -158,6 +170,7 @@ Techs
 		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/PointMachinegun/PointMachinegun.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/PointMachinegun/PointMachinegun.rules>/Part/EditorIcon
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/PointMachinegun/PointMachinegun.rules>/Part/ID]
+		Category = [defenses]
 		Cost = 5000
 		FundsThresholdBeforeOffered = 0
 	}
@@ -167,6 +180,7 @@ Techs
 		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/PointMachinegun/PointMachinegun2.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/PointMachinegun/PointMachinegun2.rules>/Part/EditorIcon
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/PointMachinegun/PointMachinegun2.rules>/Part/ID]
+		Category = [defenses]
 		Cost = 7500
 		FundsThresholdBeforeOffered = 100000
 	}
@@ -176,6 +190,7 @@ Techs
 		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RadioOperator/radio.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RadioOperator/radio.rules>/Part/EditorIcon
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RadioOperator/radio.rules>/Part/ID]
+		Category = [utility]
 		Cost = 5000
 		FundsThresholdBeforeOffered = 100000
 	}
@@ -185,6 +200,7 @@ Techs
 		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall.rules>/Part/EditorIcon
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall.rules>/Part/ID]
+		Category = [weapons]
 		Cost = 5000
 		FundsThresholdBeforeOffered = 0
 	}
@@ -194,6 +210,7 @@ Techs
 		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall2.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall2.rules>/Part/EditorIcon
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall2.rules>/Part/ID]
+		Category = [weapons]
 		Cost = 7500
 		FundsThresholdBeforeOffered = 0
 	}
@@ -203,6 +220,7 @@ Techs
 		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall3.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall3.rules>/Part/EditorIcon
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall3.rules>/Part/ID]
+		Category = [weapons]
 		Cost = 10000
 		FundsThresholdBeforeOffered = 100000
 	}
@@ -212,6 +230,7 @@ Techs
 		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk.rules>/Part/EditorIcon
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk.rules>/Part/ID]
+		Category = [weapons]
 		Cost = 5000
 		FundsThresholdBeforeOffered = 0
 	}
@@ -221,6 +240,7 @@ Techs
 		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk2.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk2.rules>/Part/EditorIcon
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk2.rules>/Part/ID]
+		Category = [weapons]
 		Cost = 7500
 		FundsThresholdBeforeOffered = 0
 	}
@@ -230,6 +250,7 @@ Techs
 		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk3.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk3.rules>/Part/EditorIcon
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk3.rules>/Part/ID]
+		Category = [weapons]
 		Cost = 10000
 		FundsThresholdBeforeOffered = 100000
 	}
@@ -239,6 +260,7 @@ Techs
 		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/MachinegunSmall/MachinegunSmall.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/MachinegunSmall/MachinegunSmall.rules>/Part/EditorIcon
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/MachinegunSmall/MachinegunSmall.rules>/Part/ID]
+		Category = [weapons]
 		Cost = 5000
 		FundsThresholdBeforeOffered = 0
 	}
@@ -248,6 +270,7 @@ Techs
 		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/MachinegunSmall/MachinegunSmall2.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/MachinegunSmall/MachinegunSmall2.rules>/Part/EditorIcon
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/MachinegunSmall/MachinegunSmall2.rules>/Part/ID]
+		Category = [weapons]
 		Cost = 7500
 		FundsThresholdBeforeOffered = 0
 	}
@@ -257,6 +280,7 @@ Techs
 		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/MachinegunSmall/MachinegunSmall3.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/MachinegunSmall/MachinegunSmall3.rules>/Part/EditorIcon
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/MachinegunSmall/MachinegunSmall3.rules>/Part/ID]
+		Category = [weapons]
 		Cost = 10000
 		FundsThresholdBeforeOffered = 100000
 	}
@@ -266,6 +290,7 @@ Techs
 		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/Machinegun/Machinegun.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/Machinegun/Machinegun.rules>/Part/EditorIcon
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/Machinegun/Machinegun.rules>/Part/ID]
+		Category = [weapons]
 		Cost = 5000
 		FundsThresholdBeforeOffered = 0
 	}
@@ -275,6 +300,7 @@ Techs
 		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/Machinegun/Machinegun2.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/Machinegun/Machinegun2.rules>/Part/EditorIcon
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/Machinegun/Machinegun2.rules>/Part/ID]
+		Category = [weapons]
 		Cost = 10000
 		FundsThresholdBeforeOffered = 100000
 	}
@@ -284,6 +310,7 @@ Techs
 		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/DualMachinegun/dual_machinegun.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/DualMachinegun/dual_machinegun.rules>/Part/EditorIcon
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/DualMachinegun/dual_machinegun.rules>/Part/ID]
+		Category = [weapons]
 		Cost = 10000
 		FundsThresholdBeforeOffered = 100000
 	}
@@ -293,6 +320,7 @@ Techs
 		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/Autocannon/autocannon.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/Autocannon/autocannon.rules>/Part/EditorIcon
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/Autocannon/autocannon.rules>/Part/ID]
+		Category = [weapons]
 		Cost = 7500
 		FundsThresholdBeforeOffered = 100000
 	}
@@ -302,6 +330,7 @@ Techs
 		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/Flamethrower/Flamethrower.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/Flamethrower/Flamethrower.rules>/Part/EditorIcon
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/Flamethrower/Flamethrower.rules>/Part/ID]
+		Category = [weapons]
 		Cost = 5000
 		FundsThresholdBeforeOffered = 100000
 	}
@@ -311,6 +340,7 @@ Techs
 		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/Flamethrower/Flamethrower2.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/Flamethrower/Flamethrower2.rules>/Part/EditorIcon
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/Flamethrower/Flamethrower2.rules>/Part/ID]
+		Category = [weapons]
 		Cost = 10000
 		FundsThresholdBeforeOffered = 100000
 	}*/
@@ -320,6 +350,7 @@ Techs
 		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/DeckMortar/deck_mortar.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/DeckMortar/deck_mortar.rules>/Part/EditorIcon
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/DeckMortar/deck_mortar.rules>/Part/ID]
+		Category = [weapons]
 		Cost = 10000
 		FundsThresholdBeforeOffered = 250000
 	}
@@ -329,6 +360,7 @@ Techs
 		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/DeckArtillery/deck_artillery.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/DeckArtillery/deck_artillery.rules>/Part/EditorIcon
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/DeckArtillery/deck_artillery.rules>/Part/ID]
+		Category = [weapons]
 		Cost = 10000
 		FundsThresholdBeforeOffered = 250000
 	}
@@ -338,17 +370,35 @@ Techs
 		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/DeckChaingun/rotary_cannon_deck.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/DeckChaingun/rotary_cannon_deck.rules>/Part/EditorIcon
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/DeckChaingun/rotary_cannon_deck.rules>/Part/ID]
+		Category = [weapons]
 		Cost = 10000
 		FundsThresholdBeforeOffered = 250000
 	}
-	{//med sulf reactor
-		ID = bonible.generator_med
-		NameKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/SulfurReactor/generator_med.rules>/Part/NameKey
-		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/SulfurReactor/generator_med.rules>/Part/DescriptionKey
-		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/SulfurReactor/generator_med.rules>/Part/EditorIcon
-		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/SulfurReactor/generator_med.rules>/Part/ID]
-		Cost = 5000
+	{//medium power bucket
+		ID = cosmoteer.reactor_med
+		NameKey = &<./Standard Mods/emmy-bbpp/buckets/reactor_med.rules>/Part/NameKey
+		DescriptionKey = &<./Standard Mods/emmy-bbpp/buckets/reactor_med.rules>/Part/DescriptionKey
+		Icon = &<./Standard Mods/emmy-bbpp/buckets/reactor_med.rules>/Part/EditorIcon
+		PartsUnlocked = [
+			&<./Data/ships/terran/reactor_med/reactor_med.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/SulfurReactor/generator_small.rules>/Part/ID
+			]
+		Category = [utility]
+		Cost = 7500
 		FundsThresholdBeforeOffered = 100000
+	}
+	{//large power bucket
+		ID = cosmoteer.reactor_large
+		NameKey = &<./Standard Mods/emmy-bbpp/buckets/reactor_large.rules>/Part/NameKey
+		DescriptionKey = &<./Standard Mods/emmy-bbpp/buckets/reactor_large.rules>/Part/DescriptionKey
+		Icon = &<./Standard Mods/emmy-bbpp/buckets/reactor_large.rules>/Part/EditorIcon
+		PartsUnlocked = [
+			&<./Data/ships/terran/reactor_large/reactor_large.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/SulfurReactor/generator_med.rules>/Part/ID
+		]
+		Category = [utility]
+		Cost = 10000
+		FundsThresholdBeforeOffered = 250000
 	}
 	{//large sulf reactor
 		ID = bonible.generator_large
@@ -356,8 +406,9 @@ Techs
 		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/SulfurReactor/generator_large.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/SulfurReactor/generator_large.rules>/Part/EditorIcon
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/SulfurReactor/generator_large.rules>/Part/ID]
-		Cost = 5000
-		FundsThresholdBeforeOffered = 250000
+		Category = [utility]
+		Cost = 10000
+		FundsThresholdBeforeOffered = 400000
 	}
 	{//small hardlight
 		ID = bonible.HardlightShield
@@ -365,6 +416,7 @@ Techs
 		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/HardlightShield/Hardlight_Shield.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/HardlightShield/Hardlight_Shield.rules>/Part/EditorIcon
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/HardlightShield/Hardlight_Shield.rules>/Part/ID]
+		Category = [defenses]
 		Cost = 7500
 		FundsThresholdBeforeOffered = 100000
 	}
@@ -374,6 +426,7 @@ Techs
 		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/HardlightShield/Hardlight_Shield2.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/HardlightShield/Hardlight_Shield2.rules>/Part/EditorIcon
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/HardlightShield/Hardlight_Shield2.rules>/Part/ID]
+		Category = [defenses]
 		Cost = 10000
 		FundsThresholdBeforeOffered = 250000
 	}
@@ -394,6 +447,7 @@ Techs
 			]
 		ResourcesUnlocked = [&<./Data/resources/missile_part_he/missile_part_he.rules>/ID]
 		ToggleChoicesUnlocked = [[missile_type, 0]]
+		Category = [weapons]
 		Cost = 10000
 		FundsThresholdBeforeOffered = 250000
 	}
@@ -426,6 +480,5 @@ PartsWhitelist
 	//General Munitions Projectile Weaponry
 	bonible.sulfurstorage
 	bonible.generator_tiny
-	bonible.generator_small
 	bonible.ArmorPlate
 ]

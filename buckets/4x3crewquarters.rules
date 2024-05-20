@@ -1,0 +1,16 @@
+Part : <./Data/ships/terran/base_part_terran.rules>/Part
+{
+	//More Crew Bunks
+	//4x3 bunks
+	NameKey = "Parts/CrewQuarters4x3Bucket"
+	DescriptionKey = "Parts/CrewQuarters4x3BucketDesc"
+	EditorIcon
+	{
+		Texture
+		{
+			File = "./Standard Mods/emmy-bbpp/buckets/4x3crewquarters.png"
+			SampleMode = Linear
+		}
+		Size = [64, 64]
+	}
+}

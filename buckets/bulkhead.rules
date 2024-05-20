@@ -1,0 +1,15 @@
+Part : <./Data/ships/terran/base_part_terran.rules>/Part
+{
+	//Bulkheads & AWT
+	NameKey = "Parts/BulkheadBucket"
+	DescriptionKey = "Parts/BulkheadBucketDesc"
+	EditorIcon
+	{
+		Texture
+		{
+			File = "./Standard Mods/emmy-bbpp/buckets/bulkhead.png"
+			SampleMode = Linear
+		}
+		Size = [64, 64]
+	}
+}
