@@ -1,8 +1,8 @@
 //Changelog at file tail
 ID = Emerald.BaBPersonalPatch
 Name = "Emmy Battle & Build Personal Patch (BBPP)"
-Version = 1.3.0
-CompatibleGameVersions = ["0.26.0"]
+Version = 1.3.1
+CompatibleGameVersions = ["0.26.1"]
 ModifiesMultiplayer = true
 StringsFolder = "strings"
 Author = "Emerald Blood"
@@ -65,12 +65,15 @@ Actions
 		With = &<mode-rules.rules>/Mode/TechOfferingsPerRound
 	}
 	//My custom ship parts
-	/* 
 	{ 
 		Action = AddMany
-		AddTo = "<ships/terran/terran.rules>/terran/parts"
-		ManyToAdd = &<assets/cust-parts.rules>/Parts
-	} */
+		AddTo = "<ships/terran/terran.rules>/Terran/Parts"
+		ManyToAdd = [
+			&<assets/auto_charge/auto_charge.rules>/Part
+			//Unused testing content
+			//&<assets/auto_gun/auto_gun.rules>/Part
+		]
+	}
 	//Mod support
 	//Techs & prices
 	{

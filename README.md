@@ -15,6 +15,10 @@
 A link to the steam collection can be found here: https://steamcommunity.com/sharedfiles/filedetails/?id=3250287374
 
 ## Changelog:
+v1.3.1 - Auto Charge item added
+* Added offical 0.26.1 support.
+* Created a new ship part, the Auto Charge. This is simply an explosive charge the AI will detonate once within 450 units (HE missile range) of an enemy.
+
 v1.3.0 - Bucket update & QoL improvements
 * Added categories to all modded weapons. Forgot to do this prior, oops.
 	* Added a new category for Utility parts.
@@ -61,5 +65,24 @@ Base Parts Moved:
 * Standard engines now draft
 * Crews Quarter now draft (with 3x2 MCQ)
 
+## Round Balancing
+This is the general draft cost I balance around. It's intended for more shorter cash rounds than a few large cash rounds. In the future I plan on adding a lobby config for the mode, but for now this is the policy at when I balance around.
+Round: $ gain / $ total
+
+000000 - Basic
+	R1: 75k
+100000 - Improved
+	R2: 50k / 125k 
+	R3: 50k / 175k
+250000 - Powerful
+	R4: 75k / 250k
+	R5: 75k / 325k
+400000 - Deadly
+	R6: 75k / 450k
+	R7: 100k / 550k
+550000 - Super
+	R8+ repeat previous
+
 ## Todo List
-* Adding late-game buckets to buy groupings of low-tier weapons in bulk.
+* Create late game buckets that will include many lower tier guns. This will provide much more building options and hopefully free up some slots.
+* Create a lobby setting format for the mode.

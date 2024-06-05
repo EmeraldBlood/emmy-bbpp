@@ -1,0 +1,271 @@
+Part : <./Data/ships/terran/base_part_terran.rules>/Part
+{
+	NameKey = "Parts/AutoCharge"
+	IconNameKey = "Parts/AutoChargeIcon"
+	ID = emmy.auto_charge
+	EditorGroup = "Utilities"
+	DescriptionKey = "Parts/AutoChargeDesc"
+	Resources
+	[
+		[steel, 16]
+		[coil, 6]
+	]
+	TypeCategories = [weapon, explosives]
+	ReceivableBuffs : ^/0/ReceivableBuffs []
+	Size = [1, 1]
+	IsRotateable = false
+	SelectionPriority = 1
+	SelectionTypeByRotation = true
+	MaxHealth = 1000
+	CreateUnderlyingWhenDestroyed = false
+	CrewSpeedFactor = 0
+	AllowedDoorLocations = []
+	EditorIcon
+	{
+		Texture
+		{
+			File = "icon.png"
+			SampleMode = Linear
+		}
+		Size = [32, 32]
+	}
+	Components : ^/0/Components
+	{
+		DetonateEffects
+		{
+			// This just destroys the part, which in turn will trigger the DeathEffects, causing the actual collateral damage.
+
+			Type = TriggeredEffects
+			ChainedTo = Turret
+			Trigger = Turret
+			HitEffects
+			[
+				{
+					Type = Damage
+					Damage = 999999
+					Filter
+					{
+						Friendlies = true
+						IgnoreInvulnerability = true
+					}
+				}
+			]
+		}
+
+		DestroyedEffects
+		{
+			Type = DeathEffects
+			Location = [.5, .5]
+
+			MediaEffects
+			[
+				&<./Data/common_effects/particles/explosions/med_part_explode.rules>
+				&<./Data/common_effects/particles/explosions/big_part_explode_flash.rules>
+				&<./Data/ships/terran/explosive_charge/particles/explosive_charge_shockwave.rules>
+				&<./Data/common_effects/particles/explosions/med_part_explode_smoke.rules>
+
+				: /BASE_SOUNDS/AudioExterior
+				{
+					Sound = "./Data/common_effects/sounds/big_part_destroyed.wav"
+					Volume = 1
+					SpeedVariation = .25
+				}
+
+				: /BASE_SHAKE
+				{
+					ShakeAmount = .15
+					Duration = 1
+				}
+			]
+
+			HitEffects
+			[
+				{
+					Type = ExplosiveDamage
+					TotalDamage = 25000
+					Radius = 2.5
+					Delay = .05
+					ImpulsePerNDamage = 10
+					NDamage = 1000
+					Filter
+					{
+						OperationalHealth = true
+						StructuralHealth = false
+						Friendlies = true
+					}
+				}
+				{
+					Type = ExplosiveDamage
+					TotalDamage = 9500
+					Radius = 2.5
+					Delay = .05
+					ImpulsePerNDamage = 5
+					NDamage = 1000
+					Filter
+					{
+						OperationalHealth = false
+						StructuralHealth = true
+						Friendlies = true
+					}
+				}
+			]
+		}
+
+		Graphics
+		{
+			Type = Graphics
+			Location = [.5, .5]
+			Floor
+			{
+				Layer = "floors"
+				DamageLevels
+				[
+					{
+						File = "floor.png"
+						Size = [1, 1]
+					}
+					{
+						File = "floor_33.png"
+						Size = [1, 1]
+					}
+					{
+						File = "floor_66.png"
+						Size = [1, 1]
+					}
+				]
+			}
+			Roof
+			{
+				Layer = "roofs"
+				DamageLevels
+				[
+					{
+						File = "roof.png"
+						NormalsFile = "roof_normals.png"
+						Size = [1, 1]
+					}
+					{
+						File = "roof_33.png"
+						NormalsFile = "roof_normals_33.png"
+						Size = [1, 1]
+					}
+					{
+						File = "roof_66.png"
+						NormalsFile = "roof_normals_66.png"
+						Size = [1, 1]
+					}
+				]
+			}
+		}
+
+		Blueprints
+		{
+			Type = BlueprintSprite
+			File = "blueprints.png"
+			Size = [1, 1]
+		}
+
+		IsOperational
+		{
+			Type = MultiToggle
+			Toggles = [PowerToggle]
+			Mode = All
+		}
+
+		PowerToggle
+		{
+			Type = UIToggle
+			ToggleID = "on_off"
+			Default = 1
+			RequiresCommand = false
+		}
+
+		CommandConsumer
+		{
+			Type = CommandConsumer
+			OperationalToggle = PowerToggle
+			CommandPoints = 0
+		}
+
+		FireModeToggle
+		{
+			Type = UIToggle
+			ToggleID = "fire_mode"
+			Default = 1
+			ToggledOnChoices = [0, 1, 2]
+		}
+		AutoTargetToggle
+		{
+			Type = ModeToggle
+			Mode = FireModeToggle
+			OnModes = [1, 2]
+		}
+		AutoFireToggle
+		{
+			Type = ModeToggle
+			Mode = FireModeToggle
+			OnMode = 2
+		}
+		
+		Turret //Allows the weapon to be shot by AI, causing it to explode.
+		{
+			Type = TurretWeapon // This has an arc of 0, but we don't want to use FixedWeapon because that will only shoot at things directly in the LOS.
+			Location = [.5, .5]
+			Rotation = -90d
+			OperationalToggle = IsOperational
+			AutoFireToggle = AutoFireToggle
+			FireInterval = 0 // Uses common reload timer.
+			FiringArc = 0d;
+			ValidArc = 360d;
+			FireThresholdAngle = 360d;
+			RotateSpeed = 0d
+			AllowFireWithBlockedLOS = true
+			Emitter = BulletEmitter
+			FirePermissionToggle = FireModeToggle
+			AIFirepowerRating = 3200
+			
+			AutoTargets
+			[
+				{
+					TargetType = ShipParts
+					Toggle = AutoTargetToggle
+				}
+			]
+
+			BlueprintArcSprite
+			{
+				Texture = &/INDICATORS/WeaponArc
+				Size = [0, 1.5]
+				Color = [255, 0, 0, 63]
+			}
+			BlueprintArcRadius = 10
+			BlueprintArcSpriteSegments = 64
+
+			CoverageSectorArc
+			{
+				Texture = &/INDICATORS/VerticalGradient
+				VertexColor = [255, 255, 255, 51]
+				QuadCount = 64
+			}
+		}
+		
+		BulletEmitter
+		{
+			Type = BulletEmitter
+			ChainedTo = Turret
+			FireTrigger = Turret
+			GetTargetFrom = Turret
+			Location = [1, 0]
+			OperationalToggle = IsOperational
+			FireDelay = .4
+			Bullet = &<./Data/shots/laser_bolt_small/laser_bolt_small.rules>
+		}
+	}
+
+	Stats
+	{
+		SimpleMaxDamage = &~/Part/Components/DestroyedEffects/HitEffects/0/TotalDamage
+		DamageArea = &~/Part/Components/DestroyedEffects/HitEffects/0/Radius
+		Range = &<./Data/shots/missile_he/missile_he.rules>/Range
+	}
+}

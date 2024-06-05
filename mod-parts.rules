@@ -481,4 +481,6 @@ PartsWhitelist
 	bonible.sulfurstorage
 	bonible.generator_tiny
 	bonible.ArmorPlate
+	//Emmy B&B
+	emmy.auto_charge
 ]

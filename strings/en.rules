@@ -8,8 +8,14 @@ Parts
 	//Auto Charge
 	AutoCharge = "Auto Charge"
 	AutoChargeIcon = &AutoCharge
-	AutoChargeDesc = "AI priority charge. Used for Build & Battle mode with AI controllers"
-	
+	AutoChargeDesc = "AI triggered explosive charge for Build & Battle mode with AI controllers. Will seperate the ship at 450 units (missile range) out."
+	/* Unused testing
+	//Auto Gun
+	AutoGun = "Auto Charge Gun"
+	AutoGunIcon = &AutoGun
+	AutoGunDesc = "AI priority charge. Used for Build & Battle mode with AI controllers"
+	*/
+
 //Buckets
 	//More Crew Mod
 	//3x2 bunks
