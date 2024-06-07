@@ -1,5 +1,34 @@
 Techs
 [
+	//Base Game
+	{//Med Command Bucket
+	//Med control room, sensor array
+		ID = cosmoteer.control_room_med
+		NameKey = &<./Standard Mods/emmy-bbpp/buckets/control_room_med.rules>/Part/NameKey
+		DescriptionKey = &<./Standard Mods/emmy-bbpp/buckets/control_room_med.rules>/Part/DescriptionKey
+		Icon = &<./Standard Mods/emmy-bbpp/buckets/control_room_med.rules>/Part/EditorIcon
+		Category = [utility]
+		PartsUnlocked = [
+			&<./Data/ships/terran/control_room_med/control_room_med.rules>/Part/ID
+			&<./Data/ships/terran/sensor_array/sensor_array.rules>/Part/ID
+			]
+		Cost = 5000
+		FundsThresholdBeforeOffered = 250000
+	}
+	{//Large Command Bucket
+	//Large control room, tractor beam 
+		ID = cosmoteer.control_room_large
+		NameKey = &<./Standard Mods/emmy-bbpp/buckets/control_room_large.rules>/Part/NameKey
+		DescriptionKey = &<./Standard Mods/emmy-bbpp/buckets/control_room_large.rules>/Part/DescriptionKey
+		Icon = &<./Standard Mods/emmy-bbpp/buckets/control_room_large.rules>/Part/EditorIcon
+		Category = [utility]
+		PartsUnlocked = [
+			&<./Data/ships/terran/control_room_large/control_room_large.rules>/Part/ID
+			&<./Data/ships/terran/tractor_beam_emitter/tractor_beam_emitter.rules>/Part/ID
+			]
+		Cost = 5000
+		FundsThresholdBeforeOffered = 400000
+	}
 	//More Crew Quarters
 	{//2x2, 3x2 bunks
 		ID = kurim.3x2crewquarters
@@ -181,8 +210,8 @@ Techs
 		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/PointMachinegun/PointMachinegun2.rules>/Part/EditorIcon
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/PointMachinegun/PointMachinegun2.rules>/Part/ID]
 		Category = [defenses]
-		Cost = 7500
-		FundsThresholdBeforeOffered = 100000
+		Cost = 10000
+		FundsThresholdBeforeOffered = 400000
 	}
 	{//radio jammer
 		ID = bonible.RadioOperator
@@ -194,95 +223,50 @@ Techs
 		Cost = 5000
 		FundsThresholdBeforeOffered = 100000
 	}
-	{//basic rifle
+	//Short Barrel Bundle
+	{//small rifle, small mg, and grenade launcher
 		ID = bonible.RifleSmall
-		NameKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall.rules>/Part/NameKey
-		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall.rules>/Part/DescriptionKey
-		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall.rules>/Part/EditorIcon
-		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall.rules>/Part/ID]
+		NameKey = &<./Standard Mods/emmy-bbpp/buckets/RifleSmall.rules>/Part/NameKey
+		DescriptionKey = &<./Standard Mods/emmy-bbpp/buckets/RifleSmall.rules>/Part/DescriptionKey
+		Icon = &<./Standard Mods/emmy-bbpp/buckets/RifleSmall.rules>/Part/EditorIcon
+		PartsUnlocked = [
+			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/MachinegunSmall/MachinegunSmall.rules>/Part/ID
+			]
 		Category = [weapons]
-		Cost = 5000
+		Cost = 7500
 		FundsThresholdBeforeOffered = 0
 	}
-	{//long rifle
+	//Long Barrel Bundle
+	{//long rifle, small mg, and grenade launcher
 		ID = bonible.RifleSmall2
-		NameKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall2.rules>/Part/NameKey
-		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall2.rules>/Part/DescriptionKey
-		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall2.rules>/Part/EditorIcon
-		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall2.rules>/Part/ID]
+		NameKey = &<./Standard Mods/emmy-bbpp/buckets/RifleLong.rules>/Part/NameKey
+		DescriptionKey = &<./Standard Mods/emmy-bbpp/buckets/RifleLong.rules>/Part/DescriptionKey
+		Icon = &<./Standard Mods/emmy-bbpp/buckets/RifleLong.rules>/Part/EditorIcon
+		PartsUnlocked = [
+			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall2.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk2.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/MachinegunSmall/MachinegunSmall2.rules>/Part/ID
+			]
 		Category = [weapons]
-		Cost = 7500
-		FundsThresholdBeforeOffered = 0
+		Cost = 10000
+		FundsThresholdBeforeOffered = 100000
 	}
-	{//roof rifle
+	//Roof Barrel Bundle
+	{//roof rifle, small mg, and grenade launcher
 		ID = bonible.RifleSmall3
-		NameKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall3.rules>/Part/NameKey
-		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall3.rules>/Part/DescriptionKey
-		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall3.rules>/Part/EditorIcon
-		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall3.rules>/Part/ID]
+		NameKey = &<./Standard Mods/emmy-bbpp/buckets/RifleRoof.rules>/Part/NameKey
+		DescriptionKey = &<./Standard Mods/emmy-bbpp/buckets/RifleRoof.rules>/Part/DescriptionKey
+		Icon = &<./Standard Mods/emmy-bbpp/buckets/RifleRoof.rules>/Part/EditorIcon
+		PartsUnlocked = [
+			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall3.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk3.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/MachinegunSmall/MachinegunSmall3.rules>/Part/ID
+			]
 		Category = [weapons]
-		Cost = 10000
-		FundsThresholdBeforeOffered = 100000
-	}
-	{//basic grenade
-		ID = bonible.GrenadeBunk
-		NameKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk.rules>/Part/NameKey
-		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk.rules>/Part/DescriptionKey
-		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk.rules>/Part/EditorIcon
-		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk.rules>/Part/ID]
-		Category = [weapons]
-		Cost = 5000
-		FundsThresholdBeforeOffered = 0
-	}
-	{//long grenade
-		ID = bonible.GrenadeBunk2
-		NameKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk2.rules>/Part/NameKey
-		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk2.rules>/Part/DescriptionKey
-		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk2.rules>/Part/EditorIcon
-		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk2.rules>/Part/ID]
-		Category = [weapons]
-		Cost = 7500
-		FundsThresholdBeforeOffered = 0
-	}
-	{//roof grenade
-		ID = bonible.GrenadeBunk3
-		NameKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk3.rules>/Part/NameKey
-		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk3.rules>/Part/DescriptionKey
-		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk3.rules>/Part/EditorIcon
-		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk3.rules>/Part/ID]
-		Category = [weapons]
-		Cost = 10000
-		FundsThresholdBeforeOffered = 100000
-	}
-	{//basic mg
-		ID = bonible.MachinegunSmall
-		NameKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/MachinegunSmall/MachinegunSmall.rules>/Part/NameKey
-		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/MachinegunSmall/MachinegunSmall.rules>/Part/DescriptionKey
-		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/MachinegunSmall/MachinegunSmall.rules>/Part/EditorIcon
-		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/MachinegunSmall/MachinegunSmall.rules>/Part/ID]
-		Category = [weapons]
-		Cost = 5000
-		FundsThresholdBeforeOffered = 0
-	}
-	{//long mg
-		ID = bonible.MachinegunSmall2
-		NameKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/MachinegunSmall/MachinegunSmall2.rules>/Part/NameKey
-		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/MachinegunSmall/MachinegunSmall2.rules>/Part/DescriptionKey
-		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/MachinegunSmall/MachinegunSmall2.rules>/Part/EditorIcon
-		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/MachinegunSmall/MachinegunSmall2.rules>/Part/ID]
-		Category = [weapons]
-		Cost = 7500
-		FundsThresholdBeforeOffered = 0
-	}
-	{//roof mg
-		ID = bonible.MachinegunSmall3
-		NameKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/MachinegunSmall/MachinegunSmall3.rules>/Part/NameKey
-		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/MachinegunSmall/MachinegunSmall3.rules>/Part/DescriptionKey
-		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/MachinegunSmall/MachinegunSmall3.rules>/Part/EditorIcon
-		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/MachinegunSmall/MachinegunSmall3.rules>/Part/ID]
-		Category = [weapons]
-		Cost = 10000
-		FundsThresholdBeforeOffered = 100000
+		Cost = 15000
+		FundsThresholdBeforeOffered = 400000
 	}
 	{//normal heavy mg
 		ID = bonible.Machinegun
@@ -301,8 +285,8 @@ Techs
 		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/Machinegun/Machinegun2.rules>/Part/EditorIcon
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/Machinegun/Machinegun2.rules>/Part/ID]
 		Category = [weapons]
-		Cost = 10000
-		FundsThresholdBeforeOffered = 100000
+		Cost = 12500
+		FundsThresholdBeforeOffered = 400000
 	}
 	{//quad heavy mg
 		ID = bonible.DualMachinegun
@@ -381,7 +365,7 @@ Techs
 		Icon = &<./Standard Mods/emmy-bbpp/buckets/reactor_med.rules>/Part/EditorIcon
 		PartsUnlocked = [
 			&<./Data/ships/terran/reactor_med/reactor_med.rules>/Part/ID
-			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/SulfurReactor/generator_small.rules>/Part/ID
+			//&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/SulfurReactor/generator_small.rules>/Part/ID
 			]
 		Category = [utility]
 		Cost = 7500
@@ -394,12 +378,13 @@ Techs
 		Icon = &<./Standard Mods/emmy-bbpp/buckets/reactor_large.rules>/Part/EditorIcon
 		PartsUnlocked = [
 			&<./Data/ships/terran/reactor_large/reactor_large.rules>/Part/ID
-			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/SulfurReactor/generator_med.rules>/Part/ID
+			//&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/SulfurReactor/generator_med.rules>/Part/ID
 		]
 		Category = [utility]
 		Cost = 10000
 		FundsThresholdBeforeOffered = 250000
 	}
+	/*
 	{//large sulf reactor
 		ID = bonible.generator_large
 		NameKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/SulfurReactor/generator_large.rules>/Part/NameKey
@@ -409,7 +394,7 @@ Techs
 		Category = [utility]
 		Cost = 10000
 		FundsThresholdBeforeOffered = 400000
-	}
+	} */
 	{//small hardlight
 		ID = bonible.HardlightShield
 		NameKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/HardlightShield/Hardlight_Shield.rules>/Part/NameKey
@@ -470,6 +455,39 @@ Techs
 		Cost = 7500
 		FundsThresholdBeforeOffered = 100000
 	}
+	//Stormforge Railgun
+	{
+		ID = storm.deck_railgun
+		NameKey = &<./Data/../../../workshop/content/799600/2915669103/Parts/Projectile_Weapons/deck_railgun/deck_railgun.rules>/Part/NameKey
+		DescriptionKey = &<./Data/../../../workshop/content/799600/2915669103/Parts/Projectile_Weapons/deck_railgun/deck_railgun.rules>/Part/DescriptionKey
+		Icon = &<./Data/../../../workshop/content/799600/2915669103/Parts/Projectile_Weapons/deck_railgun/deck_railgun.rules>/Part/EditorIcon
+		PartsUnlocked = [&<./Data/../../../workshop/content/799600/2915669103/Parts/Projectile_Weapons/deck_railgun/deck_railgun.rules>/Part/ID]
+		Category = [weapons]
+		Cost = 10000
+		FundsThresholdBeforeOffered = 400000
+	}
+	//AI Core Automated Ship Parts
+	{
+		ID = aephiex.parts.ai_terminal
+		NameKey = &<./Data/../../../workshop/content/799600/2920003373/terran/ai_terminal/ai_terminal.rules>/Part/NameKey
+		DescriptionKey = &<./Data/../../../workshop/content/799600/2920003373/terran/ai_terminal/ai_terminal.rules>/Part/DescriptionKey
+		Icon = &<./Data/../../../workshop/content/799600/2920003373/terran/ai_terminal/ai_terminal.rules>/Part/EditorIcon
+		PartsUnlocked = [&<./Data/../../../workshop/content/799600/2920003373/terran/ai_terminal/ai_terminal.rules>/Part/ID]
+		Category = [utility]
+		Cost = 5000
+		FundsThresholdBeforeOffered = 250000
+	}
+	//Dorsal Thrusters
+	{
+		ID = charlatan_.thruster_burner_large_dorsal
+		NameKey = &<./Data/../../../workshop/content/799600/2888035272/thruster_burner_large_dorsal/thruster_burner_large_dorsal.rules>/Part/NameKey
+		DescriptionKey = &<./Data/../../../workshop/content/799600/2888035272/thruster_burner_large_dorsal/thruster_burner_large_dorsal.rules>/Part/DescriptionKey
+		Icon = &<./Data/../../../workshop/content/799600/2888035272/thruster_burner_large_dorsal/thruster_burner_large_dorsal.rules>/Part/EditorIcon
+		PartsUnlocked = [&<./Data/../../../workshop/content/799600/2888035272/thruster_burner_large_dorsal/thruster_burner_large_dorsal.rules>/Part/ID]
+		Category = [thrusters]
+		Cost = 7500
+		FundsThresholdBeforeOffered = 250000
+	}
 ]
 PartsWhitelist
 [
@@ -478,8 +496,8 @@ PartsWhitelist
 	//Twin Small Thrusters
 	rustydios.thruster_small_Twin
 	//General Munitions Projectile Weaponry
-	bonible.sulfurstorage
-	bonible.generator_tiny
+	//bonible.sulfurstorage
+	//bonible.generator_tiny
 	bonible.ArmorPlate
 	//Emmy B&B
 	emmy.auto_charge

@@ -1,0 +1,15 @@
+Part : <./Data/ships/terran/base_part_terran.rules>/Part
+{
+	//Base Game
+	NameKey = "Parts/ControlRoomMedBucket"
+	DescriptionKey = "Parts/ControlRoomMedBucketDesc"
+	EditorIcon
+	{
+		Texture
+		{
+			File = "./Standard Mods/emmy-bbpp/buckets/control_room_med.png"
+			SampleMode = Linear
+		}
+		Size = [64, 64]
+	}
+}

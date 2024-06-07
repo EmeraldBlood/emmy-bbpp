@@ -1,0 +1,15 @@
+Part : <./Data/ships/terran/base_part_terran.rules>/Part
+{
+	//GMPW
+	NameKey = "Parts/RifleSmallBucket"
+	DescriptionKey = "Parts/RifleSmallBucketDesc"
+	EditorIcon
+	{
+		Texture
+		{
+			File = "./Standard Mods/emmy-bbpp/buckets/RifleSmall.png"
+			SampleMode = Linear
+		}
+		Size = [64, 64]
+	}
+}

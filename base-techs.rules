@@ -193,26 +193,8 @@ Techs
 		Cost = 10000
 		FundsThresholdBeforeOffered = 250000
 	}
-	{
-		ID = cosmoteer.control_room_med
-		NameKey = &<./Data/ships/terran/control_room_med/control_room_med.rules>/Part/NameKey
-		DescriptionKey = &<./Data/ships/terran/control_room_med/control_room_med.rules>/Part/DescriptionKey
-		Icon = &<./Data/ships/terran/control_room_med/control_room_med.rules>/Part/EditorIcon
-		Category = [utility]
-		PartsUnlocked = [&<./Data/ships/terran/control_room_med/control_room_med.rules>/Part/ID]
-		Cost = 5000
-		FundsThresholdBeforeOffered = 250000
-	}
-	{
-		ID = cosmoteer.control_room_large
-		NameKey = &<./Data/ships/terran/control_room_large/control_room_large.rules>/Part/NameKey
-		DescriptionKey = &<./Data/ships/terran/control_room_large/control_room_large.rules>/Part/DescriptionKey
-		Icon = &<./Data/ships/terran/control_room_large/control_room_large.rules>/Part/EditorIcon
-		Category = [utility]
-		PartsUnlocked = [&<./Data/ships/terran/control_room_large/control_room_large.rules>/Part/ID]
-		Cost = 5000
-		FundsThresholdBeforeOffered = 550000
-	}
+	//cosmoteer.control_room_med moved to mod-parts.rules
+	//cosmoteer.control_room_large moved to mod-parts.rules
 	{
 		ID = cosmoteer.thruster_large
 		NameKey = &<./Data/ships/terran/thruster_large/thruster_large.rules>/Part/NameKey
@@ -263,26 +245,8 @@ Techs
 		Cost = 5000
 		FundsThresholdBeforeOffered = 0
 	}
-	{
-		ID = cosmoteer.tractor_beam_emitter
-		NameKey = &<./Data/ships/terran/tractor_beam_emitter/tractor_beam_emitter.rules>/Part/NameKey
-		DescriptionKey = &<./Data/ships/terran/tractor_beam_emitter/tractor_beam_emitter.rules>/Part/DescriptionKey
-		Icon = &<./Data/ships/terran/tractor_beam_emitter/tractor_beam_emitter.rules>/Part/EditorIcon
-		Category = [utility]
-		PartsUnlocked = [&<./Data/ships/terran/tractor_beam_emitter/tractor_beam_emitter.rules>/Part/ID]
-		Cost = 5000
-		FundsThresholdBeforeOffered = 100000
-	}
-	{
-		ID = cosmoteer.sensor_array
-		NameKey = &<./Data/ships/terran/sensor_array/sensor_array.rules>/Part/NameKey
-		DescriptionKey = &<./Data/ships/terran/sensor_array/sensor_array.rules>/Part/DescriptionKey
-		Icon = &<./Data/ships/terran/sensor_array/sensor_array.rules>/Part/EditorIcon
-		Category = [utility]
-		PartsUnlocked = [&<./Data/ships/terran/sensor_array/sensor_array.rules>/Part/ID]
-		Cost = 7500
-		FundsThresholdBeforeOffered = 250000
-	}
+	//cosmoteer.tractor_beam_emitter moved to mod-parts.rules
+	//cosmoteer.sensor_array moved to mod-parts.rules
 	{
 		ID = cosmoteer.thruster_rocket
 		NameKey = "Parts/ThrusterRocket"

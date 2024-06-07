@@ -1,0 +1,15 @@
+Part : <./Data/ships/terran/base_part_terran.rules>/Part
+{
+	//GMPW
+	NameKey = "Parts/RifleRoofBucket"
+	DescriptionKey = "Parts/RifleRoofBucketDesc"
+	EditorIcon
+	{
+		Texture
+		{
+			File = "./Standard Mods/emmy-bbpp/buckets/RifleRoof.png"
+			SampleMode = Linear
+		}
+		Size = [64, 64]
+	}
+}
