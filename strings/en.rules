@@ -9,6 +9,10 @@ Parts
 	AutoCharge = "Auto Charge"
 	AutoChargeIcon = "Auto Charge"
 	AutoChargeDesc = "AI triggered explosive charge for Build & Battle mode with AI controllers. Will seperate the ship at 450 units (missile range) out."
+	//Tiny Reactor
+	ReactorTiny = "Tiny Reactor"
+	ReactorTinyIcon = "Tiny Reactor"
+	ReactorTinyDesc = "A power generator designed to power tiny corvettes and fighters."
 	/* Unused testing
 	//Auto Gun
 	AutoGun = "Auto Charge Gun"
@@ -63,3 +67,13 @@ Parts
 	RifleRoofBucketDesc = "Emmy BBPP: placeholder text"
 	
 }
+/*
+//Build & Battle mode rulesets
+BuildBattleModeConfig : PvpModeConfig
+{
+	Ruleset
+	{
+		EmmyBABNorm = "Emmy B&B - Standard + A.I."
+		EmmyBABNormShort = "EBAB\nSDT A.T."
+	}
+}*/

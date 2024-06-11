@@ -1,7 +1,7 @@
 //Changelog at file tail
 ID = Emerald.BaBPersonalPatch
 Name = "Emmy Battle & Build Personal Patch (BBPP)"
-Version = 1.4.0
+Version = 1.4.1
 CompatibleGameVersions = ["0.26.1"]
 ModifiesMultiplayer = true
 StringsFolder = "strings"
@@ -54,6 +54,14 @@ Actions
 		IgnoreIfNotExisting = false
 		With = &<mode-rules.rules>/Mode/TechOfferingsPerRound
 	}
+	/* NameKey is currently crashing. To be fixed later
+	//Adds default mode to B&B settings list
+	{
+		Action = AddMany
+		AddTo = "<modes/pvp/pvp_buildbattle/pvp_buildbattle.rules>/Mode/OfficialRulesets"
+		IgnoreIfNotExisting = true
+		ManyToAdd = &<mode-rules.rules>/Mode/OfficialRulesets
+	} */
 	//Emmy B&B Custom Parts
 	{ 
 		Action = AddMany
@@ -61,15 +69,19 @@ Actions
 		ManyToAdd = [
 			//Auto Charge
 			&<assets/auto_charge/auto_charge.rules>/Part
-			//Unused testing content
+			//Tiny Reactor
+			&<assets/reactor_tiny/reactor_tiny.rules>/Part
+			//Unused testing content not released in the release. Do not uncomment or will crash.
 			//&<assets/auto_gun/auto_gun.rules>/Part
 		]
+		IgnoreIfNotExisting = true
 	}
 	//Basegame Stats Changes
 	//Railgun: Multipler from 20% up to 40% (2x per segment)
 	{
 		Action = Replace
 		Replace = "<buffs/buffs.rules>/RailgunShot/Multiplier"
+		IgnoreIfNotExisting = false
 		With = 40%
 	}
 	//Mod support

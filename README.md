@@ -1,5 +1,5 @@
 # Cosmoteer-Emmy-BBPP
- My personal mod created to allow multiple different steam workshop mods to be accessable within the Build & Battle mode. You are free to edit anything you don't like about it, such as adding or removing mods, however all players must have the EXACT same copy of the mod or else it will cause issues.
+ My personal mod created to allow multiple different steam workshop mods to be accessable within the Build & Battle mode. You are free to edit anything you don't like about it, such as adding or removing mods. If you did edit the game, all players must have the EXACT same copy of the mod or else it will cause issues.
 
 ## Required Mods List:
 * Kurim's More Crew Quarters
@@ -14,12 +14,18 @@
 * General Munitions' Projectile Weapons
 * DIGI Modular Missiles
 * Stormforge Additional Parts
-* AI Core Automated Ship Parts
 * Dorsal Thrusters
 
 A link to the steam collection can be found here: https://steamcommunity.com/sharedfiles/filedetails/?id=3250287374
 
 ## Changelog:
+v1.4.1 - Tiny Generator & Small Tweaks
+* AI Core Automated Ship Parts has been disabled for the time being. While I could go about patching the mod for weapons, the mod doesn't provide enough of a change to justify the work right now.
+	* Known Issue: Spawning the GMPW Deck Chaingun will crash due to the AI modules.
+* Created a Tiny Generator in place of the old Sulfur Tiny Generators. This will better allow for more tiny ships while not being so cheap as to overshadow the small generator.
+	* The Tiny Generator holds about 40% capacity at 60% cost of the small generator. It is designed to be a cheaper main generator with enough strength to power thrusters and other low power rooms. It general lacks the capacity to be a personal power generator for high power shields and energy weapons.  
+* Working to add the default mode I balance the game around to the drop-down list. Currently having issues so delayed ATM.
+
 v1.4.0 - New Mods, Basegame Changes, and Balance Patch
 New Mods
 * Stormforge Additional Parts
@@ -29,7 +35,7 @@ New Mods
 * Dorsal Thrusters
 	* Large thrusters that can be placed in the center of the ship. Placed in the Powerful tier, as to be more inline with other turrets.
 Basegame Changes
-* The modular Railgun has been buffed by making each segment now give double the buff it use to. Essentially every railgun is now 2x longer at half the space. Since the Railgun is very hard to build around and and extremely vulnerable, I wanted to make it really worth that risk. This may be too strong, but if so it can always be rolled back some later.
+* The modular Railgun has been buffed by making each segment now give double the buff it use to. Essentially every railgun is now 2x longer at half the space. Since the Railgun is very hard to build around and and extremely vulnerable, I wanted to make it really worth that risk. As Sid Meier once said, make big changes to see how they work.
 	* Railgun segment multiplier from 20% up to 40% more power.
 B&B Balance
 * All Sulfur Generators have been removed for the time being. Any bucket with them essentially refunded more money than it cost by switching to them, as their sole function was to be cheaper. While I considered ways to balance them without directly editing their code, ultimately I decided there was no efficient way to solve this problem without doing so.

@@ -467,6 +467,7 @@ Techs
 		FundsThresholdBeforeOffered = 400000
 	}
 	//AI Core Automated Ship Parts
+	/*
 	{
 		ID = aephiex.parts.ai_terminal
 		NameKey = &<./Data/../../../workshop/content/799600/2920003373/terran/ai_terminal/ai_terminal.rules>/Part/NameKey
@@ -476,7 +477,7 @@ Techs
 		Category = [utility]
 		Cost = 5000
 		FundsThresholdBeforeOffered = 250000
-	}
+	} */
 	//Dorsal Thrusters
 	{
 		ID = charlatan_.thruster_burner_large_dorsal
@@ -501,4 +502,5 @@ PartsWhitelist
 	bonible.ArmorPlate
 	//Emmy B&B
 	emmy.auto_charge
+	emmy.reactor_tiny
 ]
