@@ -6,9 +6,9 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 	EditorGroup = "Power"
 	DescriptionKey = "Parts/ReactorTinyDesc"
 	Resources
-	[//small 25k total. tiny ??k total
-		[steel, 20] 
-		[coil, 32]
+	[//small 25k total. tiny 15k total
+		[steel, 36]
+		[coil, 36]
 		[enriched_uranium, 4]
 		[processor, 1]
 	]

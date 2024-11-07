@@ -34,7 +34,7 @@ Mode : <../base_pvp.rules>
 	Techs = &<techs_buildbattle.rules>/Techs //changed externally in mod.rules
 	PartsWhitelist = &<techs_buildbattle.rules>/PartsWhitelist //changed externally in mod.rules
 
-	/* Currently causing a crash with NameKey. Looking to fix in the future.
+	// Currently nonfunctional. Looking to fix in the future.
 	OfficialRulesets
 	[
 		{
@@ -72,7 +72,7 @@ Mode : <../base_pvp.rules>
 				AsteroidDensities = 0 //index into list. turned off
 			}
 		}
-	] */
+	]
 	
 	CapturePointRules //Currently unused
 	{

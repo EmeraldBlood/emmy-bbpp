@@ -106,20 +106,7 @@ Techs
 		Cost = 5000
 		FundsThresholdBeforeOffered = 0
 	}
-	{
-		ID = cosmoteer.ion_beam_emitter
-		NameKey = &<./Data/ships/terran/ion_beam_emitter/ion_beam_emitter.rules>/Part/NameKey
-		DescriptionKey = &<./Data/ships/terran/ion_beam_emitter/ion_beam_emitter.rules>/Part/DescriptionKey
-		Icon = &<./Data/ships/terran/ion_beam_emitter/ion_beam_emitter.rules>/Part/EditorIcon
-		Category = [weapons]
-		PartsUnlocked
-		[
-			&<./Data/ships/terran/ion_beam_emitter/ion_beam_emitter.rules>/Part/ID
-			&<./Data/ships/terran/ion_beam_prism/ion_beam_prism.rules>/Part/ID
-		]
-		Cost = 10000
-		FundsThresholdBeforeOffered = 250000
-	}
+	//cosmoteer.ion_beam_emitter moved to mod-parts.rules
 	{
 		ID = cosmoteer.missile_launcher_he
 		NameKey = "MissileTypes/HE"
@@ -143,22 +130,6 @@ Techs
 			&<./Data/ships/terran/railgun_loader/railgun_loader.rules>/Part/ID
 			&<./Data/ships/terran/railgun_accelerator/railgun_accelerator.rules>/Part/ID
 			&<./Data/ships/terran/railgun_launcher/railgun_launcher.rules>/Part/ID
-		]
-		Cost = 10000
-		FundsThresholdBeforeOffered = 250000
-	}
-	{
-		ID = cosmoteer.chaingun
-		NameKey = &<./Data/ships/terran/chaingun/chaingun.rules>/Part/NameKey
-		DescriptionKey = &<./Data/ships/terran/chaingun/chaingun.rules>/Part/DescriptionKey
-		Icon = &<./Data/ships/terran/chaingun/chaingun.rules>/Part/EditorIcon
-		Category = [weapons]
-		PartsUnlocked
-		[
-			&<./Data/ships/terran/chaingun/chaingun.rules>/Part/ID
-			&<./Data/ships/terran/chaingun_magazine/chaingun_magazine.rules>/Part/ID
-			&<./Data/../../../workshop/content/799600/3071792765/elbow_left_magazine/elbow_left_magazine.rules>/Part/ID //elbow mod
-			&<./Data/../../../workshop/content/799600/3071792765/elbow_right_magazine/elbow_right_magazine.rules>/Part/ID //elbow mod
 		]
 		Cost = 10000
 		FundsThresholdBeforeOffered = 250000
@@ -235,16 +206,6 @@ Techs
 		Cost = 5000
 		FundsThresholdBeforeOffered = 250000
 	}
-	{
-		ID = cosmoteer.power_storage
-		NameKey = &<./Data/ships/terran/power_storage/power_storage.rules>/Part/NameKey
-		DescriptionKey = &<./Data/ships/terran/power_storage/power_storage.rules>/Part/DescriptionKey
-		Icon = &<./Data/ships/terran/power_storage/power_storage.rules>/Part/EditorIcon
-		Category = [utility]
-		PartsUnlocked = [&<./Data/ships/terran/power_storage/power_storage.rules>/Part/ID]
-		Cost = 5000
-		FundsThresholdBeforeOffered = 0
-	}
 	//cosmoteer.tractor_beam_emitter moved to mod-parts.rules
 	//cosmoteer.sensor_array moved to mod-parts.rules
 	{
@@ -291,20 +252,21 @@ PartsWhitelist
 	cosmoteer.control_room_small
 	cosmoteer.conveyor
 	cosmoteer.corridor
-	//cosmoteer.crew_quarters_med //NOTE this is in the mod-parts file for draft.
 	cosmoteer.crew_quarters_small
 	cosmoteer.explosive_charge
-	//cosmoteer.factory_coil //Pointless factories removed
-	//cosmoteer.factory_coil2
-	//cosmoteer.factory_diamond
-	//cosmoteer.factory_processor
-	//cosmoteer.factory_steel
-	//cosmoteer.factory_tristeel
-	//cosmoteer.factory_uranium
+	//factories
+	cosmoteer.factory_coil
+	cosmoteer.factory_coil2
+	cosmoteer.factory_diamond
+	cosmoteer.factory_processor
+	cosmoteer.factory_steel
+	cosmoteer.factory_tristeel
+	cosmoteer.factory_uranium
 	cosmoteer.factory_ammo
 	cosmoteer.factory_he
 	cosmoteer.factory_emp
 	cosmoteer.factory_nuke
+	cosmoteer.factory_mine
 	cosmoteer.fire_extinguisher
 	cosmoteer.hyperdrive_beacon
 	cosmoteer.hyperdrive_large
@@ -327,4 +289,5 @@ PartsWhitelist
 	cosmoteer.thruster_small_3way
 	//Added Base
 	cosmoteer.roof_headlight
+	cosmoteer.power_storage
 ]

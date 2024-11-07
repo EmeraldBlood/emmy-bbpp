@@ -1,18 +1,23 @@
 __Name = "English"
 __DebugOnly = false
 //The above 2 lines *MUST* be the first two lines of the file!
-
+//Forbidden Symbols: & /
+//Allowed Symbols: - , . ( )
 Parts
 {
 //Mod Assets
 	//Auto Charge
 	AutoCharge = "Auto Charge"
 	AutoChargeIcon = "Auto Charge"
-	AutoChargeDesc = "AI triggered explosive charge for Build & Battle mode with AI controllers. Will seperate the ship at 450 units (missile range) out."
+	AutoChargeDesc = "AI triggered explosive charge for Build and Battle mode with AI controllers. Will detonate when an enemy is within 450 units."
 	//Tiny Reactor
 	ReactorTiny = "Tiny Reactor"
 	ReactorTinyIcon = "Tiny Reactor"
 	ReactorTinyDesc = "A power generator designed to power tiny corvettes and fighters."
+	//Tiny Cockpit
+	ControlRoomTiny = "Tiny Command Room"
+	ControlRoomTinyIcon = "Tiny Command Room"
+	ControlRoomTinyDesc = "A tiny command room designed to run very small ships."
 	/* Unused testing
 	//Auto Gun
 	AutoGun = "Auto Charge Gun"
@@ -21,53 +26,74 @@ Parts
 	*/
 
 //Buckets
+	//Placeholder Bucket
+	TempBucket = "Temp Bucket Title"
+	TempBucketDesc = "Temp Bucket Desc"
+	
 	//Base Game
 	//Medium Control
 	ControlRoomMedBucket = "Medium Control Bucket"
-	ControlRoomMedBucketDesc = "Emmy BBPP: placeholder text"
-	
+	ControlRoomMedBucketDesc = "Emmy BBPP - placeholder text"
 	//Large Control
 	ControlRoomLrgBucket = "Large Control Bucket"
-	ControlRoomLrgBucketDesc = "Emmy BBPP: placeholder text"
+	ControlRoomLrgBucketDesc = "Emmy BBPP - placeholder text"
+	//Medium Power
+	ReactorMedBucket = "Medium Power Bucket"
+	ReactorMedBucketDesc = "Emmy BBPP - placeholder text"
+	//Large Power
+	ReactorLargeBucket = "High Power Bucket"
+	ReactorLargeBucketDesc = "Emmy BBPP - placeholder text"
 
+	//Super Buckets
+	//Thruster Super Bucket
+	ThrusterSuperBucket = "Thrusters Super Bucket"
+	ThrusterSuperBucketDesc = "Emmy BBPP - placeholder text"
+	//Energy Weapon Super Bucket
+	EnergyWeaponSuperBucket = "Energy Weapons Super Bucket"
+	EnergyWeaponSuperBucketDesc = "Emmy BBPP - placeholder text"
+	//Projectile Weapon Super Bucket
+	AmmoWeaponSuperBucket = "Projectile Weapons Super Bucket"
+	AmmoWeaponSuperBucketDesc = "Emmy BBPP - placeholder text"
+	//Missile Super Bucket
+	MissileSuperBucket = "Missile Weapons Super Bucket"
+	MissileSuperBucketDesc = "Emmy BBPP - placeholder text"
+	//Defense Super Bucket
+	DefenseSuperBucket = "Defense Super Bucket"
+	DefenseSuperBucketDesc = "Emmy BBPP - placeholder text"
+	//Command Supper Bucket
+	CommandSuperBucket = "Core Super Bucket"
+	CommandSuperBucketDesc = "Emmy BBPP - placeholder text"
+	
 	//More Crew Mod
 	//3x2 bunks
 	CrewQuarters3x2Bucket = "Medium Bunk Bucket"
 	CrewQuarters3x2BucketIcon = "Quad Bunk Bucket"
 	CrewQuarters3x2BucketDesc = "Provides both 2x2 and 3x2 bunks."
-	
 	//4x3 bunks
 	CrewQuarters4x3Bucket = "Large Bunk Bucket"
-	CrewQuarters4x3BucketDesc = "Emmy BBPP: placeholder text"
+	CrewQuarters4x3BucketDesc = "Emmy BBPP - placeholder text"
 	
 	//Bulkheads & AWT
 	//bulkheads
 	BulkheadBucket = "Reinforced Corridor Bucket"
-	BulkheadBucketDesc = "Emmy BBPP: placeholder text"
+	BulkheadBucketDesc = "Emmy BBPP - placeholder text"
+	//AWT Armor
+	AWTArmorBucket = "Light - Heavy Armor Bucket"
+	AWTArmorBucketDesc = "Emmy BBPP - placeholder text"
 	
 	//General Munitions
-	//Small sulfur
-	ReactorMedBucket = "Medium Power Bucket"
-	ReactorMedBucketDesc = "Emmy BBPP: placeholder text"
-	
-	//Medium sulfur
-	ReactorLargeBucket = "High Power Bucket"
-	ReactorLargeBucketDesc = "Emmy BBPP: placeholder text"
-	
 	//Small Guns
 	RifleSmallBucket = "Small Projectile Bucket"
-	RifleSmallBucketDesc = "Emmy BBPP: placeholder text"
-	
+	RifleSmallBucketDesc = "Emmy BBPP - placeholder text"
 	//Long Guns
 	RifleLongBucket = "Long Projectile Bucket"
-	RifleLongBucketDesc = "Emmy BBPP: placeholder text"
-	
+	RifleLongBucketDesc = "Emmy BBPP - placeholder text"
 	//Roof Guns
 	RifleRoofBucket = "Roof Projectile Bucket"
-	RifleRoofBucketDesc = "Emmy BBPP: placeholder text"
+	RifleRoofBucketDesc = "Emmy BBPP - placeholder text"
 	
 }
-/*
+/* Causing crashes ATM. Looking to fix in the future.
 //Build & Battle mode rulesets
 BuildBattleModeConfig : PvpModeConfig
 {

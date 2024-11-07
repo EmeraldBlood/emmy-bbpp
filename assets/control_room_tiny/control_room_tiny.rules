@@ -1,0 +1,456 @@
+Part : <./Data/ships/terran/base_part_terran.rules>/Part
+{
+	NameKey = "Parts/ControlRoomTiny"
+	IconNameKey = "Parts/ControlRoomTinyIcon"
+	ID = emmy.control_room_tiny
+	EditorGroup = "Flight"
+	DescriptionKey = "Parts/ControlRoomTinyDesc"
+	Resources
+	[ //base 10k. Tiny ~??k.
+		[steel, 20]
+		[coil2, 10]
+		[processor, 1]
+	]
+	AIValueFactor = 5
+	Size = [1, 2]
+	SelectionPriority = 0
+	SelectionTypeID = "control_room"
+	MaxHealth = 1800 //base 4000
+	ContiguityOriginPriority = 1
+	TypeCategories = [command, uses_power, is_crewed]
+	ReceivableBuffs : ^/0/ReceivableBuffs []
+	AllowedDoorLocations
+	[ //base [-1,1], [2,1], [0,2], [1,2]
+		[0, 2] //bottom edge, center
+		[-1,1] //left edge, bottom row
+		[1,1] //right edge, bottom row
+	]
+	EditorIcon
+	{
+		Texture
+		{
+			File = "./Data/ships/terran/control_room_small/icon.png"
+			SampleMode = Linear
+		}
+		Size = [24, 48] //base 48, 48
+	}
+	Components : ^/0/Components
+	{
+		IsOperational
+		{
+			Type = MultiToggle
+			Toggles = [PowerToggle, BatteryStorage, PartCrew]
+			Mode = All
+		}
+
+		PowerToggle
+		{
+			Type = UIToggle
+			ToggleID = "on_off"
+			Default = 1
+			RequiresCommand = false
+		}
+
+		BatteryStorage
+		{
+			Type = ResourceStorage
+			ResourceType = battery
+			MaxResources = 1000 //base 2000
+			ReceiveResourceMediaEffects = &/COMMON_EFFECTS/PowerDeliver
+		}
+		BatteryConsumer
+		{
+			Type = ResourceConsumer
+			ResourceType = battery
+			Storage = BatteryStorage
+			DefaultPriority = &/PRIORITIES/ControlRoom_Supply
+			ResupplyThreshold = 350 //base 500
+			OperationalToggle = PowerToggle
+			AllowNonContiguousCrewSearch = true
+		}
+
+		PowerDrain
+		{
+			Type = ResourceConverter
+			OperationalToggle = IsOperational
+			FromStorage = BatteryStorage
+			FromQuantity = 1000 //Think this is the drain amount per min
+			MinFromQuantityForConversion = 1
+			Interval = 60 // Drains 1 power every minute.
+		}
+
+		CommandProvider
+		{
+			Type = CommandProvider
+			OperationalToggle = IsOperational
+			CommandPoints = 20 //Base 50
+		}
+
+		//uses base command sensor range
+		Sensor =	&<./Data/ships/terran/control_room_small/control_room_small.rules>/Part/Components/Sensor
+
+		CrewLocation
+		{
+			Type = CrewLocation
+			Location = [.5, 0.97] //base [1, .97]
+		}
+		PartCrew
+		{
+			Type = PartCrew
+			Crew = 1
+			DefaultPriority = &/PRIORITIES/ControlRoom_Crew
+			PrerequisitesBeforeCrewing = [PowerToggle]
+			HighPriorityPrerequisites = [BatteryStorage]
+			CrewDestinations
+			[
+				[.5, 0.97]
+			]
+			CrewLocations
+			[
+				CrewLocation
+			]
+		}
+
+		Graphics
+		{
+			Type = Graphics
+			Location = [.5, 1] //base [1,1]
+			OperationalToggle = IsOperational
+			Floor
+			{
+				Layer = "floors"
+				DamageLevels
+				[
+					{
+						File = "./Data/ships/terran/control_room_small/floor.png"
+						Size = [1, 2]
+					}
+					{
+						File = "./Data/ships/terran/control_room_small/floor_33.png"
+						Size = [1, 2]
+					}
+					{
+						File = "./Data/ships/terran/control_room_small/floor_66.png"
+						Size = [1, 2]
+					}
+				]
+			}
+			OperationalDoodad
+			{
+				Layer = "doodads_low"
+				DamageLevels
+				[
+					{
+						AnimationFiles
+						[
+							"./Data/ships/terran/control_room_small/doodads_on1.png"
+							"./Data/ships/terran/control_room_small/doodads_on2.png"
+							"./Data/ships/terran/control_room_small/doodads_on3.png"
+							"./Data/ships/terran/control_room_small/doodads_on4.png"
+							"./Data/ships/terran/control_room_small/doodads_on5.png"
+							"./Data/ships/terran/control_room_small/doodads_on6.png"
+							"./Data/ships/terran/control_room_small/doodads_on7.png"
+							"./Data/ships/terran/control_room_small/doodads_on8.png"
+							"./Data/ships/terran/control_room_small/doodads_on9.png"
+							"./Data/ships/terran/control_room_small/doodads_on10.png"
+							"./Data/ships/terran/control_room_small/doodads_on11.png"
+							"./Data/ships/terran/control_room_small/doodads_on12.png"
+						]
+						Size = [1, 2]
+						AnimationInterval = 0.125
+					}
+					{
+						AnimationFiles
+						[
+							"./Data/ships/terran/control_room_small/doodads_on1_33.png"
+							"./Data/ships/terran/control_room_small/doodads_on2_33.png"
+							"./Data/ships/terran/control_room_small/doodads_on3_33.png"
+							"./Data/ships/terran/control_room_small/doodads_on4_33.png"
+							"./Data/ships/terran/control_room_small/doodads_on5_33.png"
+							"./Data/ships/terran/control_room_small/doodads_on6_33.png"
+							"./Data/ships/terran/control_room_small/doodads_on7_33.png"
+							"./Data/ships/terran/control_room_small/doodads_on8_33.png"
+							"./Data/ships/terran/control_room_small/doodads_on9_33.png"
+							"./Data/ships/terran/control_room_small/doodads_on10_33.png"
+							"./Data/ships/terran/control_room_small/doodads_on11_33.png"
+							"./Data/ships/terran/control_room_small/doodads_on12_33.png"
+						]
+						Size = [1, 2]
+						AnimationInterval = 0.125
+					}
+					{
+						AnimationFiles
+						[
+							"./Data/ships/terran/control_room_small/doodads_on1_66.png"
+							"./Data/ships/terran/control_room_small/doodads_on2_66.png"
+							"./Data/ships/terran/control_room_small/doodads_on3_66.png"
+							"./Data/ships/terran/control_room_small/doodads_on4_66.png"
+							"./Data/ships/terran/control_room_small/doodads_on5_66.png"
+							"./Data/ships/terran/control_room_small/doodads_on6_66.png"
+							"./Data/ships/terran/control_room_small/doodads_on7_66.png"
+							"./Data/ships/terran/control_room_small/doodads_on8_66.png"
+							"./Data/ships/terran/control_room_small/doodads_on9_66.png"
+							"./Data/ships/terran/control_room_small/doodads_on10_66.png"
+							"./Data/ships/terran/control_room_small/doodads_on11_66.png"
+							"./Data/ships/terran/control_room_small/doodads_on12_66.png"
+						]
+						Size = [1, 2]
+						AnimationInterval = 0.125
+					}
+				]
+			}
+			NonOperationalDoodad
+			{
+				Layer = "doodads_low"
+				DamageLevels
+				[
+					{
+						File = "./Data/ships/terran/control_room_small/doodads_off.png"
+						Offset = [0, 0.5] //May need to change this, currently default.
+						Size = [.5, .5]
+					}
+					{
+						File = "./Data/ships/terran/control_room_small/doodads_off_33.png"
+						Offset = [0, 0.5]
+						Size = [.5, .5]
+					}
+					{
+						File = "./Data/ships/terran/control_room_small/doodads_off_66.png"
+						Offset = [0, 0.5]
+						Size = [.5, .5]
+					}
+				]
+			}
+			OperationalLighting
+			{
+				Layer = "lights_add"
+				DamageLevels
+				[
+					{
+						File = "./Data/ships/terran/control_room_small/lights.png"
+						Size = [1, 2]
+					}
+				]
+			}
+			Walls
+			{
+				Layer = "walls"
+				DamageLevels
+				[
+					{
+						File = "./Data/ships/terran/control_room_small/walls.png"
+						Size = [1, 2]
+					}
+					{
+						File = "./Data/ships/terran/control_room_small/walls_33.png"
+						Size = [1, 2]
+					}
+					{
+						File = "./Data/ships/terran/control_room_small/walls_66.png"
+						Size = [1, 2]
+					}
+				]
+			}
+			Roof
+			{
+				Layer = "roofs"
+				DamageLevels
+				[
+					{
+						File = "./Data/ships/terran/control_room_small/roof.png"
+						NormalsFile = "./Data/ships/terran/control_room_small/roof_normals.png"
+						Size = [1, 2]
+					}
+					{
+						File = "./Data/ships/terran/control_room_small/roof_33.png"
+						NormalsFile = "./Data/ships/terran/control_room_small/roof_normals_33.png"
+						Size = [1, 2]
+					}
+					{
+						File = "./Data/ships/terran/control_room_small/roof_66.png"
+						NormalsFile = "./Data/ships/terran/control_room_small/roof_normals_66.png"
+						Size = [1, 2]
+					}
+				]
+			}
+			OperationalRoofDoodad
+			{
+				Layer = "roof_doodads"
+				DamageLevels
+				[
+					{
+						File = "./Data/ships/terran/control_room_small/roof_glows.png"
+						Size = [1, 2]
+					}
+					{
+						File = "./Data/ships/terran/control_room_small/roof_glows_33.png"
+						Size = [1, 2]
+					}
+					{
+						File = "./Data/ships/terran/control_room_small/roof_glows_66.png"
+						Size = [1, 2]
+					}
+				]
+			}
+
+			OperationalRoofLighting
+			{
+				Layer = "roof_lights_fancy"
+				Offset = [0, .78] //May need to change this
+				DamageLevels
+				[
+					{
+						File = "./Data/ships/common/light_blob.png"
+						Size = [4, 4] //base [5,5]
+						Z = 1.5 // Controls the "height" of the light for the purposes of normal mapping.
+						VertexColor = [36*1.0,105*1.0, 255*1.0]//[50*1.0,100*1.0, 255*1.0]
+					}
+				]
+			}
+		}
+
+		Graphics2
+		{
+			Type = Graphics
+			Location = [.5, 1.48] //base [1, 1.48]
+			OperationalToggle = IsOperational
+			OperationalRoofDoodad
+			{
+				Layer = "roof_doodads"
+				DamageLevels
+				[
+					{
+						File = "./Data/ships/terran/control_room_small/radar.png"
+						NormalsFile = "./Data/ships/terran/control_room_small/radar_normals.png"
+						RotSpeed = 180d
+					}
+				]
+			}
+			NonOperationalRoofDoodad
+			{
+				Layer = "roof_doodads"
+				DamageLevels
+				[
+					{
+						File = "./Data/ships/terran/control_room_small/radar.png"
+						NormalsFile = "./Data/ships/terran/control_room_small/radar_normals.png"
+						Size = [.5, 1]
+					}
+				]
+			}
+		}
+
+		BatterySprites
+		{
+			Type = ResourceSprites
+			Location = [.5, 1]
+			ResourceStorage = BatteryStorage
+			Layer = "doodads_high"
+			ResourceLevels
+			[
+				{
+					File = "./Data/ships/terran/control_room_small/batteries1.png"
+					Offset = [-0.5, 0] //unchanged
+					Size = [.5, 1] //base [1,1]
+				}
+				{
+					File = "./Data/ships/terran/control_room_small/batteries2.png"
+					Size = [1, 1] //base [2,1]
+				}
+			]
+		}
+
+		OperationEffects
+		{
+			Type = ToggleEffects
+			Location = [.5, 1] //baser [1,1]
+			Toggle = IsOperational
+			ToggledOnMediaEffects = &/COMMON_EFFECTS/PowerOn
+			ToggledOffMediaEffects = &/COMMON_EFFECTS/PowerOff
+		}
+
+		DestroyedEffects
+		{
+			Type = DeathEffects
+			MediaEffects = &/COMMON_EFFECTS/MedPartDestroyed
+			Location = [.5, 1] //base [1,1]
+		}
+
+		OperationSoundLoop
+		{
+			Type = ContinuousEffects
+			Location = [.5, 1] //base [1,1]
+			OperationalToggle = IsOperational
+			MaxMediaEffectsZoom = 4
+			MediaEffects
+			[
+				: /BASE_SOUNDS/AudioInterior
+				{
+					Sound = "./Data/ships/terran/control_room_small/operating.wav"
+					Volume = .15
+					MaxConcurrentVolume = .3
+					Speed = .75
+					MaxConcurrent = 1
+				}
+			]
+		}
+
+		Indicators
+		{
+			Type = IndicatorSprites
+			Location = [.5, 1] //base [1,1]
+			Layer = "indicators"
+			Indicators
+			[
+				// Turned off.
+				{
+					Toggle = PowerToggle
+					AtlasSprite
+					{
+						File = &/INDICATORS/PowerOff
+						Size = [1, 1] //unchanged
+					}
+				}
+
+				// Out of power.
+				{
+					Toggle = BatteryStorage
+					AtlasSprite
+					{
+						File = &/INDICATORS/NoPower
+						Size = [1, 1]
+					}
+				}
+
+				// No crew.
+				{
+					Toggle = PartCrew
+					AtlasSprite
+					{
+						File = &/INDICATORS/NoCrew
+						Size = [1, 1]
+					}
+				}
+			]
+		}
+
+		Blueprints
+		{
+			Type = BlueprintSprite
+			File = "./Data/ships/terran/control_room_small/blueprints.png"
+			Size = [1, 2]
+		}
+	}
+
+	Stats
+	{
+		CrewRequired = &~/Part/Components/PartCrew/Crew
+		PowerUsageContinuousMinutes = (&~/Part/Components/PowerDrain/FromQuantity) / (&~/Part/Components/PowerDrain/Interval) / 1000 * 60
+		PowerCapacity = (&~/Part/Components/BatteryStorage/MaxResources) / 1000
+		SightRange = &~/Part/Components/Sensor/SightRadius
+		RadarRange = &~/Part/Components/Sensor/RadarRadius
+
+		RecPower = (&PowerUsageContinuousMinutes) / 60
+		RecCrew = (&CrewRequired) + (&RecPower) * 4
+	}
+}

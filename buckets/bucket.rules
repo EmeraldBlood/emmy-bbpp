@@ -1,0 +1,278 @@
+Part : <./Data/ships/terran/base_part_terran.rules>/Part
+{
+	//Temp Bucket
+	Temp
+	{
+		NameKey = "Parts/TempBucket"
+		DescriptionKey = "Parts/TempBucketDesc"
+		EditorIcon
+		{
+			Texture
+			{
+				File = "./Standard Mods/emmy-bbpp/buckets/temp.png"
+				SampleMode = Linear
+			}
+			Size = [64, 64]
+		}
+	}
+	//Base Game
+	//Medium Control Room
+	ControlRoomMed
+	{
+		NameKey = "Parts/ControlRoomMedBucket"
+		DescriptionKey = "Parts/ControlRoomMedBucketDesc"
+		EditorIcon
+		{
+			Texture
+			{
+				File = "./Standard Mods/emmy-bbpp/buckets/control_room_med.png"
+				SampleMode = Linear
+			}
+			Size = [64, 64]
+		}
+	}
+	//Large Control Room
+	ControlRoomLarge
+	{
+		NameKey = "Parts/ControlRoomLrgBucket"
+		DescriptionKey = "Parts/ControlRoomLrgBucketDesc"
+		EditorIcon
+		{
+			Texture
+			{
+				File = "./Standard Mods/emmy-bbpp/buckets/control_room_large.png"
+				SampleMode = Linear
+			}
+			Size = [64, 64]
+		}
+	}
+	//Medium Power Bucket
+	ReactorMed
+	{
+		NameKey = "Parts/ReactorMedBucket"
+		DescriptionKey = "Parts/ReactorMedBucketDesc"
+		EditorIcon
+		{
+			Texture
+			{
+				File = "./Standard Mods/emmy-bbpp/buckets/reactors.png"
+				SampleMode = Linear
+			}
+			Size = [64, 64]
+		}
+	}
+	//Large Power Bucket
+	ReactorLarge
+	{
+		NameKey = "Parts/ReactorLargeBucket"
+		DescriptionKey = "Parts/ReactorLargeBucketDesc"
+		EditorIcon
+		{
+			Texture
+			{
+				File = "./Standard Mods/emmy-bbpp/buckets/reactors.png"
+				SampleMode = Linear
+			}
+			Size = [64, 64]
+		}
+	}
+	//Super Buckets
+	//Thruster Super Bucket
+	ThrusterSuper
+	{
+		NameKey = "Parts/ThrusterSuperBucket"
+		DescriptionKey = "Parts/ThrusterSuperBucketDesc"
+		EditorIcon
+		{
+			Texture
+			{
+				File = "./Standard Mods/emmy-bbpp/buckets/thrusters_super.png"
+				SampleMode = Linear
+			}
+			Size = [64, 64]
+		}
+	}
+	//Energy Weapon Super Bucket
+	EnergyWeaponSuper
+	{
+		NameKey = "Parts/EnergyWeaponSuperBucket"
+		DescriptionKey = "Parts/EnergyWeaponSuperBucketDesc"
+		EditorIcon
+		{
+			Texture
+			{
+				File = "./Standard Mods/emmy-bbpp/buckets/energy_weapon_super.png"
+				SampleMode = Linear
+			}
+			Size = [64, 64]
+		}
+	}
+	//Projectile Weapon Super Bucket
+	AmmoWeaponSuper
+	{
+		NameKey = "Parts/AmmoWeaponSuperBucket"
+		DescriptionKey = "Parts/AmmoWeaponSuperBucketDesc"
+		EditorIcon
+		{
+			Texture
+			{
+				File = "./Standard Mods/emmy-bbpp/buckets/ammo_weapon_super.png"
+				SampleMode = Linear
+			}
+			Size = [64, 64]
+		}
+	}
+	//Missile Super Bucket
+	MissileSuper
+	{
+		NameKey = "Parts/MissileSuperBucket"
+		DescriptionKey = "Parts/MissileSuperBucketDesc"
+		EditorIcon
+		{
+			Texture
+			{
+				File = "./Standard Mods/emmy-bbpp/buckets/missile_weapon_super.png"
+				SampleMode = Linear
+			}
+			Size = [64, 64]
+		}
+	}
+	//Defense Super Bucket
+	DefenseSuper
+	{
+		NameKey = "Parts/DefenseSuperBucket"
+		DescriptionKey = "Parts/DefenseSuperBucketDesc"
+		EditorIcon
+		{
+			Texture
+			{
+				File = "./Standard Mods/emmy-bbpp/buckets/defense_super.png"
+				SampleMode = Linear
+			}
+			Size = [64, 64]
+		}
+	}
+	//Command Supper Bucket
+	CommandSuper
+	{
+		NameKey = "Parts/CommandSuperBucket"
+		DescriptionKey = "Parts/CommandSuperBucketDesc"
+		EditorIcon
+		{
+			Texture
+			{
+				File = "./Standard Mods/emmy-bbpp/buckets/command_super.png"
+				SampleMode = Linear
+			}
+			Size = [64, 64]
+		}
+	}
+	//More Crew Bunks
+	//3x2 bunks
+	CrewQuarters3x2
+	{
+		NameKey = "Parts/CrewQuarters3x2Bucket"
+		DescriptionKey = "Parts/CrewQuarters3x2BucketDesc"
+		EditorIcon
+		{
+			Texture
+			{
+				File = "./Standard Mods/emmy-bbpp/buckets/3x2crewquarters.png"
+				SampleMode = Linear
+			}
+			Size = [64, 64]
+		}
+	}
+	//4x3 bunks
+	CrewQuarters4x3
+	{
+		NameKey = "Parts/CrewQuarters4x3Bucket"
+		DescriptionKey = "Parts/CrewQuarters4x3BucketDesc"
+		EditorIcon
+		{
+			Texture
+			{
+				File = "./Standard Mods/emmy-bbpp/buckets/4x3crewquarters.png"
+				SampleMode = Linear
+			}
+			Size = [64, 64]
+		}
+	}
+	//AWT
+	//Light & Heavy Armor
+	AWTArmor
+	{
+		NameKey = "Parts/AWTArmorBucket"
+		DescriptionKey = "Parts/AWTArmorBucketDesc"
+		EditorIcon
+		{
+			Texture
+			{
+				File = "./Standard Mods/emmy-bbpp/buckets/AWTArmor.png"
+				SampleMode = Linear
+			}
+			Size = [64, 64]
+		}
+	}
+	//Bulkheads
+	Bulkhead
+	{
+		NameKey = "Parts/BulkheadBucket"
+		DescriptionKey = "Parts/BulkheadBucketDesc"
+		EditorIcon
+		{
+			Texture
+			{
+				File = "./Standard Mods/emmy-bbpp/buckets/bulkhead.png"
+				SampleMode = Linear
+			}
+			Size = [64, 64]
+		}
+	}
+	//GMPW
+	//Rifles Small
+	RiflesSmall
+	{
+		NameKey = "Parts/RifleSmallBucket"
+		DescriptionKey = "Parts/RifleSmallBucketDesc"
+		EditorIcon
+		{
+			Texture
+			{
+				File = "./Standard Mods/emmy-bbpp/buckets/RifleSmall.png"
+				SampleMode = Linear
+			}
+			Size = [64, 64]
+		}
+	}
+	//Rifles Long
+	RiflesLong
+	{
+		NameKey = "Parts/RifleLongBucket"
+		DescriptionKey = "Parts/RifleLongBucketDesc"
+		EditorIcon
+		{
+			Texture
+			{
+				File = "./Standard Mods/emmy-bbpp/buckets/RifleLong.png"
+				SampleMode = Linear
+			}
+			Size = [64, 64]
+		}
+	}
+	//Rifles Roof
+	RiflesRoof
+	{
+		NameKey = "Parts/RifleRoofBucket"
+		DescriptionKey = "Parts/RifleRoofBucketDesc"
+		EditorIcon
+		{
+			Texture
+			{
+				File = "./Standard Mods/emmy-bbpp/buckets/RifleRoof.png"
+				SampleMode = Linear
+			}
+			Size = [64, 64]
+		}
+	}
+}
