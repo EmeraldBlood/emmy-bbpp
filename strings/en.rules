@@ -9,7 +9,14 @@ Parts
 	//Auto Charge
 	AutoCharge = "Auto Charge"
 	AutoChargeIcon = "Auto Charge"
-	AutoChargeDesc = "AI triggered explosive charge for Build and Battle mode with AI controllers. Will detonate when an enemy is within 450 units."
+	AutoChargeDesc = "AI triggered explosive charge for Build and Battle mode with AI controllers. Will detonate when an enemy is within standard fire range (~350 units)."
+	//Auto Charge LR
+	AutoChargeLR = "Auto Charge LR"
+	AutoChargeLRIcon = "Auto Charge LR"
+	AutoChargeLRDesc = "AI triggered explosive charge for Build and Battle mode with AI controllers. Will detonate when an enemy is within normal PvP spawn range (1500 units)."
+	AutoChargeLR = "Auto Charge Suicide"
+	AutoChargeLRIcon = "Auto Charge Suicide"
+	AutoChargeLRDesc = "AI triggered explosive bomb, set to explode at close contact with the enemy (~50 units)"
 	//Tiny Reactor
 	ReactorTiny = "Tiny Reactor"
 	ReactorTinyIcon = "Tiny Reactor"
@@ -18,6 +25,10 @@ Parts
 	ControlRoomTiny = "Tiny Command Room"
 	ControlRoomTinyIcon = "Tiny Command Room"
 	ControlRoomTinyDesc = "A tiny command room designed to run very small ships."
+	//Tiny Capacitor
+	CapacitorTiny = "Tiny Capacitor"
+	CapacitorTinyIcon = "Tiny Capacitor"
+	CapacitorTinyDesc = "A tiny battery storage designed to help power low-drain rooms or as an emergency burst of power for weapons without taking up too much space."
 	/* Unused testing
 	//Auto Gun
 	AutoGun = "Auto Charge Gun"

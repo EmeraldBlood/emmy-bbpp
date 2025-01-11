@@ -38,7 +38,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 		{
 			Type = ResourceStorage
 			ResourceType = battery
-			MaxResources = 3500 //small 8000
+			MaxResources = 3000 //small 8000
 			StartingResources = &MaxResources
 			SuppliesResources = true
 			MinResourcesPickUp = 1000

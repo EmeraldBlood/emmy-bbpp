@@ -1,8 +1,8 @@
 //Changelog at file tail
 ID = Emerald.BaBPersonalPatch
 Name = "Emmy Battle & Build Personal Patch (BBPP)"
-Version = 2.0.0
-CompatibleGameVersions = ["0.27.2"]
+Version = 2.1.0
+CompatibleGameVersions = ["0.28.0"]
 ModifiesMultiplayer = true
 StringsFolder = "strings"
 Author = "Emerald Blood"
@@ -69,10 +69,14 @@ Actions
 		ManyToAdd = [
 			//Auto Charge
 			&<assets/auto_charge/auto_charge.rules>/Part
+			//Auto Charge LR
+			&<assets/auto_charge_lr/auto_charge_lr.rules>/Part
 			//Tiny Reactor
 			&<assets/reactor_tiny/reactor_tiny.rules>/Part
 			//Tiny Cockpit
 			&<assets/control_room_tiny/control_room_tiny.rules>/Part
+			//Tiny Capacitor
+			&<assets/capacitor_tiny/capacitor_tiny.rules>/Part
 			//Unused testing content not released in the release. Do not uncomment or will crash.
 			//&<assets/auto_gun/auto_gun.rules>/Part
 		]

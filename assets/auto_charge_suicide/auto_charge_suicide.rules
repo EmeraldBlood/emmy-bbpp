@@ -311,6 +311,6 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 	{
 		SimpleMaxDamage = &~/Part/Components/DestroyedEffects/HitEffects/0/TotalDamage
 		DamageArea = &~/Part/Components/DestroyedEffects/HitEffects/0/Radius
-		Range = &<./Data/shots/laser_bolt_small/laser_bolt_small.rules>/Range
+		Range = &<./Data/shots/missile_he/missile_he.rules>/Range
 	}
 }

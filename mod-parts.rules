@@ -239,6 +239,8 @@ Techs
 		DescriptionKey = &<./Data/../../../workshop/content/799600/2892943426/advanced_launcher/advanced_launcher.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/2892943426/advanced_launcher/advanced_launcher.rules>/Part/EditorIcon
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/2892943426/advanced_launcher/advanced_launcher.rules>/Part/ID]
+		ResourcesUnlocked = [&<./Data/resources/missile_part_he/missile_part_he.rules>/ID]
+		ToggleChoicesUnlocked = [[missile_type, 0]]
 		Category = [weapons]
 		Cost = 7500
 		FundsThresholdBeforeOffered = 400000
@@ -694,7 +696,20 @@ Techs
 		]
 		Category = [weapons]
 		Cost = 10000
-		FundsThresholdBeforeOffered = 250000
+		FundsThresholdBeforeOffered = 400000
+	}
+	//Cluster Missiles TEMP
+	{
+		ID = emmy.TempCluster
+		NameKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/Temp/NameKey
+		DescriptionKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/Temp/DescriptionKey
+		Icon = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/Temp/EditorIcon
+		Category = [weapons]
+		PartsUnlocked = [&<./Data/ships/terran/missile_launcher/missile_launcher.rules>/Part/ID]
+		ResourcesUnlocked = [&<./Data/resources/missile_part_he/missile_part_he.rules>/ID]
+		ToggleChoicesUnlocked = [[missile_type, 0]]
+		Cost = 7500
+		FundsThresholdBeforeOffered = 100000
 	}
 ]
 PartsWhitelist
@@ -709,6 +724,8 @@ PartsWhitelist
 	bonible.ArmorPlate
 	//Emmy B&B
 	emmy.auto_charge
+	emmy.auto_charge_lr
 	emmy.reactor_tiny
+	emmy.capacitor_tiny
 	emmy.control_room_tiny
 ]

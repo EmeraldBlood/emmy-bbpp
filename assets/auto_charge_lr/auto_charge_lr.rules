@@ -1,10 +1,10 @@
 Part : <./Data/ships/terran/base_part_terran.rules>/Part
 {
-	NameKey = "Parts/AutoCharge"
-	IconNameKey = "Parts/AutoChargeIcon"
-	ID = emmy.auto_charge
+	NameKey = "Parts/AutoChargeLR"
+	IconNameKey = "Parts/AutoChargeLRIcon"
+	ID = emmy.auto_charge_lr
 	EditorGroup = "Utilities"
-	DescriptionKey = "Parts/AutoChargeDesc"
+	DescriptionKey = "Parts/AutoChargeLRDesc"
 	Resources
 	[
 		[steel, 16]
@@ -264,8 +264,9 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			ValidArc = 360d;
 			FireThresholdAngle = 360d;
 			RotateSpeed = 0d
-			AllowFireWithBlockedLOS = true
-			Emitter = BulletEmitter
+			AllowFireWithBlockedLOS = true 
+			IgnoreFriendlyShipLowLOSChecks = true //Attempt to remove LOS for blast
+			Emitter = BulletEmitter // Doesn't actually fire; only used for targeting.
 			FirePermissionToggle = FireModeToggle
 			AIFirepowerRating = 3200
 			
@@ -303,7 +304,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			Location = [1, 0]
 			OperationalToggle = IsOperational
 			FireDelay = .4
-			Bullet = &<./Data/shots/laser_bolt_small/laser_bolt_small.rules>
+			Bullet = &<aclr_shot.rules>
 		}
 	}
 
@@ -311,6 +312,6 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 	{
 		SimpleMaxDamage = &~/Part/Components/DestroyedEffects/HitEffects/0/TotalDamage
 		DamageArea = &~/Part/Components/DestroyedEffects/HitEffects/0/Radius
-		Range = &<./Data/shots/laser_bolt_small/laser_bolt_small.rules>/Range
+		Range = 1500 //Set to blow up at Normal Starting Distance in PvP
 	}
 }

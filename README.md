@@ -1,5 +1,19 @@
-# Cosmoteer-Emmy-BBPP
-My personal mod created to allow multiple different steam workshop mods to be accessable within the Build & Battle mode. You are free to edit anything you don't like about it, such as adding or removing mods. If you did edit the game, all players must have the EXACT same copy of the mod or else it will cause issues.
+# Cosmoteer - Emmy B&B++
+Emmy B&B++ is a compatibility and quality of life enhancement for the game [Cosmoteer](https://store.steampowered.com/app/799600/Cosmoteer_Starship_Architect__Commander/). It is designed specifically for the Build & Battle PvP mode and not intended for co-op or other PvP modes, though the mod can be used in other mods with minimal/no impact.
+
+By default, most mods do not add their content to the Build & Battle mode, leaving only the vanilla parts. I wanted to greatly extend the longevity of the mode and allow players to go down different tech combinations every game. As such, Emmy B&B++ is designed to revamp both the vanilla mode and include modded material into the rotation.
+
+This mod is intended for use amongst friends and is not designed to appeal to every person's taste. You are free to modify, add, or disable any mod to Emmy B&B++. If you do edit the files, insure that **all** players in your lobby have your edited files for Emmy B&B++, such as the `mod-parts.rules` file. Though I'll accept requests to look at certain mods, I am **not** taking any requests to add specific mod compatibility to this mod.
+
+## Current Mod Features
+Trimmed Starting Techs 
+	* You will now start with only the most basic of parts. All weapons and further improvements will need to be purchased.
+Improved Tech Drafting
+	* Techs are now divided into power tiers and will unlock as rounds go on. Start with basic cannons and end with powerful railguns.
+	* Some techs have been bundled together and late game offers you large portions of the tech tree to unlock in a single tech.
+New Custom Parts
+	* Smaller parts to allow more flexibility in smaller and cheaper ship design.
+	* Special Explosive Charges useable by the AI to allow for building multiple ships in B&B mode.
 
 ## Required Mods List
 * Kurim's More Crew Quarters
@@ -23,9 +37,26 @@ My personal mod created to allow multiple different steam workshop mods to be ac
 * Sunflower Corporation
 * Bonible's Roof Mounted Chaingun
 
-A link to the steam collection can be found here: https://steamcommunity.com/sharedfiles/filedetails/?id=3250287374
+A link to the Steam collection of these mods can be found [here]( https://steamcommunity.com/sharedfiles/filedetails/?id=3250287374).
 
-## Most Recent Changelog
+## Recent Changelogs
+v2.1.0
+Game Version Support
+* Supports game version 0.28.0
+New Custom Parts
+* Auto Charge LR
+	* A long range version of the Auto Charge designed to seperate the ship a spawn range instead of close contact. Ranged for Normal mode spawn range (1500 units)
+* Tiny Capacitor
+	* A 1x1 capacitor designed to hold a few charges in use for low power enviroments. Ideal for thrusters or moving power around a tight ship.
+New B&B Parts
+* Cluster Missiles have been moved into new purchasable missile item at the Improved rank. They were never intended to be unlocked with the base missile launcher, so disabling them was low priority.
+Tweaks
+* Deck Chaingun has been moved from Powerful to Deadly. It was always intended to be one above the normal Chaingun but I forgot to change the value.
+* Removed half an energy from the Tiny Power Battery Capacity. While a slight decrease in max storage, crew could never move half a battery. This keeps the parts simplier and more relevant at a glace.
+* Fixed the Advance Missile Launcher lacking HE missiles and parts on its own.
+Misc
+* Removed unused files.
+
 v2.0.0 - Energy Update
 Game Version Support
 * Supports Cosmoteer version 0.27.2
@@ -89,6 +120,7 @@ This is the general draft cost I balance around. It's intended for many rounds w
 
 Weapons are priced and unlock based on how strong they are on a scale from Basic to Super. If a bundle is more/less powerful, I may make it more/less expensive. It is important to note that while I try to balance parts by making some more/less expensive, true balance is impossible for this mod to achieve. It is going to be up to the players to vary builds and avoid overpowered weapons every round. For this reason, I will never be accepting requests to balance the unlock trees.
 
+```
 Round: $ gain / $ total
 000000 - Basic
 	R1: 75k
@@ -103,6 +135,7 @@ Round: $ gain / $ total
 	R7: 100k / 550k
 550000 - Super
 	R8+ repeat previous
+```
 
 ## Past Changelogs
 v1.4.1 - Tiny Generator & Small Tweaks
