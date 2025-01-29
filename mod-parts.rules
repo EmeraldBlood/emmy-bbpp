@@ -254,10 +254,11 @@ Techs
 		Icon = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/Bulkhead/EditorIcon
 		PartsUnlocked = [
 			&<./Data/../../../workshop/content/799600/2879432704/bulkhead/bulkhead.rules>/Part/ID
-			&<./Data/../../../workshop/content/799600/2882082274/Armor/renforced_corridor/renforced_corridor.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/2882082274/Armor/Renforced_Corridor/renforced_corridor.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/2882082274/Armor/Renforced_CorridorB/renforced_corridorB.rules>/Part/ID
 			]
 		Category = [utility]
-		Cost = 7500
+		Cost = 10000
 		FundsThresholdBeforeOffered = 100000
 	}
 	//AWT
@@ -482,7 +483,7 @@ Techs
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/Flamethrower/Flamethrower.rules>/Part/ID]
 		Category = [weapons]
 		Cost = 5000
-		FundsThresholdBeforeOffered = 100000
+		FundsThresholdBeforeOffered = 250000
 	}
 	/*{//turret flamer
 		ID = bonible.Flamethrower2
@@ -698,7 +699,7 @@ Techs
 		Cost = 10000
 		FundsThresholdBeforeOffered = 400000
 	}
-	//Cluster Missiles TEMP
+	/*Cluster Missiles TEMP
 	{
 		ID = emmy.TempCluster
 		NameKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/Temp/NameKey
@@ -710,7 +711,7 @@ Techs
 		ToggleChoicesUnlocked = [[missile_type, 0]]
 		Cost = 7500
 		FundsThresholdBeforeOffered = 100000
-	}
+	} */
 ]
 PartsWhitelist
 [
@@ -728,4 +729,67 @@ PartsWhitelist
 	emmy.reactor_tiny
 	emmy.capacitor_tiny
 	emmy.control_room_tiny
+	//Expanded Vanilla Armors
+	SW.expanded_v_armor
+	SW.expanded_v_armor_1x1_1Quarter
+	SW.expanded_v_armor_1x1_2Quarter
+	SW.expanded_v_armor_1x1_2QuarterMid
+	SW.expanded_v_armor_1x1_3Quarter
+	SW.expanded_v_armor_1x1_3QuarterMid
+	SW.expanded_v_armor_1x1_RoundBig
+	SW.expanded_v_armor_1x1_RoundBigInv
+	SW.expanded_v_armor_1x1_RoundSmall
+	SW.expanded_v_armor_1x1_RoundSmallInv
+	SW.expanded_v_armor_1x1_RoundWedge
+	SW.expanded_v_armor_1x1_RoundWedgeInv
+	SW.expanded_v_armor_1x1_SemiRoundBottomHalf
+	SW.expanded_v_armor_1x1_SemiRoundTopHalf
+	SW.expanded_v_armor_1x1_SquareWedge_1
+	SW.expanded_v_armor_1x1_SquareWedge_1Inv
+	SW.expanded_v_armor_1x1_SquareWedge_2
+	SW.expanded_v_armor_1x1_SquareWedge_2Inv
+	SW.expanded_v_armor_1x1_SquareWedge_3
+	SW.expanded_v_armor_1x1_SquareWedge_3Inv
+	SW.expanded_v_armor_1x1_TipBit01
+	SW.expanded_v_armor_1x1_TipBit02
+	SW.expanded_v_armor_1x1_TipBitRound01
+	SW.expanded_v_armor_1x1_TipBitRound02
+	SW.expanded_v_armor_1x1_TipBitRoundSmall01
+	SW.expanded_v_armor_1x1_TipBitRoundSmall02
+	SW.expanded_v_armor_1x1_TipBitTriangleSmall01
+	SW.expanded_v_armor_1x1_TipBitTriangleSmall02
+	SW.expanded_v_armor_1x1_TriangleBig
+	SW.expanded_v_armor_1x1_TriangleBigInv
+	SW.expanded_v_armor_1x1_TriangleBottomHalf
+	SW.expanded_v_armor_1x1_TriangleInv
+	SW.expanded_v_armor_1x1_TriangleTopHalf
+	SW.expanded_v_armor_1x1_TriangleTopHalf02
+	SW.expanded_v_armor_1x1_Wedge_4B_C01_L
+	SW.expanded_v_armor_1x1_Wedge_1Quarter
+	SW.expanded_v_armor_1x1_Wedge_1QuarterInv
+	SW.expanded_v_armor_1x1_Wedge_4B_C02_L
+	SW.expanded_v_armor_1x1_Wedge_4B_D02_L
+	SW.expanded_v_armor_1x1_Wedge_4B_B01_L
+	SW.expanded_v_armor_1x1_Wedge_4B_D03_L
+	SW.expanded_v_armor_1x1_Wedge_2Quarter
+	SW.expanded_v_armor_1x1_Wedge_2QuarterInv
+	SW.expanded_v_armor_1x1_Wedge_3Quarter
+	SW.expanded_v_armor_1x1_Wedge_3QuarterInv
+	SW.expanded_v_armor_1x1_Wedge_4B_A01_L
+	SW.expanded_v_armor_1x1_Wedge_4B_B02_L
+	SW.expanded_v_armor_1x1_Wedge_4B_C03_L
+	SW.expanded_v_armor_1x1_Wedge_4B_D04_L
+	SW.expanded_v_armor_1x2_Round
+	SW.expanded_v_armor_1x2_RoundWedge_L
+	SW.expanded_v_armor_1x2_RoundWedgeInv_L
+	SW.expanded_v_armor_1x2_wedge_L
+	SW.expanded_v_armor_1x3_Wedge_L
+	SW.expanded_v_armor_2x1
+	SW.expanded_v_armor_2x2
+	SW.expanded_v_armor_structure_hybrid_1x1
+	SW.expanded_v_armor_structure_hybrid_1x2
+	SW.expanded_v_armor_structure_hybrid_1x3
+	SW.expanded_v_armor_structure_hybrid_tri
+	SW.expanded_v_armor_tri
+	SW.expanded_v_armor_wedge
 ]

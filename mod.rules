@@ -6,6 +6,7 @@ CompatibleGameVersions = ["0.28.0"]
 ModifiesMultiplayer = true
 StringsFolder = "strings"
 Author = "Emerald Blood"
+Logo = "assets/maxwell-smol-glow.png"
 Description = "Vastly expands the base game Build & Battle mode to include many differing mods. Currently includes 10+ mods to improve the experience. Along with other mod compatibility, the mod also adds the following:\n\n- Custom pricing for techs to attempt to better balance options.\n\n- Bundled techs to ensure more stable tech spreads and let more weaker/situtational techs be played.\n\n- New items to allow for better Build & Battle experience.\n\nReminder that all players require this mod, as well as all required mods. If you have any issues or requests, contact me on the Steam Fourms or GitHub repository."
 
 Actions
@@ -102,5 +103,12 @@ Actions
 		Action = AddMany
 		AddTo = "<../Standard Mods/emmy-bbpp/base-techs.rules>/PartsWhitelist"
 		ManyToAdd = &<mod-parts.rules>/PartsWhitelist
+	}
+	//Disable cluster missiles (Sunflower)
+	{
+		Action = Replace
+		Replace = "<ships/terran/missile_launcher/missile_launcher.rules>/Part/Components/ClusterMissilesComponents"
+		IgnoreIfNotExisting = true
+		With = dynamic
 	}
 ]

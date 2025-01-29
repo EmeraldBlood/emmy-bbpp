@@ -2,7 +2,7 @@ __Name = "English"
 __DebugOnly = false
 //The above 2 lines *MUST* be the first two lines of the file!
 //Forbidden Symbols: & /
-//Allowed Symbols: - , . ( )
+//Allowed Symbols: - , . ( ) \" \n
 Parts
 {
 //Mod Assets
@@ -14,9 +14,9 @@ Parts
 	AutoChargeLR = "Auto Charge LR"
 	AutoChargeLRIcon = "Auto Charge LR"
 	AutoChargeLRDesc = "AI triggered explosive charge for Build and Battle mode with AI controllers. Will detonate when an enemy is within normal PvP spawn range (1500 units)."
-	AutoChargeLR = "Auto Charge Suicide"
-	AutoChargeLRIcon = "Auto Charge Suicide"
-	AutoChargeLRDesc = "AI triggered explosive bomb, set to explode at close contact with the enemy (~50 units)"
+	AutoChargeSuicide = "Auto Charge Suicide"
+	AutoChargeSuicideIcon = "Auto Charge Suicide"
+	AutoChargeSuicideDesc = "AI triggered explosive bomb, set to explode at close contact with the enemy (~50 units)"
 	//Tiny Reactor
 	ReactorTiny = "Tiny Reactor"
 	ReactorTinyIcon = "Tiny Reactor"

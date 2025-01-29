@@ -42,7 +42,12 @@ A link to the Steam collection of these mods can be found [here]( https://steamc
 ## Recent Changelogs
 v2.1.0
 Game Version Support
-* Supports game version 0.28.0
+* Supports game version 0.28.1
+New Mod Support
+* Expanded Vanilla Armors
+	* A mostly cosmetic mod aiming to add new armor shapes. Time to expand your creative horizon.
+* AWT [update]
+	* Added supported for the new Blathalite Reinforced Corridors, bundled with the previous corridors and Bulkheads mod. The bucket has gone up from 7,500 to 10,000 in price due to compensate for a higher tech being in a lower tier bucket.
 New Custom Parts
 * Auto Charge LR
 	* A long range version of the Auto Charge designed to seperate the ship a spawn range instead of close contact. Ranged for Normal mode spawn range (1500 units)
@@ -50,12 +55,18 @@ New Custom Parts
 	* A 1x1 capacitor designed to hold a few charges in use for low power enviroments. Ideal for thrusters or moving power around a tight ship.
 New B&B Parts
 * Cluster Missiles have been moved into new purchasable missile item at the Improved rank. They were never intended to be unlocked with the base missile launcher, so disabling them was low priority.
-Tweaks
-* Deck Chaingun has been moved from Powerful to Deadly. It was always intended to be one above the normal Chaingun but I forgot to change the value.
+Balance Changes
+* Tiers Changed
+	* Flamethrowers have been moved from Improved to Powerful. At the Improved levels, ships lack much armor or any shields to prevent flamers from igniting an entire ship. If it proves too useless at their tier, it might just be removed for being too all-or-nothing in power.
+	* Deck Chaingun has been moved from Powerful to Deadly. It was always intended to be one above the normal Chaingun but I forgot to change the value.
+* Bucket Changes
+	* Nukes have been added to the Missile Super Bucket.
+Misc
 * Removed half an energy from the Tiny Power Battery Capacity. While a slight decrease in max storage, crew could never move half a battery. This keeps the parts simplier and more relevant at a glace.
 * Fixed the Advance Missile Launcher lacking HE missiles and parts on its own.
-Misc
 * Removed unused files.
+* Updated the mod README.
+* Maxwell is standing in for the mod icon temporarily.
 
 v2.0.0 - Energy Update
 Game Version Support
@@ -105,10 +116,7 @@ Misc
 	* Mine Factory was missing and has been readded.
 
 ## Todo List
-* Create a mod icon. Very important.
 * Create a lobby setting format for the mode.
-* Fix TDI Clusters being on the default missile launcher
-* Improve the Auto Charge and add alternate versions for more control.
 * Create a Steam version for easier updates. I'll have to rewrite file paths to get that done. Not hard but boring so it's low priority.
 
 ## Known Issues
