@@ -4,7 +4,7 @@ Mode : <../base_pvp.rules>
 	{
 		Texture
 		{ //Adds Maxwell icon
-			File = "./Standard Mods/emmy-bbpp/assets/maxwell-smol-glow.png"
+			File = "./Standard Mods/emmy-bbpp/assets/maxwell_smol_glow.png"
 			SampleMode = Linear
 			MipLevels = 2
 		}
@@ -14,7 +14,7 @@ Mode : <../base_pvp.rules>
 	{
 		Texture
 		{ //Adds Necoarc icon
-			File = "./Standard Mods/emmy-bbpp/assets/neco-stash-fit.png"
+			File = "./Standard Mods/emmy-bbpp/assets/neco_stash_fit.png"
 			SampleMode = Linear
 			MipLevels = 2
 		}

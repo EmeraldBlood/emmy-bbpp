@@ -93,7 +93,7 @@ Techs
 	}
 	//Super Buckets
 	{//Thruster Super Bucket
-		ID = emmy.ThrusterSuper
+		ID = emmy.thruster_super
 		NameKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/ThrusterSuper/NameKey
 		DescriptionKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/ThrusterSuper/DescriptionKey
 		Icon = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/ThrusterSuper/EditorIcon
@@ -108,7 +108,7 @@ Techs
 		FundsThresholdBeforeOffered = 550000
 	}
 	{//Energy Weapon Super Bucket
-		ID = emmy.EnergyWeaponSuper
+		ID = emmy.energy_weapon_super
 		NameKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/EnergyWeaponSuper/NameKey
 		DescriptionKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/EnergyWeaponSuper/DescriptionKey
 		Icon = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/EnergyWeaponSuper/EditorIcon
@@ -125,7 +125,7 @@ Techs
 		FundsThresholdBeforeOffered = 550000
 	}
 	{//Projectile Weapon Super Bucket
-		ID = emmy.AmmoWeaponSuper
+		ID = emmy.ammo_weapon_super
 		NameKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/AmmoWeaponSuper/NameKey
 		DescriptionKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/AmmoWeaponSuper/DescriptionKey
 		Icon = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/AmmoWeaponSuper/EditorIcon
@@ -147,7 +147,7 @@ Techs
 		FundsThresholdBeforeOffered = 550000
 	}
 	{//Missile Super Bucket
-		ID = emmy.MissileSuper
+		ID = emmy.missile_super
 		NameKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/MissileSuper/NameKey
 		DescriptionKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/MissileSuper/DescriptionKey
 		Icon = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/MissileSuper/EditorIcon
@@ -169,7 +169,7 @@ Techs
 		FundsThresholdBeforeOffered = 550000
 	}
 	{//Defense Super Bucket
-		ID = emmy.DefenseSuper
+		ID = emmy.defense_super
 		NameKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/DefenseSuper/NameKey
 		DescriptionKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/DefenseSuper/DescriptionKey
 		Icon = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/DefenseSuper/EditorIcon
@@ -187,7 +187,7 @@ Techs
 		FundsThresholdBeforeOffered = 550000
 	}
 	{//Command Supper Bucket
-		ID = emmy.CommandSuper
+		ID = emmy.command_super
 		NameKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/CommandSuper/NameKey
 		DescriptionKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/CommandSuper/DescriptionKey
 		Icon = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/CommandSuper/EditorIcon
@@ -699,7 +699,7 @@ Techs
 		Cost = 10000
 		FundsThresholdBeforeOffered = 400000
 	}
-	/*Cluster Missiles TEMP
+	//Cluster Missiles TEMP
 	{
 		ID = emmy.TempCluster
 		NameKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/Temp/NameKey
@@ -711,7 +711,30 @@ Techs
 		ToggleChoicesUnlocked = [[missile_type, 0]]
 		Cost = 7500
 		FundsThresholdBeforeOffered = 100000
-	} */
+	}
+	//Galactic Alliance
+	//Heavy Energy Machinegun
+	{
+		ID = ultranova.machine_gun_heavy
+		NameKey = &<./Data/../../../workshop/content/799600/2879478059/Parts/Energy_Weapons/machine_gun_heavy/machine_gun_heavy.rules>/Part/NameKey
+		DescriptionKey = &<./Data/../../../workshop/content/799600/2879478059/Parts/Energy_Weapons/machine_gun_heavy/machine_gun_heavy.rules>/Part/DescriptionKey
+		Icon = &<./Data/../../../workshop/content/799600/2879478059/Parts/Energy_Weapons/machine_gun_heavy/machine_gun_heavy.rules>/Part/EditorIcon
+		PartsUnlocked = [&<./Data/../../../workshop/content/799600/2879478059/Parts/Energy_Weapons/machine_gun_heavy/machine_gun_heavy.rules>/Part/ID]
+		Category = [weapons]
+		Cost = 7500
+		FundsThresholdBeforeOffered = 100000
+	}
+	//Dual Heavy Energy Machinegun
+	{
+		ID = ultranova.machine_gun_heavy_dual
+		NameKey = &<./Data/../../../workshop/content/799600/2879478059/Parts/Energy_Weapons/machine_gun_heavy_dual/machine_gun_heavy_dual.rules>/Part/NameKey
+		DescriptionKey = &<./Data/../../../workshop/content/799600/2879478059/Parts/Energy_Weapons/machine_gun_heavy_dual/machine_gun_heavy_dual.rules>/Part/DescriptionKey
+		Icon = &<./Data/../../../workshop/content/799600/2879478059/Parts/Energy_Weapons/machine_gun_heavy_dual/machine_gun_heavy_dual.rules>/Part/EditorIcon
+		PartsUnlocked = [&<./Data/../../../workshop/content/799600/2879478059/Parts/Energy_Weapons/machine_gun_heavy_dual/machine_gun_heavy_dual.rules>/Part/ID]
+		Category = [weapons]
+		Cost = 7500
+		FundsThresholdBeforeOffered = 250000
+	}
 ]
 PartsWhitelist
 [
