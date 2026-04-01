@@ -100,15 +100,15 @@ Parts
 	AWTArmorBucketDesc = "Emmy BBPP - placeholder text"
 	
 	//General Munitions
-	//Small Guns
-	RifleSmallBucket = "Small Projectile Bucket"
+	//Rifle Guns
+	RifleSmallBucket = "Rifle Bucket"
 	RifleSmallBucketDesc = "Emmy BBPP - placeholder text"
-	//Long Guns
-	RifleLongBucket = "Long Projectile Bucket"
-	RifleLongBucketDesc = "Emmy BBPP - placeholder text"
-	//Roof Guns
-	RifleRoofBucket = "Roof Projectile Bucket"
-	RifleRoofBucketDesc = "Emmy BBPP - placeholder text"
+	//Small MGs Guns
+	SmallMGBucket = "Small MG Bucket"
+	SmallMGBucketDesc = "Emmy BBPP - placeholder text"
+	//Grenade Launchers Guns
+	GrenadeBunkBucket = "Grenade Launcher Bucket"
+	GrenadeBunkBucketDesc = "Emmy BBPP - placeholder text"
 	
 }
 /* Causing crashes ATM. Looking to fix in the future.

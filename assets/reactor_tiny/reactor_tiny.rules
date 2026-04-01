@@ -267,7 +267,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			[
 				: /BASE_SOUNDS/AudioInterior
 				{
-					Sound = "./Data/ships/terran/reactor_small/operating.wav"
+					Sound = "./Data/ships/terran/reactor_small/sounds/reactor_interior_idle.wav"
 					Volume = .5
 					Speed = .5
 					MaxConcurrent = 1
@@ -340,7 +340,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 
 				: /BASE_SOUNDS/AudioExterior
 				{
-					Sound = "./Data/ships/terran/reactor_small/destroyed.wav"
+					RandomSounds = ["./Data/ships/terran/reactor_small/destroyed/reactor_destroyed_01.wav", "./Data/ships/terran/reactor_small/destroyed/reactor_destroyed_02.wav", "./Data/ships/terran/reactor_small/destroyed/reactor_destroyed_03.wav"]
 					Volume = 1
 					SpeedVariation = .25
 				}

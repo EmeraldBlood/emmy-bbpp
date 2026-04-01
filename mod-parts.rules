@@ -52,7 +52,6 @@ Techs
 		Icon = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/ReactorMed/EditorIcon
 		PartsUnlocked = [
 			&<./Data/ships/terran/reactor_med/reactor_med.rules>/Part/ID
-			//&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/SulfurReactor/generator_small.rules>/Part/ID
 			&<./Data/../../../workshop/content/799600/2886481069/PowerStorageMedium/PowerStorageMedium.rules>/Part/ID //med capacitor
 			]
 		Category = [utility]
@@ -66,7 +65,6 @@ Techs
 		Icon = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/ReactorLarge/EditorIcon
 		PartsUnlocked = [
 			&<./Data/ships/terran/reactor_large/reactor_large.rules>/Part/ID
-			//&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/SulfurReactor/generator_med.rules>/Part/ID
 			&<./Data/../../../workshop/content/799600/2886481069/PowerStorageLarge/PowerStorageLarge.rules>/Part/ID //large capacitor
 		]
 		Category = [utility]
@@ -88,7 +86,7 @@ Techs
 			&<./Data/../../../workshop/content/799600/2881872234/super_prism_LV3/super_prism_LV3.rules>/Part/ID  //ion lvl 3
 			&<./Data/../../../workshop/content/799600/2881872234/super_prism_LV4/super_prism_LV4.rules>/Part/ID  //ion lvl 4
 		]
-		Cost = 12500
+		Cost = 10000
 		FundsThresholdBeforeOffered = 250000
 	}
 	//Super Buckets
@@ -118,7 +116,7 @@ Techs
 			&<./Data/ships/terran/laser_blaster_small/laser_blaster_small.rules>/Part/ID //laser small
 			&<./Data/ships/terran/laser_blaster_large/laser_blaster_large.rules>/Part/ID //laser med
 			&<./Data/../../../workshop/content/799600/2995534359/parts/ion_blaster/ion_blaster.rules>/Part/ID //ion small
-			&<./Data/../../../workshop/content/799600/2885023862/uv_laser/uv_laser.rules>/Part/ID // UV laser
+			//&<./Data/../../../workshop/content/799600/2885023862/uv_laser/uv_laser.rules>/Part/ID // UV laser
 		]
 		Category = [weapons]
 		Cost = 10000
@@ -179,8 +177,8 @@ Techs
 			&<./Data/ships/terran/point_defense/point_defense.rules>/Part/ID //base PD gun
 			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/HardlightShield/Hardlight_Shield.rules>/Part/ID //small hardlight
 			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/PointMachinegun/PointMachinegun.rules>/Part/ID //point def mg
-			&<./Data/../../../workshop/content/799600/2886934391/point_defense_med/point_defense_med.rules>/Part/ID //twin linked PD
-			&<./Data/../../../workshop/content/799600/2883970407/laser_point_defense/laser_point_defense.rules>/Part/ID//Laser PD
+			//&<./Data/../../../workshop/content/799600/2886934391/point_defense_med/point_defense_med.rules>/Part/ID //twin linked PD
+			//&<./Data/../../../workshop/content/799600/2883970407/laser_point_defense/laser_point_defense.rules>/Part/ID//Laser PD
 		]
 		Category = [defenses]
 		Cost = 10000
@@ -263,7 +261,7 @@ Techs
 	}
 	//AWT
 	{//light & heavy armor bucket
-		ID = sewayn.light_armor
+		ID = syy1125.light_armor
 		NameKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/AWTArmor/NameKey
 		DescriptionKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/AWTArmor/DescriptionKey
 		Icon = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/AWTArmor/EditorIcon
@@ -286,7 +284,7 @@ Techs
 		FundsThresholdBeforeOffered = 0
 	}
 	{//super armor
-		ID = sewayn.tri_steel_armor
+		ID = syy1125.tri_steel_armor
 		NameKey = &<./Data/../../../workshop/content/799600/2882082274/Armor/tri_steel/tri_steel_armor/tri_steel_armor.rules>/Part/NameKey
 		DescriptionKey = &<./Data/../../../workshop/content/799600/2882082274/Armor/tri_steel/tri_steel_armor/tri_steel_armor.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/2882082274/Armor/tri_steel/tri_steel_armor/tri_steel_armor.rules>/Part/EditorIcon
@@ -296,14 +294,13 @@ Techs
 			&<./Data/../../../workshop/content/799600/2882082274/Armor/tri_steel/tri_steel_1x3_wedge/tri_steel_1x3_wedge.rules>/Part/ID
 			&<./Data/../../../workshop/content/799600/2882082274/Armor/tri_steel/tri_steel_armor_2x1/tri_steel_armor_2x1.rules>/Part/ID
 			&<./Data/../../../workshop/content/799600/2882082274/Armor/tri_steel/tri_steel_armor_wedge/tri_steel_armor_wedge.rules>/Part/ID
-			&<./Data/../../../workshop/content/799600/2882082274/Armor/tri_steel/tri_steel_armor_2x1/tri_steel_armor_2x1.rules>/Part/ID
 			]
 		Category = [defenses]
-		Cost = 10000
+		Cost = 7500
 		FundsThresholdBeforeOffered = 400000
 	}
 	{//bubble shield
-		ID = sewayn.small.bubble.shield
+		ID = syy1125.small.bubble.shield
 		NameKey = &<./Data/../../../workshop/content/799600/2882082274/Shields/small_bubble_shield/small_bubble_shield.rules>/Part/NameKey
 		DescriptionKey = &<./Data/../../../workshop/content/799600/2882082274/Shields/small_bubble_shield/small_bubble_shield.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/2882082274/Shields/small_bubble_shield/small_bubble_shield.rules>/Part/EditorIcon
@@ -313,7 +310,7 @@ Techs
 		FundsThresholdBeforeOffered = 250000
 	}
 	{//super 180 shield
-		ID = sewayn.blathalite_180_shield
+		ID = syy1125.blathalite_180_shield
 		NameKey = &<./Data/../../../workshop/content/799600/2882082274/Shields/blathalite_180_shield/blathalite_180_shield.rules>/Part/NameKey
 		DescriptionKey = &<./Data/../../../workshop/content/799600/2882082274/Shields/blathalite_180_shield/blathalite_180_shield.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/2882082274/Shields/blathalite_180_shield/blathalite_180_shield.rules>/Part/EditorIcon
@@ -348,7 +345,8 @@ Techs
 		Cost = 7500
 		FundsThresholdBeforeOffered = 250000
 	}
-	//Medium PDT
+	//Twin Point Defense
+	/* DSIABLED UNTIL FURTHER NOTICE. Broke in the Overclock update.
 	{
 		ID = dj0z.point_defense_med
 		NameKey = &<./Data/../../../workshop/content/799600/2886934391/point_defense_med/point_defense_med.rules>/Part/NameKey
@@ -358,7 +356,7 @@ Techs
 		Category = [defenses]
 		Cost = 7500
 		FundsThresholdBeforeOffered = 100000
-	}
+	} */
 	//General Munitions Projectile Weaponry
 	{//pointdef mg
 		ID = bonible.PointMachinegun
@@ -390,50 +388,50 @@ Techs
 		Cost = 5000
 		FundsThresholdBeforeOffered = 100000
 	}
-	//Short Barrel Bundle
-	{//small rifle, small mg, and grenade launcher
+	//Rifle Bundle
+	{
 		ID = bonible.RifleSmall
 		NameKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/RiflesSmall/NameKey
 		DescriptionKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/RiflesSmall/DescriptionKey
 		Icon = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/RiflesSmall/EditorIcon
 		PartsUnlocked = [
 			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall.rules>/Part/ID
-			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk.rules>/Part/ID
-			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/MachinegunSmall/MachinegunSmall.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall2.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall3.rules>/Part/ID
 			]
 		Category = [weapons]
 		Cost = 7500
 		FundsThresholdBeforeOffered = 0
 	}
-	//Long Barrel Bundle
-	{//long rifle, small mg, and grenade launcher
-		ID = bonible.RifleSmall2
-		NameKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/RiflesLong/NameKey
-		DescriptionKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/RiflesLong/DescriptionKey
-		Icon = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/RiflesLong/EditorIcon
+	//Small MG Bundle
+	{
+		ID = bonible.MachinegunSmall
+		NameKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/SmallMG/NameKey
+		DescriptionKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/SmallMG/DescriptionKey
+		Icon = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/SmallMG/EditorIcon
 		PartsUnlocked = [
-			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall2.rules>/Part/ID
-			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk2.rules>/Part/ID
+			<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/MachinegunSmall/MachinegunSmall.rules>/Part/ID
 			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/MachinegunSmall/MachinegunSmall2.rules>/Part/ID
-			]
-		Category = [weapons]
-		Cost = 10000
-		FundsThresholdBeforeOffered = 100000
-	}
-	//Roof Barrel Bundle
-	{//roof rifle, small mg, and grenade launcher
-		ID = bonible.RifleSmall3
-		NameKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/RiflesRoof/NameKey
-		DescriptionKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/RiflesRoof/DescriptionKey
-		Icon = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/RiflesRoof/EditorIcon
-		PartsUnlocked = [
-			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall3.rules>/Part/ID
-			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk3.rules>/Part/ID
 			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/MachinegunSmall/MachinegunSmall3.rules>/Part/ID
 			]
 		Category = [weapons]
-		Cost = 15000
-		FundsThresholdBeforeOffered = 400000
+		Cost = 7500
+		FundsThresholdBeforeOffered = 0
+	}
+	//Grenade Launcher Bundle
+	{
+		ID = bonible.GrenadeBunk
+		NameKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/GrenadeBunk/NameKey
+		DescriptionKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/GrenadeBunk/DescriptionKey
+		Icon = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/GrenadeBunk/EditorIcon
+		PartsUnlocked = [
+			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk2.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk3.rules>/Part/ID
+			]
+		Category = [weapons]
+		Cost = 7500
+		FundsThresholdBeforeOffered = 0
 	}
 	{//normal heavy mg
 		ID = bonible.Machinegun
@@ -452,7 +450,7 @@ Techs
 		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/Machinegun/Machinegun2.rules>/Part/EditorIcon
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/Machinegun/Machinegun2.rules>/Part/ID]
 		Category = [weapons]
-		Cost = 12500
+		Cost = 10000
 		FundsThresholdBeforeOffered = 400000
 	}
 	{//quad heavy mg
@@ -515,27 +513,6 @@ Techs
 		Cost = 10000
 		FundsThresholdBeforeOffered = 250000
 	}
-	/*
-	{//deck chaingun - Mod Auth deleted this item.
-		ID = bonible.rotary_cannon_deck
-		NameKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/DeckChaingun/rotary_cannon_deck.rules>/Part/NameKey
-		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/DeckChaingun/rotary_cannon_deck.rules>/Part/DescriptionKey
-		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/DeckChaingun/rotary_cannon_deck.rules>/Part/EditorIcon
-		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/DeckChaingun/rotary_cannon_deck.rules>/Part/ID]
-		Category = [weapons]
-		Cost = 10000
-		FundsThresholdBeforeOffered = 250000
-	}
-	{//large sulf reactor
-		ID = bonible.generator_large
-		NameKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/SulfurReactor/generator_large.rules>/Part/NameKey
-		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/SulfurReactor/generator_large.rules>/Part/DescriptionKey
-		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/SulfurReactor/generator_large.rules>/Part/EditorIcon
-		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/SulfurReactor/generator_large.rules>/Part/ID]
-		Category = [utility]
-		Cost = 10000
-		FundsThresholdBeforeOffered = 400000
-	} */
 	{//small hardlight
 		ID = bonible.HardlightShield
 		NameKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/HardlightShield/Hardlight_Shield.rules>/Part/NameKey
@@ -558,18 +535,18 @@ Techs
 	}
 	//DIGI Modular Missiles
 	{//modular missile
-		ID = sewayn.modular_missile_loader
+		ID = syy1125.modular_missile_loader
 		NameKey = &<./Data/../../../workshop/content/799600/2886141879/parts/modular_missile_loader/modular_missile_loader.rules>/Part/NameKey
 		DescriptionKey = &<./Data/../../../workshop/content/799600/2886141879/parts/modular_missile_loader/modular_missile_loader.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/2886141879/parts/modular_missile_loader/modular_missile_loader.rules>/Part/EditorIcon
 		PartsUnlocked = [
 			&<./Data/../../../workshop/content/799600/2886141879/parts/modular_missile_loader/modular_missile_loader.rules>/Part/ID
-			&<./Data/../../../workshop/content/799600/2886141879/parts/modular_missile_maneuvering_segment/modular_missile_maneuvering_segment.rules>/Part/ID
-			&<./Data/../../../workshop/content/799600/2886141879/parts/modular_missile_payload_segment/modular_missile_payload_segment.rules>/Part/ID
-			&<./Data/../../../workshop/content/799600/2886141879/parts/modular_missile_engine_segment/modular_missile_engine_segment.rules>/Part/ID
-			&<./Data/../../../workshop/content/799600/2886141879/parts/modular_missile_fuel_segment/modular_missile_fuel_segment.rules>/Part/ID
-			&<./Data/../../../workshop/content/799600/2886141879/parts/modular_missile_launcher/modular_missile_launcher.rules>/Part/ID
-			&<./Data/../../../workshop/content/799600/2886141879/parts/modular_missile_torpedo_launcher/modular_missile_torpedo_launcher.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/2886141879/parts/modular_missile_segment_maneuvering/modular_missile_segment_maneuvering.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/2886141879/parts/modular_missile_segment_payload/modular_missile_segment_payload.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/2886141879/parts/modular_missile_segment_engine/modular_missile_segment_engine.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/2886141879/parts/modular_missile_segment_fuel/modular_missile_segment_fuel.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/2886141879/parts/modular_missile_launcher_guided/modular_missile_launcher_guided.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/2886141879/parts/modular_missile_launcher_torpedo/modular_missile_launcher_torpedo.rules>/Part/ID
 			]
 		ResourcesUnlocked = [&<./Data/resources/missile_part_he/missile_part_he.rules>/ID]
 		ToggleChoicesUnlocked = [[missile_type, 0]]
@@ -578,7 +555,7 @@ Techs
 		FundsThresholdBeforeOffered = 250000
 	}
 	{//modular mines
-		ID = sewayn.modular_mine_loader
+		ID = syy1125.modular_mine_loader
 		NameKey = &<./Data/../../../workshop/content/799600/2886141879/parts/modular_mine_loader/modular_mine_loader.rules>/Part/NameKey
 		DescriptionKey = &<./Data/../../../workshop/content/799600/2886141879/parts/modular_mine_loader/modular_mine_loader.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/2886141879/parts/modular_mine_loader/modular_mine_loader.rules>/Part/EditorIcon
@@ -597,6 +574,7 @@ Techs
 		FundsThresholdBeforeOffered = 100000
 	}
 	//Stormforge Railgun
+	/* DSIABLED UNTIL FURTHER NOTICE. Broke in the Overclock update.
 	{
 		ID = storm.deck_railgun
 		NameKey = &<./Data/../../../workshop/content/799600/2915669103/Parts/Projectile_Weapons/deck_railgun/deck_railgun.rules>/Part/NameKey
@@ -606,7 +584,7 @@ Techs
 		Category = [weapons]
 		Cost = 10000
 		FundsThresholdBeforeOffered = 400000
-	}
+	} */
 	//AI Core Automated Ship Parts
 	/*
 	{
@@ -620,6 +598,7 @@ Techs
 		FundsThresholdBeforeOffered = 250000
 	} */
 	//Dorsal Thrusters
+	/* DSIABLED UNTIL FURTHER NOTICE. Broke in the Overclock update.
 	{
 		ID = charlatan_.thruster_burner_large_dorsal
 		NameKey = &<./Data/../../../workshop/content/799600/2888035272/thruster_burner_large_dorsal/thruster_burner_large_dorsal.rules>/Part/NameKey
@@ -629,8 +608,9 @@ Techs
 		Category = [thrusters]
 		Cost = 7500
 		FundsThresholdBeforeOffered = 250000
-	}
+	} */
 	//UV laser
+	/* DSIABLED UNTIL FURTHER NOTICE. Broke in the Overclock update.
 	{
 		ID = jfjohnny5.uv_laser
 		NameKey = &<./Data/../../../workshop/content/799600/2885023862/uv_laser/uv_laser.rules>/Part/NameKey
@@ -640,8 +620,9 @@ Techs
 		Category = [utility]
 		Cost = 5000
 		FundsThresholdBeforeOffered = 100000
-	}
+	} */
 	//laser point def
+	/* DSIABLED UNTIL FURTHER NOTICE. Broke in the Overclock update. 
 	{
 		ID = jfjohnny5.laser_point_defense
 		NameKey = &<./Data/../../../workshop/content/799600/2883970407/laser_point_defense/laser_point_defense.rules>/Part/NameKey
@@ -651,7 +632,7 @@ Techs
 		Category = [defenses]
 		Cost = 5000
 		FundsThresholdBeforeOffered = 0
-	}
+	} */
 	//Autocannon
 	{
 		ID = danger.autocannon
@@ -712,7 +693,7 @@ Techs
 		Cost = 7500
 		FundsThresholdBeforeOffered = 100000
 	}
-	//Galactic Alliance
+	//Galactic Alliance - Weapons
 	//Heavy Energy Machinegun
 	{
 		ID = ultranova.machine_gun_heavy
@@ -735,6 +716,104 @@ Techs
 		Cost = 7500
 		FundsThresholdBeforeOffered = 250000
 	}
+	//Assault Cannon
+	{
+		ID = ultranova.assault_cannon_light
+		NameKey = &<./Data/../../../workshop/content/799600/2879478059/Parts/Energy_Weapons/assault_cannon/assault_cannon.rules>/Part/NameKey
+		DescriptionKey = &<./Data/../../../workshop/content/799600/2879478059/Parts/Energy_Weapons/assault_cannon/assault_cannon.rules>/Part/DescriptionKey
+		Icon = &<./Data/../../../workshop/content/799600/2879478059/Parts/Energy_Weapons/assault_cannon/assault_cannon.rules>/Part/EditorIcon
+		PartsUnlocked = [&<./Data/../../../workshop/content/799600/2879478059/Parts/Energy_Weapons/assault_cannon/assault_cannon.rules>/Part/ID]
+		Category = [weapons]
+		Cost = 7500
+		FundsThresholdBeforeOffered = 250000
+	}
+	//Gauss Cannon
+	{
+		ID = ultranova.gauss_cannon
+		NameKey = &<./Data/../../../workshop/content/799600/2879478059/Parts/Projectile_Weapons/cannon_gauss/cannon_gauss.rules>/Part/NameKey
+		DescriptionKey = &<./Data/../../../workshop/content/799600/2879478059/Parts/Projectile_Weapons/cannon_gauss/cannon_gauss.rules>/Part/DescriptionKey
+		Icon = &<./Data/../../../workshop/content/799600/2879478059/Parts/Projectile_Weapons/cannon_gauss/cannon_gauss.rules>/Part/EditorIcon
+		PartsUnlocked = [&<./Data/../../../workshop/content/799600/2879478059/Parts/Projectile_Weapons/cannon_gauss/cannon_gauss.rules>/Part/ID]
+		Category = [weapons]
+		Cost = 7500
+		FundsThresholdBeforeOffered = 250000
+	}
+	//Particle Cannon Small
+	{
+		ID = ultranova.small_particle_c_loader
+		NameKey = &<./Data/../../../workshop/content/799600/2879478059/Parts/Projectile_Weapons/particle_cannon_small/particle_cannon_loader.rules>/Part/NameKey
+		DescriptionKey = &<./Data/../../../workshop/content/799600/2879478059/Parts/Projectile_Weapons/particle_cannon_small/particle_cannon_loader.rules>/Part/DescriptionKey
+		Icon = &<./Data/../../../workshop/content/799600/2879478059/Parts/Projectile_Weapons/particle_cannon_small/particle_cannon_loader.rules>/Part/EditorIcon
+		PartsUnlocked = [
+			&<./Data/../../../workshop/content/799600/2879478059/Parts/Projectile_Weapons/particle_cannon_small/particle_cannon_loader.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/2879478059/Parts/Projectile_Weapons/particle_cannon_small/particle_cannon_barrel_extender.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/2879478059/Parts/Projectile_Weapons/particle_cannon_small/particle_cannon_barrel.rules>/Part/ID
+			]
+		Category = [weapons]
+		Cost = 7500
+		FundsThresholdBeforeOffered = 250000
+	}
+	//Rocket Silo
+	{
+		ID = ultranova.rocket_launcher
+		NameKey = &<./Data/../../../workshop/content/799600/2879478059/Parts/Projectile_Weapons/rocket_silo/rocket_silo.rules>/Part/NameKey
+		DescriptionKey = &<./Data/../../../workshop/content/799600/2879478059/Parts/Projectile_Weapons/rocket_silo/rocket_silo.rules>/Part/DescriptionKey
+		Icon = &<./Data/../../../workshop/content/799600/2879478059/Parts/Projectile_Weapons/rocket_silo/rocket_silo.rules>/Part/EditorIcon
+		PartsUnlocked = [&<./Data/../../../workshop/content/799600/2879478059/Parts/Projectile_Weapons/rocket_silo/rocket_silo.rules>/Part/ID]
+		ResourcesUnlocked = [&<./Data/../../../workshop/content/799600/2879478059/Resources/rocket/rocket.rules>/ID]
+		Category = [weapons]
+		Cost = 7500
+		FundsThresholdBeforeOffered = 0
+	}
+	//Rocket Silo Heavy
+	{
+		ID = ultranova.rocket_silo_heavy_heavy
+		NameKey = &<./Data/../../../workshop/content/799600/2879478059/Parts/Projectile_Weapons/rocket_silo_heavy/rocket_silo_heavy.rules>/Part/NameKey
+		DescriptionKey = &<./Data/../../../workshop/content/799600/2879478059/Parts/Projectile_Weapons/rocket_silo_heavy/rocket_silo_heavy.rules>/Part/DescriptionKey
+		Icon = &<./Data/../../../workshop/content/799600/2879478059/Parts/Projectile_Weapons/rocket_silo_heavy/rocket_silo_heavy.rules>/Part/EditorIcon
+		PartsUnlocked = [&<./Data/../../../workshop/content/799600/2879478059/Parts/Projectile_Weapons/rocket_silo_heavy/rocket_silo_heavy.rules>/Part/ID]
+		ResourcesUnlocked = [&<./Data/../../../workshop/content/799600/2879478059/Resources/rocket/rocket.rules>/ID]
+		Category = [weapons]
+		Cost = 7500
+		FundsThresholdBeforeOffered = 100000
+	}
+	//Galactic Alliance - Thrusters
+	//Plasma Thrusters Small/Medium
+	{
+		ID = ultranova.thruster_plasma_med_light
+		NameKey = &<./Data/../../../workshop/content/799600/2879478059/Parts/Flight/thruster_plasma_med/thruster_plasma_med.rules>/Part/NameKey
+		DescriptionKey = &<./Data/../../../workshop/content/799600/2879478059/Parts/Flight/thruster_plasma_med/thruster_plasma_med.rules>/Part/DescriptionKey
+		Icon = &<./Data/../../../workshop/content/799600/2879478059/Parts/Flight/thruster_plasma_med/thruster_plasma_med.rules>/Part/EditorIcon
+		PartsUnlocked = [
+			&<./Data/../../../workshop/content/799600/2879478059/Parts/Flight/thruster_plasma_small/thruster_plasma_small.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/2879478059/Parts/Flight/thruster_plasma_med/thruster_plasma_med.rules>/Part/ID
+			]
+		Category = [thrusters]
+		Cost = 7500
+		FundsThresholdBeforeOffered = 0
+	}
+	//Plasma Thrusters Large
+	{
+		ID = ultranova.thruster_plasma_large_light
+		NameKey = &<./Data/../../../workshop/content/799600/2879478059/Parts/Flight/thruster_plasma_large/thruster_plasma_large.rules>/Part/NameKey
+		DescriptionKey = &<./Data/../../../workshop/content/799600/2879478059/Parts/Flight/thruster_plasma_large/thruster_plasma_large.rules>/Part/DescriptionKey
+		Icon = &<./Data/../../../workshop/content/799600/2879478059/Parts/Flight/thruster_plasma_large/thruster_plasma_large.rules>/Part/EditorIcon
+		PartsUnlocked = [&<./Data/../../../workshop/content/799600/2879478059/Parts/Flight/thruster_plasma_large/thruster_plasma_large.rules>/Part/ID]
+		Category = [thrusters]
+		Cost = 7500
+		FundsThresholdBeforeOffered = 100000
+	}
+	//Plasma Thrusters Huge
+	{
+		ID = ultranova.thruster_plasma_huge_light
+		NameKey = &<./Data/../../../workshop/content/799600/2879478059/Parts/Flight/thruster_plasma_huge/thruster_plasma_huge.rules>/Part/NameKey
+		DescriptionKey = &<./Data/../../../workshop/content/799600/2879478059/Parts/Flight/thruster_plasma_huge/thruster_plasma_huge.rules>/Part/DescriptionKey
+		Icon = &<./Data/../../../workshop/content/799600/2879478059/Parts/Flight/thruster_plasma_huge/thruster_plasma_huge.rules>/Part/EditorIcon
+		PartsUnlocked = [&<./Data/../../../workshop/content/799600/2879478059/Parts/Flight/thruster_plasma_huge/thruster_plasma_huge.rules>/Part/ID]
+		Category = [thrusters]
+		Cost = 7500
+		FundsThresholdBeforeOffered = 250000
+	}
 ]
 PartsWhitelist
 [
@@ -743,8 +822,6 @@ PartsWhitelist
 	//Twin Small Thrusters
 	rustydios.thruster_small_Twin
 	//General Munitions Projectile Weaponry
-	//bonible.sulfurstorage
-	//bonible.generator_tiny
 	bonible.ArmorPlate
 	//Emmy B&B
 	emmy.auto_charge

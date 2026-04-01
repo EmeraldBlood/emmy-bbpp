@@ -230,7 +230,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 		}
 	}
 	//GMPW
-	//Rifles Small
+	//Rifles
 	RiflesSmall
 	{
 		NameKey = "Parts/RifleSmallBucket"
@@ -245,31 +245,31 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			Size = [64, 64]
 		}
 	}
-	//Rifles Long
-	RiflesLong
+	//Small MGs
+	SmallMG
 	{
-		NameKey = "Parts/RifleLongBucket"
-		DescriptionKey = "Parts/RifleLongBucketDesc"
+		NameKey = "Parts/SmallMGBucket"
+		DescriptionKey = "Parts/SmallMGBucketDesc"
 		EditorIcon
 		{
 			Texture
 			{
-				File = "./Standard Mods/emmy-bbpp/buckets/RifleLong.png"
+				File = "./Standard Mods/emmy-bbpp/buckets/temp.png"
 				SampleMode = Linear
 			}
 			Size = [64, 64]
 		}
 	}
-	//Rifles Roof
-	RiflesRoof
+	//Grenade Launchers
+	GrenadeBunk
 	{
-		NameKey = "Parts/RifleRoofBucket"
-		DescriptionKey = "Parts/RifleRoofBucketDesc"
+		NameKey = "Parts/GrenadeBunkBucket"
+		DescriptionKey = "Parts/GrenadeBunkBucketDesc"
 		EditorIcon
 		{
 			Texture
 			{
-				File = "./Standard Mods/emmy-bbpp/buckets/RifleRoof.png"
+				File = "./Standard Mods/emmy-bbpp/buckets/temp.png"
 				SampleMode = Linear
 			}
 			Size = [64, 64]

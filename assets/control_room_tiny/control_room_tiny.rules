@@ -386,7 +386,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			[
 				: /BASE_SOUNDS/AudioInterior
 				{
-					Sound = "./Data/ships/terran/control_room_small/operating.wav"
+					Sound = "./Data/ships/terran/control_room_small/sounds/cockpit_idle.wav"
 					Volume = .15
 					MaxConcurrentVolume = .3
 					Speed = .75

@@ -1,0 +1,55 @@
+//Basegame part rebalancing
+RailgunShotMultiplier = 40% //Multipler from 20% up to 40% (2x per segment)
+
+//Mod part rebalancing
+//AWT Armor Weapons & Technology
+//Tri steel armors. Price increased 2x
+triSteelAlt = 2
+tri_steel_armorResources = [
+	[steel, 30*2],
+	[tristeel, 3*2]
+]
+tri_steel_armor_1x2_wedgeResources = [
+	[steel, 24*2]
+	[tristeel, 3*2]
+]
+tri_steel_1x3_wedgeResources = [
+	[steel, 36*2]
+	[tristeel, 4*2]
+]
+tri_steel_armor_2x1Resources = [
+	[steel, 60*2]
+	[tristeel, 6*2]
+]
+tri_steel_armor_wedgeResources = [
+	[steel, 20*2]
+	[tristeel, 2*2]
+]
+//GMPW
+//Small Rifles (Long, Roof)
+riflesmallLongResources = [
+	[steel, 48*2]
+	[coil, 6*2]
+]
+riflesmallRoofResources = [
+	[steel, 52*4]
+	[coil, 6*4]
+]
+//Small MG (Long, Roof)
+smallmgLongResources = [
+	[steel, 48*2]
+	[coil, 6*2]
+]
+smallmgRoofResources = [
+	[steel, 52*4]
+	[coil, 6*4]
+]
+//Grenade Bunk (Long, Roof)
+grenadebunkLongResources = [
+	[steel, 50*2]
+	[coil, 6*2]
+]
+grenadebunkRoofResources = [
+	[steel, 54*4]
+	[coil, 6*4]
+]
