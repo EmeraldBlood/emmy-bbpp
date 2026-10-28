@@ -836,7 +836,7 @@ Techs
 	}
 	//Laser Miniguns (Small/Fighter)
 	{
-		ID = ultranova.fighter_energy_cannon
+		ID = ultranova.fighter_energy_minigun
 		NameKey = &<./Data/../../../workshop/content/799600/2879478059/Parts/Energy_Weapons/fighter_weapons/energy_minigun/energy_minigun.rules>/Part/NameKey
 		DescriptionKey = &<./Data/../../../workshop/content/799600/2879478059/Parts/Energy_Weapons/fighter_weapons/energy_minigun/energy_minigun.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/2879478059/Parts/Energy_Weapons/fighter_weapons/energy_minigun/energy_minigun.rules>/Part/EditorIcon
