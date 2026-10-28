@@ -15,7 +15,6 @@ New Custom Parts
 	* Special Explosive Charges useable by the AI to allow for building multiple ships in B&B mode.
 ## Required Mods List
 * Kurim's More Crew Quarters
-* AWT Armor Weapons & Technology
 * TDI Advance Missile Launcher
 * Twin Small Thrusters
 * Twin Linked Point Defense Turret
@@ -25,79 +24,75 @@ New Custom Parts
 * Blackmian's Elbow Magazine
 * General Munitions' Projectile Weapons
 * DIGI Modular Missiles
-* Stormforge Additional Parts
-* Dorsal Thrusters
 * Better Capacitors
 * Super Prisms
-* Laser Point Defense
 * Autocannon
-* UV Lasers
 * Sunflower Corporation
-* Bonible's Roof Mounted Chaingun
+* Bonible's Roof Mounted Chaingun Fixed
 * Expanded Vanilla Armors
 * Galactic Alliance
 
 A link to the Steam collection of these mods can be found [here]( https://steamcommunity.com/sharedfiles/filedetails/?id=3250287374).
-# v2.1.0 - Improved Arsenal Changelog
-This update is being released as a stop-gap for the upcoming v3.0.0 release. With release of Cosmo v0.30.0 bringing a lot new content, I want to release what is done instead of having to endlessly move the goal post out.
+# v2.2.0 - Overclock Update
+Been a while I last touched the mod. The overlock update broke many of the used mods, so I took a break to allow some to be fixed. It also broke my mod itself, so I had to fix that as well. Right now my main goal is to simply get the mod up and working once more. As such, while this update does add in the base-game overclocks, no new modded overclocks (should they exist) have been added in.
+
+This update is also primarily a "Part 1" of the planned update. I just want to get what I have pushed so I don't need to worry about future game versions knocking me back again.
 ## Game Version Support
-* Supporting game version 0.30.3d.
-## New Mod Support
-* Galactic Alliance is now partially supported! I'll likely need to do a balance pass so expect some things to be too weak/strong.
-	* Added 7 new weapons, 4 new thrusters.
-	* More parts will be added in the near future.
-* Expanded Vanilla Armors
-	* A mostly cosmetic mod aiming to add new armor shapes. Time to expand your creative horizon.
-* AWT (update)
-	* Added supported for the new Blathalite Reinforced Corridors, bundled with the previous corridors and Bulkheads mod. The bucket has gone up from 7,500 to 10,000 in price due to compensate for a higher tech being in a lower tier bucket.
+* Supporting game version 0.30.5.
+## Updated Mod Support
+The following mods have not been updated to support the overclock update, and as such, have been disabled. Perhaps in the future, I will take it upon myself to update these mods to work. That said, it is not a priority. 
+- Twin Linked Point Defense Turret (Steam Mod ID: 2886934391)
+- Stormforge Additional Parts (2915669103)
+- Dorsal Thrusters (2888035272)
+- Laser Point Defense (2883970407)
+- UV Lasers (2885023862)
+The following mod, while working with the current game version, will no longer be supported by my mod.
+- AWT Armor Weapons & Technology (2882082274)
+	- This mod was never balanced well in my eyes, and is a pain to support. If you ever make mods, please use a consistent naming scheme, because this mod never did and caused countless problems because of it. It might come back in the future, but no time soon.
+The following mod has been swapped for a different uploaded version. The original author said it was fine for a different user to upload a fixed version, so we'll be using that for the time being.
+- Bonible's Roof Mounted Chaingun (3145052003) (dropped)
+- Bonible's Roof Mounted Chaingun Fixed (3817773349) (added)
+## New B&B Base-Game Parts
+- All 28 base-game Overclocks are now supported.
+	- Added a new "Overclock" specific tech slot to each round. This should help players see overclock options without taking slots from new part options. You will only be offered overclocks to parts you have unlocked. 
+	- Note that since only the base-game overclocks are added, you'll need to pick them up to see overclock options.
+- Thermal Resonance Lance has been added as an option at the Powerful tier.
+	- Not sure how powerful it is, so it may be moved around in the future.
+- Missile Launchers should have access to the Thermal Canister Missiles by default. 
+	- You will still need to invest in overclocks to have them function.
+## New B&B Modded Parts
+While no new mods have been in added in this update, 
+- Galactic Alliance
+	- Walkthrough Crew Quarters (default unlock)
+	- Large Airlock (default unlock)
+	- Small Phase Thrusters bucket (basic tier, 5 items)
+	- Medium Phase Thrusters bucket (improved tier, 5 items)
+	- Small Antigrav, bundled with both Phase Thrusters
+	- Laser Miniguns (improved tier)
+- General Munitions Projectile Weaponry
+	- Roof Cannon bucket (improved tier, 2 items)
 ## New Custom Parts
-* Auto Charge LR
-	* A long range version of the Auto Charge designed to separate the ship a spawn range instead of close contact. Ranged for Normal mode spawn range (1500 units)
-* Tiny Capacitor
-	* A 1x1 capacitor designed to hold a few charges in use for low power environments. Ideal for thrusters or moving power around a tight ship.
-## Balance Changes
-### Tier Cost Changes
-General weapon balance is decided by unlock tier and general worth. Each tier is subdivided into cost tiers of general worth: 5k, 7.5k, and 10k. While this is a fine price-point for early tiers, the cost is negligible late game. As such, I've slightly increased the base cost of parts as tiers increase. The goal isn't to limit funds, but ensure there's always a decision on what techs to pick up or leave.
-* A few techs at 12.5k have been lowered to the 10k
-### Item Cost Increase
-While previously I held a stance of not wanting to change the values of any other author's mod out of pure simplicity, I've decided to attempt to rebalance build costs of certain parts. Select few mod parts are quite powerful while also being cheap to build (ex: small turreted weapons). My previous attempt to balance them was to increase purchase cost, however this has the inverse effect of requiring players to sink all remaining money into that part to offset this deficit. Ideally, this will allow players to more strategically utilize a smaller quantity of these powerful parts in their ships instead of excluding them from the mode all together.
-### Part Changes
-* Tri-Steel Armor: Tended to invalidate many early tier weapons for no downside with no interesting design process to do so. Increased cost allows for use in reinforcing critical areas while discouraging converting entire ships to it.
-	* Build cost: 100% -> 200%
-	* Bucket cost: 10k -> 7.5k
-* Flamethrowers:  At the Improved levels, ships lack much armor or any shields to prevent flamers from igniting an entire ship. Increasing the cost to build to push the gun out of a general purpose gun and into a more specialized weapon, such as EMPs.
-	* Weapon Tier: Improved -> Powerful
-* Deck Chaingun: Was always intended to be one above the normal Chaingun but I forgot to change the value upon adding it.
-	* Weapon Tier: Powerful -> Deadly
-* Long variants of the Small Rifle, MG, and Grenade: Build cost increased since they can be placed behind armor. In compensation, they're now able to be built from the start of the game.
-	* Weapon Tier: Improved -> Basic
-	* Build cost: 100% -> 200%
-* Roof variants of the Small Rifle, MG, and Grenade: Build cost has been greatly increased since they can be placed deep within the ship. They are also able to be built at the start of the game now.
-	* Weapon Tier: Deadly -> Basic
-	* Build cost: 100% -> 400%
-### Bucket Changes
-* Missile Super Bucket:
-	* Now also unlocks Nukes.
-* Small rifle, mg, and grenade launchers have been reorganized by project type (all rifles, etc) instead of gun type (long, etc).
+- Reactor Bomb
+	- If you ever wished to have your ship sacrifice itself to inefficiently damage the enemy, then dream no more. The Reactor Bomb a fragile reactor with a large blast radius, capable of being manually triggered to explode. There is a general trade-off of wanting as little armor around it to maximize blast radius, yet too little armor means you're likely to be shot down instantly.
+	- This is a Utilities ship part and is unlocked by default. It is not designed to be a serious weapon, instead a gimmick you can mess around with if you really want. Perhaps for fun, I'll make a draft tech that includes a stronger core in the future.
+	- Currently rather clunky and inconsistent in effectiveness. This is a known issue with the part, but I have no current plans to dedicate more time for this specific part, being a fun/gimmick part.
+## Tech Changes
+- The Standard Machinegun (General Munitions) now includes the roof mounted version. To help balance it compared to the Small MG, the bucket has been moved up in tier. The roof version has been increased in cost to match other roof guns.
+	- Weapon Tier: Basic -> Improved
+	- Tech Cost: 5k -> 7.5k
+	- Build cost (Roof MG): 100% -> 400%
+- The Radio Jammer (General Munitions) has been disabled. I found it was mostly a dead draw and not sure where to put it right now. Might add it into some bucket in the future.
+- Particle Cannon has felt a bit weak late game so I'm moving it down a tier.
+	- Weapon Tier: Powerful -> Improved
+## Part Updates
+- Moved the Tiny Command Room custom part from the Flight group (now Thruster group) to the Command group.
+- The Tiny Reactor should now gains the effects from the Electron Nebulas. I'm not entirely certain if this is working however.
 ## Bug Fixes
-* Fix broken item text while holding alt.
-* Fixed the Advance Missile Launcher lacking HE missiles and parts on its own.
-* Added EMP missiles to the Super Missile Bucket.
+- Fixed the Rifle, MG, and Grenade (General Munitions)  buckets missing some icons.
 ## Misc
-* Removed 0.5 energy from the Tiny Generator's Battery Capacity, rounding capacity to a whole number. Better matches actual capacity to the visuals.
-* Standardized some file names and internal IDs for consistency.
-* Changed the mod's '&' symbol to 'and' for bug fixes.
-* Updated mod README. Moved changelog out of the README and into a new file.
-* Maxwell is standing in for the mod icon temporarily.
-* Removed some unused files.
-* Removed some disabled entries not planning on returning from the code.
-## Known Issues
-* Mod support is in flux right now due to update 0.30.0. As such, the following mods have been disabled in the code:
-	* Dorsal Thrusters
-	* Stormforge
-	* Twin-Linked Point Defense
-	* Laser Point Defense
-	* UV Lasers
+- Removed the Temp Bucket from the tech rotation.
+- I've been rewriting some of the backend for the mod. The mod started life as a quick project I didn't expect to continue this long. As the mod has grown, it's become fairly hard to manage the files as the grow to 1k lines of code. These changes should make it easier to manage mod support going forward. This should have no impacts on the front end.
+- Updated some bucket icons to use overlays. Mostly a backend thing, but some buckets might look slight different.
 # Development Information
 ## Todo List
 * Create a lobby setting format for the mode.

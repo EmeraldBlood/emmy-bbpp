@@ -19,7 +19,7 @@ Parts
 	//Auto Charge Suicide
 	AutoChargeSuicide = "Auto Charge Suicide"
 	AutoChargeSuicideIcon = "Auto Charge Suicide"
-	AutoChargeSuicideDesc = "AI triggered explosive bomb, set to explode at close contact with the enemy (~50 units)"
+	AutoChargeSuicideDesc = "AI triggered explosive bomb, set to explode at close contact with the enemy (~50 units)."
 	
 	//Tiny Reactor
 	ReactorTiny = "Tiny Reactor"
@@ -42,6 +42,11 @@ Parts
 	AutoGunIcon = &AutoGun
 	AutoGunDesc = "AI priority charge. Used for Build & Battle mode with AI controllers"
 	*/
+	
+	//Suicide Core
+	ReactorSuicide = "Reactor Bomb"
+	ReactorSuicideIcon = "Reactor Bomb"
+	ReactorSuicideDesc = "A weakend reactor designed to create a large explosion. While it does provide a small amount of power, it's main goal is to explode next to the enemy. AI will trigger this at close contact with the enemy (~50 units)."
 
 //Buckets
 	//Placeholder Bucket

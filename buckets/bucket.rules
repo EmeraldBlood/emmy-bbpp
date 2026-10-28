@@ -1,5 +1,17 @@
 Part : <./Data/ships/terran/base_part_terran.rules>/Part
 {
+	//Main bucket icon overlay
+	BucketOverlayIcon
+	{
+		Texture
+		{
+			File = "./Standard Mods/emmy-bbpp/buckets/bucket.png"
+			MipLevels = 2
+			SampleMode = Linear
+		}
+		Size = [64, 64]
+		VertexColor = [255, 4, 0]
+	}
 	//Temp Bucket
 	Temp
 	{
@@ -200,6 +212,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 	}
 	//AWT
 	//Light & Heavy Armor
+	/*
 	AWTArmor
 	{
 		NameKey = "Parts/AWTArmorBucket"
@@ -214,6 +227,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			Size = [64, 64]
 		}
 	}
+	*/
 	//Bulkheads
 	Bulkhead
 	{

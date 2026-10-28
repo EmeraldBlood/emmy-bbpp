@@ -3,7 +3,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 	NameKey = "Parts/ControlRoomTiny"
 	IconNameKey = "Parts/ControlRoomTinyIcon"
 	ID = emmy.control_room_tiny
-	EditorGroup = "Flight"
+	EditorGroup = "Control"
 	DescriptionKey = "Parts/ControlRoomTinyDesc"
 	Resources
 	[ //base 10k. Tiny ~??k.

@@ -1,7 +1,7 @@
 Techs
 [
 	//Base Game
-	{//chaingun with elbows
+	{//chaingun with elbows {entry 0}
 		ID = cosmoteer.chaingun
 		NameKey = &<./Data/ships/terran/chaingun/chaingun.rules>/Part/NameKey
 		DescriptionKey = &<./Data/ships/terran/chaingun/chaingun.rules>/Part/DescriptionKey
@@ -17,7 +17,7 @@ Techs
 		Cost = 10000
 		FundsThresholdBeforeOffered = 250000
 	}
-	{//Med Command Bucket {entry 0}
+	{//Med Command Bucket
 	//Med control room, sensor array
 		ID = cosmoteer.control_room_med
 		NameKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/ControlRoomMed/NameKey
@@ -252,14 +252,15 @@ Techs
 		Icon = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/Bulkhead/EditorIcon
 		PartsUnlocked = [
 			&<./Data/../../../workshop/content/799600/2879432704/bulkhead/bulkhead.rules>/Part/ID
-			&<./Data/../../../workshop/content/799600/2882082274/Armor/Renforced_Corridor/renforced_corridor.rules>/Part/ID
-			&<./Data/../../../workshop/content/799600/2882082274/Armor/Renforced_CorridorB/renforced_corridorB.rules>/Part/ID
+			//&<./Data/../../../workshop/content/799600/2882082274/Armor/Renforced_Corridor/renforced_corridor.rules>/Part/ID
+			//&<./Data/../../../workshop/content/799600/2882082274/Armor/Renforced_CorridorB/renforced_corridorB.rules>/Part/ID
 			]
 		Category = [utility]
 		Cost = 10000
 		FundsThresholdBeforeOffered = 100000
 	}
 	//AWT
+	/*
 	{//light & heavy armor bucket
 		ID = syy1125.light_armor
 		NameKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/AWTArmor/NameKey
@@ -319,6 +320,7 @@ Techs
 		Cost = 10000
 		FundsThresholdBeforeOffered = 400000
 	}
+	*/
 	//Micro Missiles
 	{
 		ID = dj0z.micromissile_launcher
@@ -358,27 +360,8 @@ Techs
 		FundsThresholdBeforeOffered = 100000
 	} */
 	//General Munitions Projectile Weaponry
-	{//pointdef mg
-		ID = bonible.PointMachinegun
-		NameKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/PointMachinegun/PointMachinegun.rules>/Part/NameKey
-		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/PointMachinegun/PointMachinegun.rules>/Part/DescriptionKey
-		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/PointMachinegun/PointMachinegun.rules>/Part/EditorIcon
-		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/PointMachinegun/PointMachinegun.rules>/Part/ID]
-		Category = [defenses]
-		Cost = 5000
-		FundsThresholdBeforeOffered = 0
-	}
-	{//roof pointdef mg
-		ID = bonible.PointMachinegun2
-		NameKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/PointMachinegun/PointMachinegun2.rules>/Part/NameKey
-		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/PointMachinegun/PointMachinegun2.rules>/Part/DescriptionKey
-		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/PointMachinegun/PointMachinegun2.rules>/Part/EditorIcon
-		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/PointMachinegun/PointMachinegun2.rules>/Part/ID]
-		Category = [defenses]
-		Cost = 10000
-		FundsThresholdBeforeOffered = 400000
-	}
-	{//radio jammer
+	//Weapon Parts
+	/*{//radio jammer
 		ID = bonible.RadioOperator
 		NameKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RadioOperator/radio.rules>/Part/NameKey
 		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RadioOperator/radio.rules>/Part/DescriptionKey
@@ -387,13 +370,14 @@ Techs
 		Category = [utility]
 		Cost = 5000
 		FundsThresholdBeforeOffered = 100000
-	}
+	}*/
 	//Rifle Bundle
 	{
 		ID = bonible.RifleSmall
 		NameKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/RiflesSmall/NameKey
 		DescriptionKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/RiflesSmall/DescriptionKey
-		Icon = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/RiflesSmall/EditorIcon
+		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall.rules>/Part/EditorIcon
+		SecondaryIcon = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/BucketOverlayIcon
 		PartsUnlocked = [
 			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall.rules>/Part/ID
 			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall2.rules>/Part/ID
@@ -408,7 +392,8 @@ Techs
 		ID = bonible.MachinegunSmall
 		NameKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/SmallMG/NameKey
 		DescriptionKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/SmallMG/DescriptionKey
-		Icon = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/SmallMG/EditorIcon
+		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/MachinegunSmall/MachinegunSmall.rules>/Part/EditorIcon
+		SecondaryIcon = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/BucketOverlayIcon
 		PartsUnlocked = [
 			<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/MachinegunSmall/MachinegunSmall.rules>/Part/ID
 			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/MachinegunSmall/MachinegunSmall2.rules>/Part/ID
@@ -423,7 +408,8 @@ Techs
 		ID = bonible.GrenadeBunk
 		NameKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/GrenadeBunk/NameKey
 		DescriptionKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/GrenadeBunk/DescriptionKey
-		Icon = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/GrenadeBunk/EditorIcon
+		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk.rules>/Part/EditorIcon
+		SecondaryIcon = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/BucketOverlayIcon
 		PartsUnlocked = [
 			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk.rules>/Part/ID
 			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk2.rules>/Part/ID
@@ -433,22 +419,26 @@ Techs
 		Cost = 7500
 		FundsThresholdBeforeOffered = 0
 	}
-	{//normal heavy mg
+	{//normal heavy mg / standard machinegun
 		ID = bonible.Machinegun
 		NameKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/Machinegun/Machinegun.rules>/Part/NameKey
 		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/Machinegun/Machinegun.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/Machinegun/Machinegun.rules>/Part/EditorIcon
-		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/Machinegun/Machinegun.rules>/Part/ID]
+		SecondaryIcon = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/BucketOverlayIcon
+		PartsUnlocked = [
+			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/Machinegun/Machinegun.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/Machinegun/Machinegun2.rules>/Part/ID
+			]
 		Category = [weapons]
-		Cost = 5000
-		FundsThresholdBeforeOffered = 0
+		Cost = 7500
+		FundsThresholdBeforeOffered = 100000
 	}
 	{//roof heavy mg
 		ID = bonible.Machinegun2
 		NameKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/Machinegun/Machinegun2.rules>/Part/NameKey
 		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/Machinegun/Machinegun2.rules>/Part/DescriptionKey
 		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/Machinegun/Machinegun2.rules>/Part/EditorIcon
-		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/Machinegun/Machinegun2.rules>/Part/ID]
+		PartsUnlocked = []
 		Category = [weapons]
 		Cost = 10000
 		FundsThresholdBeforeOffered = 400000
@@ -483,6 +473,7 @@ Techs
 		Cost = 5000
 		FundsThresholdBeforeOffered = 250000
 	}
+	//This either doesn't work or crashes upon use.
 	/*{//turret flamer
 		ID = bonible.Flamethrower2
 		NameKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/Flamethrower/Flamethrower2.rules>/Part/NameKey
@@ -512,6 +503,41 @@ Techs
 		Category = [weapons]
 		Cost = 10000
 		FundsThresholdBeforeOffered = 250000
+	}
+	{//roof cannon bucket
+		ID = bonible.RoofCannon
+		NameKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RoofCannon/roofcannon.rules>/Part/NameKey
+		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RoofCannon/roofcannon.rules>/Part/DescriptionKey
+		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RoofCannon/roofcannon.rules>/Part/EditorIcon
+		SecondaryIcon = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/BucketOverlayIcon
+		PartsUnlocked = [
+			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RoofCannon/roofcannon.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RoofCannon/roofcannon2.rules>/Part/ID
+			]
+		Category = [weapons]
+		Cost = 7500
+		FundsThresholdBeforeOffered = 100000
+	}
+	//Defense Parts
+	{//pointdef mg
+		ID = bonible.PointMachinegun
+		NameKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/PointMachinegun/PointMachinegun.rules>/Part/NameKey
+		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/PointMachinegun/PointMachinegun.rules>/Part/DescriptionKey
+		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/PointMachinegun/PointMachinegun.rules>/Part/EditorIcon
+		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/PointMachinegun/PointMachinegun.rules>/Part/ID]
+		Category = [defenses]
+		Cost = 5000
+		FundsThresholdBeforeOffered = 0
+	}
+	{//roof pointdef mg
+		ID = bonible.PointMachinegun2
+		NameKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/PointMachinegun/PointMachinegun2.rules>/Part/NameKey
+		DescriptionKey = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/PointMachinegun/PointMachinegun2.rules>/Part/DescriptionKey
+		Icon = &<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/PointMachinegun/PointMachinegun2.rules>/Part/EditorIcon
+		PartsUnlocked = [&<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/PointMachinegun/PointMachinegun2.rules>/Part/ID]
+		Category = [defenses]
+		Cost = 10000
+		FundsThresholdBeforeOffered = 400000
 	}
 	{//small hardlight
 		ID = bonible.HardlightShield
@@ -562,11 +588,11 @@ Techs
 		PartsUnlocked = [
 			&<./Data/../../../workshop/content/799600/2886141879/parts/modular_mine_loader/modular_mine_loader.rules>/Part/ID
 			&<./Data/../../../workshop/content/799600/2886141879/parts/modular_mine_launcher/modular_mine_launcher.rules>/Part/ID
-			&<./Data/../../../workshop/content/799600/2886141879/parts/modular_mine_regulator_addon/modular_mine_regulator_addon.rules>/Part/ID
-			&<./Data/../../../workshop/content/799600/2886141879/parts/modular_mine_payload_addon/modular_mine_payload_addon.rules>/Part/ID
-			&<./Data/../../../workshop/content/799600/2886141879/parts/modular_mine_iff_addon/modular_mine_iff_addon.rules>/Part/ID
-			&<./Data/../../../workshop/content/799600/2886141879/parts/modular_mine_health_addon/modular_mine_health_addon.rules>/Part/ID
-			&<./Data/../../../workshop/content/799600/2886141879/parts/modular_mine_count_addon/modular_mine_count_addon.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/2886141879/parts/modular_mine_addon_regulator/modular_mine_addon_regulator.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/2886141879/parts/modular_mine_addon_payload/modular_mine_addon_payload.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/2886141879/parts/modular_mine_addon_iff/modular_mine_addon_iff.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/2886141879/parts/modular_mine_addon_health/modular_mine_addon_health.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/2886141879/parts/modular_mine_addon_count/modular_mine_addon_count.rules>/Part/ID
 			]
 		ResourcesUnlocked = [&<./Data/resources/mine_part/mine_part.rules>/ID]
 		ToggleChoicesUnlocked = [[missile_type, 3]]
@@ -665,6 +691,7 @@ Techs
 		Cost = 10000
 		FundsThresholdBeforeOffered = 250000
 	}
+	/*
 	{//Bonible's Roof Mounted Chaingun
 		ID = bonible.RoofChaingun
 		NameKey = &<./Data/../../../workshop/content/799600/3145052003/Parts/Weapons/RoofChaingun/roofchaingun.rules>/Part/NameKey
@@ -679,8 +706,24 @@ Techs
 		Category = [weapons]
 		Cost = 10000
 		FundsThresholdBeforeOffered = 400000
+	} */
+	{//Bonible's Roof Mounted Chaingun Fixed. Note this is a DIFFERENT mod upload that the original.
+		ID = bonible.RoofChaingun
+		NameKey = &<./Data/../../../workshop/content/799600/3817773349/Parts/Weapons/RoofChaingun/roofchaingun.rules>/Part/NameKey
+		DescriptionKey = &<./Data/../../../workshop/content/799600/3817773349/Parts/Weapons/RoofChaingun/roofchaingun.rules>/Part/DescriptionKey
+		Icon = &<./Data/../../../workshop/content/799600/3817773349/Parts/Weapons/RoofChaingun/roofchaingun.rules>/Part/EditorIcon
+		PartsUnlocked = [
+			&<./Data/../../../workshop/content/799600/3817773349/Parts/Weapons/RoofChaingun/roofchaingun.rules>/Part/ID
+			&<./Data/ships/terran/chaingun_magazine/chaingun_magazine.rules>/Part/ID //chaingun mags
+			&<./Data/../../../workshop/content/799600/3071792765/elbow_left_magazine/elbow_left_magazine.rules>/Part/ID //elbow mod
+			&<./Data/../../../workshop/content/799600/3071792765/elbow_right_magazine/elbow_right_magazine.rules>/Part/ID //elbow mod
+		]
+		Category = [weapons]
+		Cost = 10000
+		FundsThresholdBeforeOffered = 400000
 	}
-	//Cluster Missiles TEMP
+	//Cluster Missiles TEMP. Delete this code at some point
+	/*
 	{
 		ID = emmy.TempCluster
 		NameKey = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/Temp/NameKey
@@ -692,7 +735,7 @@ Techs
 		ToggleChoicesUnlocked = [[missile_type, 0]]
 		Cost = 7500
 		FundsThresholdBeforeOffered = 100000
-	}
+	} */
 	//Galactic Alliance - Weapons
 	//Heavy Energy Machinegun
 	{
@@ -738,7 +781,7 @@ Techs
 		Cost = 7500
 		FundsThresholdBeforeOffered = 250000
 	}
-	//Particle Cannon Small
+	//Particle Cannon Small, PAC
 	{
 		ID = ultranova.small_particle_c_loader
 		NameKey = &<./Data/../../../workshop/content/799600/2879478059/Parts/Projectile_Weapons/particle_cannon_small/particle_cannon_loader.rules>/Part/NameKey
@@ -751,7 +794,7 @@ Techs
 			]
 		Category = [weapons]
 		Cost = 7500
-		FundsThresholdBeforeOffered = 250000
+		FundsThresholdBeforeOffered = 100000
 	}
 	//Rocket Silo
 	{
@@ -773,6 +816,34 @@ Techs
 		Icon = &<./Data/../../../workshop/content/799600/2879478059/Parts/Projectile_Weapons/rocket_silo_heavy/rocket_silo_heavy.rules>/Part/EditorIcon
 		PartsUnlocked = [&<./Data/../../../workshop/content/799600/2879478059/Parts/Projectile_Weapons/rocket_silo_heavy/rocket_silo_heavy.rules>/Part/ID]
 		ResourcesUnlocked = [&<./Data/../../../workshop/content/799600/2879478059/Resources/rocket/rocket.rules>/ID]
+		Category = [weapons]
+		Cost = 7500
+		FundsThresholdBeforeOffered = 100000
+	}
+	//Laser Cannons (Small/Fighter)
+	{
+		ID = ultranova.fighter_energy_cannon
+		NameKey = &<./Data/../../../workshop/content/799600/2879478059/Parts/Energy_Weapons/fighter_weapons/energy_cannon/energy_cannon.rules>/Part/NameKey
+		DescriptionKey = &<./Data/../../../workshop/content/799600/2879478059/Parts/Energy_Weapons/fighter_weapons/energy_cannon/energy_cannon.rules>/Part/DescriptionKey
+		Icon = &<./Data/../../../workshop/content/799600/2879478059/Parts/Energy_Weapons/fighter_weapons/energy_cannon/energy_cannon.rules>/Part/EditorIcon
+		PartsUnlocked = [
+			&<./Data/../../../workshop/content/799600/2879478059/Parts/Energy_Weapons/fighter_weapons/energy_cannon/energy_cannon.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/2879478059/Parts/Energy_Weapons/fighter_weapons/energy_cannon/energy_cannon_left.rules>/Part/ID
+			]
+		Category = [weapons]
+		Cost = 7500
+		FundsThresholdBeforeOffered = 0
+	}
+	//Laser Miniguns (Small/Fighter)
+	{
+		ID = ultranova.fighter_energy_cannon
+		NameKey = &<./Data/../../../workshop/content/799600/2879478059/Parts/Energy_Weapons/fighter_weapons/energy_minigun/energy_minigun.rules>/Part/NameKey
+		DescriptionKey = &<./Data/../../../workshop/content/799600/2879478059/Parts/Energy_Weapons/fighter_weapons/energy_minigun/energy_minigun.rules>/Part/DescriptionKey
+		Icon = &<./Data/../../../workshop/content/799600/2879478059/Parts/Energy_Weapons/fighter_weapons/energy_minigun/energy_minigun.rules>/Part/EditorIcon
+		PartsUnlocked = [
+			&<./Data/../../../workshop/content/799600/2879478059/Parts/Energy_Weapons/fighter_weapons/energy_minigun/energy_minigun.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/2879478059/Parts/Energy_Weapons/fighter_weapons/energy_minigun/energy_minigun_left.rules>/Part/ID
+			]
 		Category = [weapons]
 		Cost = 7500
 		FundsThresholdBeforeOffered = 100000
@@ -814,6 +885,44 @@ Techs
 		Cost = 7500
 		FundsThresholdBeforeOffered = 250000
 	}
+	//Phase Thrusters Small Bucket
+	//Small phase thrusters, small antigrav
+	{
+		ID = ultranova.phase_thruster_small
+		NameKey = &<./Data/../../../workshop/content/799600/2879478059/Parts/Flight/thrusters_phase/phase_thruster_small/phase_thruster_small.rules>/Part/NameKey
+		DescriptionKey = &<./Data/../../../workshop/content/799600/2879478059/Parts/Flight/thrusters_phase/phase_thruster_small/phase_thruster_small.rules>/Part/DescriptionKey
+		Icon = &<./Data/../../../workshop/content/799600/2879478059/Parts/Flight/thrusters_phase/phase_thruster_small/phase_thruster_small.rules>/Part/EditorIcon
+		SecondaryIcon = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/BucketOverlayIcon
+		PartsUnlocked = [
+			&<./Data/../../../workshop/content/799600/2879478059/Parts/Flight/thrusters_phase/phase_thruster_small/phase_thruster_small.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/2879478059/Parts/Flight/thrusters_phase/phase_thruster_small_angled/phase_thruster_small_angled_L.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/2879478059/Parts/Flight/thrusters_phase/phase_thruster_small_angled_E/phase_thruster_small_angled_L.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/2879478059/Parts/Flight/thrusters_phase/phase_thruster_small_inset/phase_thruster_small_inset_L.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/2879478059/Parts/Flight/antigrav_small/antigrav_small.rules>/Part/ID
+			]
+		Category = [thrusters]
+		Cost = 5000
+		FundsThresholdBeforeOffered = 0
+	}
+	//Phase Thrusters Medium Bucket
+	//Med phase thrusters, small antigrav
+	{
+		ID = ultranova.phase_thruster_med
+		NameKey = &<./Data/../../../workshop/content/799600/2879478059/Parts/Flight/thrusters_phase/phase_thruster_med/phase_thruster_med.rules>/Part/NameKey
+		DescriptionKey = &<./Data/../../../workshop/content/799600/2879478059/Parts/Flight/thrusters_phase/phase_thruster_med/phase_thruster_med.rules>/Part/DescriptionKey
+		Icon = &<./Data/../../../workshop/content/799600/2879478059/Parts/Flight/thrusters_phase/phase_thruster_med/phase_thruster_med.rules>/Part/EditorIcon
+		SecondaryIcon = &<./Standard Mods/emmy-bbpp/buckets/bucket.rules>/Part/BucketOverlayIcon
+		PartsUnlocked = [
+			&<./Data/../../../workshop/content/799600/2879478059/Parts/Flight/thrusters_phase/phase_thruster_med/phase_thruster_med.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/2879478059/Parts/Flight/thrusters_phase/phase_thruster_med_angled/phase_thruster_med_angled_L.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/2879478059/Parts/Flight/thrusters_phase/phase_thruster_med_angled_E/phase_thruster_med_angled_L.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/2879478059/Parts/Flight/thrusters_phase/phase_thruster_med_inset/phase_thruster_med_inset_L.rules>/Part/ID
+			&<./Data/../../../workshop/content/799600/2879478059/Parts/Flight/antigrav_small/antigrav_small.rules>/Part/ID
+			]
+		Category = [thrusters]
+		Cost = 5000
+		FundsThresholdBeforeOffered = 0
+	}
 ]
 PartsWhitelist
 [
@@ -829,6 +938,7 @@ PartsWhitelist
 	emmy.reactor_tiny
 	emmy.capacitor_tiny
 	emmy.control_room_tiny
+	emmy.reactor_suicide
 	//Expanded Vanilla Armors
 	SW.expanded_v_armor
 	SW.expanded_v_armor_1x1_1Quarter
@@ -892,4 +1002,7 @@ PartsWhitelist
 	SW.expanded_v_armor_structure_hybrid_tri
 	SW.expanded_v_armor_tri
 	SW.expanded_v_armor_wedge
+	//Galactic Alliance Crew Parts
+	ultranova.crew_quarters_walkthrough
+	ultranova.airlock_large
 ]

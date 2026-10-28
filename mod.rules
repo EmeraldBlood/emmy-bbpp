@@ -1,8 +1,8 @@
 //Changelog at file tail
 ID = emmy.babpersonalpatch
 Name = "Emmy Battle and Build Personal Patch (BBPP)"
-Version = 2.1.0
-CompatibleGameVersions = ["0.30.3"]
+Version = 2.2.0
+CompatibleGameVersions = ["0.30.4c"]
 ModifiesMultiplayer = true
 StringsFolder = "strings"
 Author = "Emerald Blood"
@@ -78,17 +78,12 @@ Actions
 			&<assets/control_room_tiny/control_room_tiny.rules>/Part
 			//Tiny Capacitor
 			&<assets/capacitor_tiny/capacitor_tiny.rules>/Part
+			//Suicide Core
+			&<assets/reactor_suicide/reactor_suicide.rules>/Part
 			//Unused testing content not released in the release. Do not uncomment or will crash.
 			//&<assets/auto_gun/auto_gun.rules>/Part
 		]
 		IgnoreIfNotExisting = true
-	}
-	//Basegame rebalance
-	//Railgun Buff
-	{
-		Action = Replace
-		Replace = "<buffs/buffs.rules>/RailgunShot/Multiplier" 
-		With = &<part-rebalance.rules>/RailgunShotMultiplier
 	}
 	//Mod support
 	//Techs & prices
@@ -103,70 +98,32 @@ Actions
 		AddTo = "<../Standard Mods/emmy-bbpp/base-techs.rules>/PartsWhitelist"
 		ManyToAdd = &<mod-parts.rules>/PartsWhitelist
 	}
-	//Mod rebalance
+	//Base game part rebalancing
+	&<part-rebalance.rules>/BaseGameRebalance
+	//Mod part rebalancing
+	//AWT rebalance
+	&<part-rebalance.rules>/ModAWTRebalance/0
+	&<part-rebalance.rules>/ModAWTRebalance/1
+	&<part-rebalance.rules>/ModAWTRebalance/2
+	&<part-rebalance.rules>/ModAWTRebalance/3
+	&<part-rebalance.rules>/ModAWTRebalance/4
+	//GMPW rebalance
+	&<part-rebalance.rules>/ModGMPWRebalance/0
+	&<part-rebalance.rules>/ModGMPWRebalance/1
+	&<part-rebalance.rules>/ModGMPWRebalance/2
+	&<part-rebalance.rules>/ModGMPWRebalance/3
+	&<part-rebalance.rules>/ModGMPWRebalance/4
+	&<part-rebalance.rules>/ModGMPWRebalance/5
+	&<part-rebalance.rules>/ModGMPWRebalance/6
+	&<part-rebalance.rules>/ModGMPWRebalance/7
+	&<part-rebalance.rules>/ModGMPWRebalance/8
 	//Disable cluster missiles (Sunflower)
 	//DONT BELIEVE THIS IS WORKING. UNFINSIHED?
+	/*
 	{
 		Action = Replace
 		Replace = "<ships/terran/missile_launcher/missile_launcher.rules>/Part/Components/ClusterMissilesComponents"
 		IgnoreIfNotExisting = true
 		With = dynamic
-	}
-	//AWT Tri-Steel Cost
-	{
-		Action = Replace
-		Replace = "<./Data/../../../workshop/content/799600/2882082274/Armor/tri_steel/tri_steel_armor/tri_steel_armor.rules>/Part/Resources" 
-		With = &<part-rebalance.rules>/tri_steel_armorResources
-	}
-	{
-		Action = Replace
-		Replace = "<./Data/../../../workshop/content/799600/2882082274/Armor/tri_steel/tri_steel_armor_1x2_wedge/tri_steel_armor_1x2_wedge.rules>/Part/Resources" 
-		With = &<part-rebalance.rules>/tri_steel_armor_1x2_wedgeResources
-	}
-	{
-		Action = Replace
-		Replace = "<./Data/../../../workshop/content/799600/2882082274/Armor/tri_steel/tri_steel_1x3_wedge/tri_steel_1x3_wedge.rules>/Part/Resources" 
-		With = &<part-rebalance.rules>/tri_steel_1x3_wedgeResources
-	}
-	{
-		Action = Replace
-		Replace = "<./Data/../../../workshop/content/799600/2882082274/Armor/tri_steel/tri_steel_armor_2x1/tri_steel_armor_2x1.rules>/Part/Resources" 
-		With = &<part-rebalance.rules>/tri_steel_armor_2x1Resources
-	}
-	{
-		Action = Replace
-		Replace = "<./Data/../../../workshop/content/799600/2882082274/Armor/tri_steel/tri_steel_armor_wedge/tri_steel_armor_wedge.rules>/Part/Resources" 
-		With = &<part-rebalance.rules>/tri_steel_armor_wedgeResources
-	}
-	//GMPW: Small rifles, mgs, and grenades
-	{//rifle long
-		Action = Replace
-		Replace = "<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall2.rules>/Part/Resources" 
-		With = &<part-rebalance.rules>/riflesmallLongResources
-	}
-	{//rifle roof
-		Action = Replace
-		Replace = "<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall3.rules>/Part/Resources" 
-		With = &<part-rebalance.rules>/riflesmallRoofResources
-	}
-	{//small mg long
-		Action = Replace
-		Replace = "<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/MachinegunSmall/MachinegunSmall2.rules>/Part/Resources" 
-		With = &<part-rebalance.rules>/smallmgLongResources
-	}
-	{//small mg roof
-		Action = Replace
-		Replace = "<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/MachinegunSmall/MachinegunSmall3.rules>/Part/Resources" 
-		With = &<part-rebalance.rules>/smallmgRoofResources
-	}
-	{//grenade long
-		Action = Replace
-		Replace = "<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk2.rules>/Part/Resources" 
-		With = &<part-rebalance.rules>/grenadebunkLongResources
-	}
-	{//grenade roof
-		Action = Replace
-		Replace = "<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk3.rules>/Part/Resources" 
-		With = &<part-rebalance.rules>/grenadebunkRoofResources
-	}
+	} */
 ]

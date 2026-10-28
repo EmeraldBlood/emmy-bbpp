@@ -1,10 +1,8 @@
-//Basegame part rebalancing
+//File variables
+//Base game railgun
 RailgunShotMultiplier = 40% //Multipler from 20% up to 40% (2x per segment)
-
-//Mod part rebalancing
-//AWT Armor Weapons & Technology
+//AWT Mod
 //Tri steel armors. Price increased 2x
-triSteelAlt = 2
 tri_steel_armorResources = [
 	[steel, 30*2],
 	[tristeel, 3*2]
@@ -25,7 +23,7 @@ tri_steel_armor_wedgeResources = [
 	[steel, 20*2]
 	[tristeel, 2*2]
 ]
-//GMPW
+//GMPW Mod
 //Small Rifles (Long, Roof)
 riflesmallLongResources = [
 	[steel, 48*2]
@@ -52,4 +50,106 @@ grenadebunkLongResources = [
 grenadebunkRoofResources = [
 	[steel, 54*4]
 	[coil, 6*4]
+]
+//Standard Machinegun Roof
+standardmgRoofResources = [
+		[steel, 66*4]
+		[coil, 7*4]
+]
+cannonRoofResources = [
+		[steel, 44*4]
+		[coil, 9*4]
+]
+cannondualRoofResources = [
+		[steel, 48*4]
+		[coil, 13*4]
+]
+//mod.rules Actions
+//Base game part rebalancing
+BaseGameRebalance //NOTE single entry {} and not list []
+//Buff railgun
+{
+		Action = Replace
+		Replace = "<buffs/buffs.rules>/RailgunShot/Multiplier" 
+		With = &<part-rebalance.rules>/RailgunShotMultiplier
+}
+//Mod part rebalancing
+//AWT Armor Weapons & Technology
+ModAWTRebalance //entries 0-4
+[
+	//AWT Tri-Steel Cost
+	{
+		Action = Replace
+		Replace = "<./Data/../../../workshop/content/799600/2882082274/Armor/tri_steel/tri_steel_armor/tri_steel_armor.rules>/Part/Resources" 
+		With = &<part-rebalance.rules>/tri_steel_armorResources
+	}
+	{
+		Action = Replace
+		Replace = "<./Data/../../../workshop/content/799600/2882082274/Armor/tri_steel/tri_steel_armor_1x2_wedge/tri_steel_armor_1x2_wedge.rules>/Part/Resources" 
+		With = &<part-rebalance.rules>/tri_steel_armor_1x2_wedgeResources
+	}
+	{
+		Action = Replace
+		Replace = "<./Data/../../../workshop/content/799600/2882082274/Armor/tri_steel/tri_steel_1x3_wedge/tri_steel_1x3_wedge.rules>/Part/Resources" 
+		With = &<part-rebalance.rules>/tri_steel_1x3_wedgeResources
+	}
+	{
+		Action = Replace
+		Replace = "<./Data/../../../workshop/content/799600/2882082274/Armor/tri_steel/tri_steel_armor_2x1/tri_steel_armor_2x1.rules>/Part/Resources" 
+		With = &<part-rebalance.rules>/tri_steel_armor_2x1Resources
+	}
+	{
+		Action = Replace
+		Replace = "<./Data/../../../workshop/content/799600/2882082274/Armor/tri_steel/tri_steel_armor_wedge/tri_steel_armor_wedge.rules>/Part/Resources" 
+		With = &<part-rebalance.rules>/tri_steel_armor_wedgeResources
+	}
+]
+//GMPW Mod
+ModGMPWRebalance //entries 0-8
+[
+	{//rifle long
+		Action = Replace
+		Replace = "<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall2.rules>/Part/Resources" 
+		With = &<part-rebalance.rules>/riflesmallLongResources
+	}
+	{//rifle roof
+		Action = Replace
+		Replace = "<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RifleSmall/RifleSmall3.rules>/Part/Resources" 
+		With = &<part-rebalance.rules>/riflesmallRoofResources
+	}
+	{//small mg long
+		Action = Replace
+		Replace = "<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/MachinegunSmall/MachinegunSmall2.rules>/Part/Resources" 
+		With = &<part-rebalance.rules>/smallmgLongResources
+	}
+	{//small mg roof
+		Action = Replace
+		Replace = "<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/MachinegunSmall/MachinegunSmall3.rules>/Part/Resources" 
+		With = &<part-rebalance.rules>/smallmgRoofResources
+	}
+	{//grenade long
+		Action = Replace
+		Replace = "<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk2.rules>/Part/Resources" 
+		With = &<part-rebalance.rules>/grenadebunkLongResources
+	}
+	{//grenade roof
+		Action = Replace
+		Replace = "<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/GrenadeBunk/GrenadeBunk3.rules>/Part/Resources" 
+		With = &<part-rebalance.rules>/grenadebunkRoofResources
+	}
+	{//roof standard machinegun
+		Action = Replace
+		Replace = "<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/Machinegun/machinegun2.rules>/Part/Resources" 
+		With = &<part-rebalance.rules>/standardmgRoofResources
+	}
+	{//roof cannon (single)
+		Action = Replace
+		Replace = "<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RoofCannon/roofcannon.rules>/Part/Resources" 
+		With = &<part-rebalance.rules>/cannonRoofResources
+	}
+	{//roof dual cannon
+		Action = Replace
+		Replace = "<./Data/../../../workshop/content/799600/3046125111/Parts/Weapons/RoofCannon/roofcannon.rules>/Part/Resources" 
+		With = &<part-rebalance.rules>/cannondualRoofResources
+	}
 ]
